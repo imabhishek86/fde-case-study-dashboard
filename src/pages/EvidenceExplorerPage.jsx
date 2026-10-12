@@ -570,7 +570,7 @@ export default function EvidenceExplorerPage() {
       {/* Review Detail Modal */}
       {selectedReview && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm"
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md"
           onClick={() => setSelectedReview(null)}
         >
           <div
