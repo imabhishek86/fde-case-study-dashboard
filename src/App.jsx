@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+import { DataProvider } from './context/DataContext';
 
+import StartHerePage from './pages/StartHerePage';
 import OverviewPage from './pages/OverviewPage';
 import UserProblemsPage from './pages/UserProblemsPage';
 import RootCausesPage from './pages/RootCausesPage';
@@ -11,8 +13,10 @@ import ProductBacklogPage from './pages/ProductBacklogPage';
 import EngineeringPage from './pages/EngineeringPage';
 import RoadmapPage from './pages/RoadmapPage';
 import EvidenceExplorerPage from './pages/EvidenceExplorerPage';
+import MethodologyPage from './pages/MethodologyPage';
 
 const VALID_TABS = [
+  'start-here',
   'overview',
   'problems',
   'root-causes',
@@ -21,14 +25,15 @@ const VALID_TABS = [
   'product-backlog',
   'engineering',
   'roadmap',
-  'evidence'
+  'evidence',
+  'methodology'
 ];
 
 function getHashTab() {
-  if (typeof window === 'undefined') return 'overview';
+  if (typeof window === 'undefined') return 'start-here';
   const raw = window.location.hash || '';
   const clean = raw.replace(/^#\/?/, '').replace(/\/$/, '');
-  return VALID_TABS.includes(clean) ? clean : 'overview';
+  return VALID_TABS.includes(clean) ? clean : 'start-here';
 }
 
 export default function App() {
@@ -52,6 +57,8 @@ export default function App() {
 
   const renderActivePage = () => {
     switch (activeTab) {
+      case 'start-here':
+        return <StartHerePage onNavigate={handleTabChange} />;
       case 'overview':
         return <OverviewPage onNavigate={handleTabChange} />;
       case 'problems':
@@ -70,32 +77,36 @@ export default function App() {
         return <RoadmapPage onNavigate={handleTabChange} />;
       case 'evidence':
         return <EvidenceExplorerPage onNavigate={handleTabChange} />;
+      case 'methodology':
+        return <MethodologyPage onNavigate={handleTabChange} />;
       default:
-        return <OverviewPage onNavigate={handleTabChange} />;
+        return <StartHerePage onNavigate={handleTabChange} />;
     }
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col lg:flex-row antialiased font-sans text-slate-900">
-      {/* Sidebar Navigation */}
-      <Sidebar
-        activeTab={activeTab}
-        setActiveTab={handleTabChange}
-        mobileOpen={mobileOpen}
-        setMobileOpen={setMobileOpen}
-      />
-
-      {/* Main Content Area */}
-      <div className="flex-1 flex flex-col min-w-0">
-        <Header
+    <DataProvider>
+      <div className="min-h-screen bg-slate-50 flex flex-col lg:flex-row antialiased font-sans text-slate-900">
+        {/* Sidebar Navigation */}
+        <Sidebar
           activeTab={activeTab}
-          onToggleMobileMenu={() => setMobileOpen(!mobileOpen)}
+          setActiveTab={handleTabChange}
+          mobileOpen={mobileOpen}
+          setMobileOpen={setMobileOpen}
         />
 
-        <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto">
-          {renderActivePage()}
-        </main>
+        {/* Main Content Area */}
+        <div className="flex-1 flex flex-col min-w-0">
+          <Header
+            activeTab={activeTab}
+            onToggleMobileMenu={() => setMobileOpen(!mobileOpen)}
+          />
+
+          <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto">
+            {renderActivePage()}
+          </main>
+        </div>
       </div>
-    </div>
+    </DataProvider>
   );
 }

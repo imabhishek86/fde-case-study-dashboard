@@ -1,9 +1,13 @@
 import React from 'react';
-import { Menu, ShieldAlert, Database } from 'lucide-react';
+import { Menu, ShieldAlert, Database, Clock } from 'lucide-react';
+import { useData } from '../context/useData';
 
 export default function Header({ activeTab, onToggleMobileMenu }) {
+  const { analytics, lastRefreshedDisplay, publicReviewsCountDisplay } = useData();
+
   const getPageTitle = (tab) => {
     switch (tab) {
+      case 'start-here': return 'Start Here — Decision Memo';
       case 'overview': return 'Executive Overview & Ratings';
       case 'problems': return 'User Problems & Journey Stages';
       case 'root-causes': return 'Root-Cause Diagnostic Analysis';
@@ -12,7 +16,8 @@ export default function Header({ activeTab, onToggleMobileMenu }) {
       case 'product-backlog': return 'Interactive Product Backlog';
       case 'engineering': return 'Engineering Deep Investigations';
       case 'roadmap': return '30-60-90 Day Phased Roadmap';
-      case 'evidence': return 'Evidence Explorer (1,000 Reviews)';
+      case 'evidence': return `Evidence Explorer (${(analytics.totalReviews || 1000).toLocaleString()} Reviews)`;
+      case 'methodology': return 'Methodology & Pipeline Architecture';
       default: return 'Case Study Analytics';
     }
   };
@@ -34,7 +39,7 @@ export default function Header({ activeTab, onToggleMobileMenu }) {
               MoveInSync Rating Intelligence
             </h1>
             <span className="hidden sm:inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200">
-              1,000 Public Reviews
+              {publicReviewsCountDisplay}
             </span>
           </div>
           <p className="text-xs text-slate-500 font-medium hidden sm:block">
@@ -43,15 +48,20 @@ export default function Header({ activeTab, onToggleMobileMenu }) {
         </div>
       </div>
 
-      <div className="flex items-center space-x-3">
-        <div className="hidden md:flex items-center space-x-1.5 text-xs text-amber-800 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200 font-medium">
+      <div className="flex items-center space-x-2.5">
+        <div className="hidden md:flex items-center space-x-1.5 text-xs text-slate-600 bg-slate-100/80 px-2.5 py-1 rounded-md border border-slate-200 font-medium">
+          <Clock className="w-3.5 h-3.5 text-indigo-600" />
+          <span>{lastRefreshedDisplay}</span>
+        </div>
+
+        <div className="hidden lg:flex items-center space-x-1.5 text-xs text-amber-800 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200 font-medium">
           <ShieldAlert className="w-3.5 h-3.5 text-amber-600" />
-          <span>Bounded Public Sample • June – Oct 2026</span>
+          <span>Bounded Public Sample • {analytics.samplePeriod || 'June – Oct 2026'}</span>
         </div>
 
         <div className="flex items-center space-x-1 text-xs text-slate-500 bg-slate-100 px-2 py-1 rounded">
           <Database className="w-3.5 h-3.5 text-slate-600" />
-          <span className="font-mono">n=1,000</span>
+          <span className="font-mono">n={(analytics.totalReviews || 1000).toLocaleString()}</span>
         </div>
       </div>
     </header>

@@ -3,7 +3,13 @@ import {
   Sparkles,
   Star,
   ArrowRight,
-  Beaker
+  Beaker,
+  ShieldCheck,
+  MessageSquare,
+  Smartphone,
+  RefreshCw,
+  Sliders,
+  CheckCircle2
 } from 'lucide-react';
 import { quickWinDetails } from '../data/caseStudyData';
 
@@ -298,6 +304,124 @@ export default function RecommendationsPage({ onNavigate }) {
                   <li key={i}>{m}</li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* PART 10: Rating Improvement Levers Section */}
+      <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm space-y-4">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <div className="flex items-center space-x-2">
+              <Sliders className="w-5 h-5 text-indigo-600" />
+              <h2 className="text-base font-bold text-slate-900 tracking-tight">
+                Rating Improvement Levers
+              </h2>
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200">
+                Potential Direct Levers
+              </span>
+            </div>
+            <p className="text-xs text-slate-500 mt-0.5">
+              Targeted product, operational, and Google Play Store mechanisms to mitigate negative review spikes. Note: These are labeled as <em>potential direct rating levers</em> and are not claimed as guaranteed rating increases.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-1">
+          {/* Lever 1 */}
+          <div className="p-4 rounded-xl border border-slate-200 bg-slate-50/60 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-2 text-indigo-600 font-bold text-xs mb-1.5">
+                <Star className="w-4 h-4 fill-indigo-600" />
+                <span>1. Dismissible Rating Prompt</span>
+              </div>
+              <p className="text-xs text-slate-700 leading-relaxed">
+                Replace the current blocking modal with a dismissible bottom-sheet banner containing an explicit [Skip] button. Prevents commuters arriving at office from feeling trapped and resorting to 1★ punitive Play Store reviews.
+              </p>
+            </div>
+            <div className="mt-3 pt-2 border-t border-slate-200/60 text-[11px] text-slate-500 font-medium">
+              Opportunity: Eliminates forced lockout friction
+            </div>
+          </div>
+
+          {/* Lever 2 */}
+          <div className="p-4 rounded-xl border border-slate-200 bg-slate-50/60 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-2 text-indigo-600 font-bold text-xs mb-1.5">
+                <CheckCircle2 className="w-4 h-4" />
+                <span>2. Contextual In-App Rating Request</span>
+              </div>
+              <p className="text-xs text-slate-700 leading-relaxed">
+                Trigger in-app rating requests conditionally only after successful commute milestones (e.g. 5 consecutive on-time completed rides with zero incident reports). Suppress triggers whenever rides suffer delays, cancellations, or driver complaints.
+              </p>
+            </div>
+            <div className="mt-3 pt-2 border-t border-slate-200/60 text-[11px] text-slate-500 font-medium">
+              Opportunity: Samples authentic satisfied sentiment
+            </div>
+          </div>
+
+          {/* Lever 3 */}
+          <div className="p-4 rounded-xl border border-slate-200 bg-slate-50/60 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-2 text-amber-700 font-bold text-xs mb-1.5">
+                <Smartphone className="w-4 h-4" />
+                <span>3. Google Play In-App Review API</span>
+              </div>
+              <p className="text-xs text-slate-700 leading-relaxed">
+                <strong>Evaluation recommendation:</strong> &quot;Evaluate eligibility and UX fit with the Android product team.&quot; Do not implement blindly; Google enforces strict quota limits and does not guarantee dialog display.
+              </p>
+            </div>
+            <div className="mt-3 pt-2 border-t border-slate-200/60 text-[11px] text-amber-800 font-medium">
+              Status: Technical assessment required with mobile team
+            </div>
+          </div>
+
+          {/* Lever 4 */}
+          <div className="p-4 rounded-xl border border-slate-200 bg-slate-50/60 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-2 text-indigo-600 font-bold text-xs mb-1.5">
+                <MessageSquare className="w-4 h-4" />
+                <span>4. Responding to Relevant 1★ Reviews</span>
+              </div>
+              <p className="text-xs text-slate-700 leading-relaxed">
+                Establish an operational SLA to respond to high-severity 1★ Play Store reviews within 24 hours. Acknowledge the specific technical issue empathetically, cite internal tracking references, and offer direct support routing.
+              </p>
+            </div>
+            <div className="mt-3 pt-2 border-t border-slate-200/60 text-[11px] text-slate-500 font-medium">
+              Opportunity: De-escalates acute commuter grievance
+            </div>
+          </div>
+
+          {/* Lever 5 */}
+          <div className="p-4 rounded-xl border border-slate-200 bg-slate-50/60 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-2 text-indigo-600 font-bold text-xs mb-1.5">
+                <RefreshCw className="w-4 h-4" />
+                <span>5. Fix → Communicate → Reconsider</span>
+              </div>
+              <p className="text-xs text-slate-700 leading-relaxed">
+                When resolved fixes (e.g. startup crash fix or booking timeout resolution) ship in production, post public developer updates to previously complaining reviewers explaining the exact patch version and politely inviting them to re-evaluate their score.
+              </p>
+            </div>
+            <div className="mt-3 pt-2 border-t border-slate-200/60 text-[11px] text-slate-500 font-medium">
+              Opportunity: Converts legacy 1★ complaints into updated ratings
+            </div>
+          </div>
+
+          {/* Lever 6 */}
+          <div className="p-4 rounded-xl border border-slate-200 bg-slate-50/60 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-2 text-emerald-700 font-bold text-xs mb-1.5">
+                <ShieldCheck className="w-4 h-4" />
+                <span>6. Staged Rollouts &amp; Android Vitals</span>
+              </div>
+              <p className="text-xs text-slate-700 leading-relaxed">
+                Deploy client updates via phased staged rollout rings (1% → 5% → 20% → 100%). Gate advancement behind real-time Android Vitals thresholds (crash-free users &gt; 99.5%, ANR &lt; 0.47%) to arrest buggy releases before they trigger punitive 1★ review waves.
+              </p>
+            </div>
+            <div className="mt-3 pt-2 border-t border-slate-200/60 text-[11px] text-emerald-800 font-medium">
+              Opportunity: Prevents widespread post-update rating erosion
             </div>
           </div>
         </div>

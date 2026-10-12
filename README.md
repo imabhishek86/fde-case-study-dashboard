@@ -1,190 +1,174 @@
 # MoveInSync FDE Case Study Dashboard
 
-An evidence-driven analytics dashboard built as part of a Forward Deployed Engineer (FDE) case study for diagnosing MoveInSync Google Play Store rating issues and translating user feedback into prioritized product and engineering actions.
+An evidence-driven analytics dashboard built as part of a Forward Deployed Engineer (FDE) case study for diagnosing MoveInSync Google Play Store rating issues and translating qualitative commuter feedback into prioritized product and engineering actions.
 
 ---
 
 ## 1. Executive Summary
 
-This project analyzes user sentiment and functional complaints from a bounded public dataset of Google Play Store reviews for MoveInSync (`com.moveinsync.ets`).
+This project analyzes user sentiment and functional complaints from a bounded public dataset of Google Play Store reviews for the MoveInSync employee application (`com.moveinsync.ets`).
 
 | Metric | Value | Context |
 | :--- | :--- | :--- |
-| **Total Reviews** | **1,000** | Public sample collected via Google Play |
+| **Total Reviews** | **1,000** | Bounded public sample collected via Google Play API |
 | **Sample Window** | **June 15 – October 11, 2026** | India locale (`en`), bimodal distribution |
-| **Average Rating** | **3.77 / 5.00** | Polarized between high satisfaction and critical friction |
+| **Analytical Sample Rating** | **3.77 / 5.00** | Polarized between high satisfaction and acute friction |
 | **1★ Reviews** | **258 (25.8%)** | Acute operational and technical blockers |
 | **2★ Reviews** | **33 (3.3%)** | Recurring commuter friction |
 | **Negative Share (1–2★)** | **291 (29.1%)** | Primary focus of root-cause and triage analysis |
 | **Positive Share (4–5★)** | **683 (68.3%)** | 641 5★ + 42 4★ reviews |
 | **Neutral Share (3★)** | **26 (2.6%)** | Mixed satisfaction reviews |
 
-> **Disclaimer:** This analysis is based on a bounded public sample of 1,000 Google Play reviews, not the complete MoveInSync historical Play Store dataset.
+> **Sampling Limitation:** This pipeline uses a bounded public sample of 1,000 Google Play reviews and is subject to public-source availability, pagination limits, rate limits, and sampling bias. It does not represent MoveInSync’s complete historical dataset.  
+> **Public Listing Rating Context:** Current public listing rating should be refreshed from the live Play Store listing before final submission; it is strictly disambiguated from our bounded 1,000-review analytical sample (3.77 / 5).
 
 ---
 
-## 2. Business Problem
+## 2. Scope & Analytical Boundaries
 
-Enterprise employee commute systems rely on end-to-end operational and technical reliability. When office commuters experience transit failures, dissatisfaction quickly surfaces as low Play Store ratings.
-
-**Core Case Study Questions:**
-1. **Why are MoveInSync ratings lower than expected?** What causes the 29.1% negative review share?
-2. **What are the acute commuter pain points?** Where in the daily journey (booking, tracking, pickup, ride, rating) do failures occur?
-3. **What should be fixed first?** How should an incoming Forward Deployed Engineer (FDE) sequence product and engineering interventions to halt rating erosion and restore platform confidence?
+- **Scope Assumption:** Analysis scope is strictly the MoveInSync employee application (`com.moveinsync.ets`) because that is the public Play Store application used for this analysis. Other MoveInSync applications (e.g. MoveInSync Driver, MoveInSync Partner, MoveInSync Escort, or enterprise web portals) were **not independently analyzed** in this submission.
+- **Causal Integrity:** We do not claim proven population-level causality between specific Play Store reviews and total active user retention, as public review data exhibits inherent voluntary-response sampling bias.
+- **Competitive Context:** Competitor comparison can be added using public Play Store listings for comparable employee commute platforms. In keeping with empirical standards, no competitor ratings or benchmark figures are fabricated in this submission.
 
 ---
 
-## 3. What I Built
+## 3. Dashboard Navigation & Routes
 
-An interactive, responsive single-page web dashboard that turns qualitative feedback into auditable product and engineering roadmaps.
+The single-page web dashboard supports full hash-based direct routing with responsive desktop and mobile navigation:
 
-- **Executive Overview (`/overview`):** Top KPI cards, bimodal rating distribution chart, 5-month longitudinal trend line chart, and journey touchpoint overview.
-- **User Problems (`/problems`):** 11 categorized complaint themes mapped to journey stages, with volume charts and interactive slide-out detail drawers.
-- **Root-Cause Diagnostic Analysis (`/root-causes`):** 4-layer diagnostic cards strictly separating *Observed Symptoms* from *Inferred Hypotheses*, *Required Telemetry*, and *Proposed Actions*.
-- **Multi-Dimensional Priority Matrix (`/priorities`):** Rigorous P0–P3 triage stack highlighting the FDE *"What I Would Fix First"* decision framework.
-- **Product Recommendations (`/recommendations`):** Formal PRD specifications for P0/P1 initiatives, plus the ⭐ **Potential Quick Win** (dismissible rating prompt).
-- **Interactive Product Backlog (`/product-backlog`):** Sortable, filterable table linking initiatives to evidence, user value, effort, and success metrics.
-- **Engineering Deep Dives (`/engineering`):** 5 technical investigation briefs detailing required telemetry instrumentation, decision gates, and acceptance criteria.
-- **Phased 30-60-90 Day Roadmap (`/roadmap`):** Visual 3-phase execution timeline (Phase 1: Instrumentation → Phase 2: Core Reliability → Phase 3: Algorithmic Scaling).
-- **Auditable Evidence Explorer (`/evidence`):** Full inspection suite covering all 1,000 verified reviews with text search, multi-faceted filtering, and detailed inspection modals.
-
----
-
-## 4. Key Findings
-
-Analysis of the 291 negative reviews identified specific friction clusters across the commuter journey:
-
-1. **Roster & Booking Management Failures (30 primary reviews):** Commuters report booking drop-offs, inability to reserve scheduled shifts, and silent allocation failures during peak cutoff windows.
-2. **App Freezing & Performance Degradation (27 primary reviews):** UI lockups, ANR events, and lagging screens during active transit workflows.
-3. **Delayed / Frozen Live GPS Tracking (26 primary reviews):** Stale vehicle coordinates and frozen pins leaving commuters uncertain during curbside waiting.
-4. **Post-Update Crash Loop (14 primary reviews):** Immediate crash on launch following client updates, creating a total service lockout for affected commuters.
-
-> **Methodological Note:** Post-update app launch crashes (14 reviews) and general app freezing/ANR (27 reviews) are kept strictly separate. They represent distinct failure modes and are never combined into an artificial figure of 41.
-
----
-
-## 5. Priority Framework
-
-Issues were prioritized using a multi-dimensional rubric balancing commuter impact with technical triage:
-
-| Tier | Focus Area | Primary Criteria |
+| Route | View Name | Description |
 | :--- | :--- | :--- |
-| **P0** | **Critical Operational & Availability Blockers** | High frequency + acute service lockout + severe journey interruption (Booking reliability, Live GPS freshness, App freezing, Post-update crash loops). |
-| **P1** | **Core Journey & Algorithm Friction** | Systemic commute degradation affecting transit time or conduct (Routing detours, ETA calibration, Driver/vehicle hygiene, Unskippable rating prompt). |
-| **P2** | **Secondary Touchpoint Defects** | Authentication, notification delays, or support ticket latency where operational workarounds exist. |
-| **P3** | **Unactionable / Vague Sentiment** | Low-information reviews (e.g., "bad app", "pathetic") lacking reproducible functional detail. |
-
-**Evaluation Dimensions:**
-- Defect frequency in public review sample
-- Failure severity (blocker vs inconvenience)
-- Commuter journey stage impact
-- Review evidence confidence
-- Potential Play Store rating recovery leverage
-- Internal engineering effort and architectural feasibility
+| `/#/start-here` | **Start Here** | First stop for decision-makers: Executive memo, dynamic snapshot, What I Found, What I Would Fix First, Day 1 tactical sequence, ownership, effort, and measurement framework. |
+| `/#/overview` | **Executive Overview** | Top KPI cards, bimodal rating distribution chart, longitudinal monthly trend line chart, and journey touchpoint overview. |
+| `/#/problems` | **User Problems** | 11 categorized complaint themes mapped to journey stages, with volume charts and interactive slide-out detail drawers. |
+| `/#/root-causes` | **Root Causes** | 4-layer diagnostic cards strictly separating *Observed Symptoms* from *Inferred Hypotheses*, *Required Telemetry*, and *Proposed Actions*. |
+| `/#/priorities` | **Priority Matrix** | Rigorous P0–P3 triage stack highlighting the FDE *"What I Would Fix First"* decision framework. |
+| `/#/recommendations` | **Recommendations** | Formal PRD specifications for P0/P1 initiatives, the Potential Quick Win, and the **Potential Direct Rating Levers**. |
+| `/#/product-backlog` | **Product Backlog** | Sortable, filterable table linking initiatives to evidence, user value, effort, and success metrics. |
+| `/#/engineering` | **Engineering Deep Dives** | 5 technical investigation briefs detailing required telemetry instrumentation, decision gates, and acceptance criteria. |
+| `/#/roadmap` | **30-60-90 Roadmap** | Visual 3-phase execution timeline (Phase 1: Instrumentation → Phase 2: Core Reliability → Phase 3: Algorithmic Scaling). |
+| `/#/evidence` | **Evidence Explorer** | Full inspection suite covering all 1,000 verified reviews with text search, multi-faceted filtering, and detail inspection modals. |
+| `/#/methodology` | **Methodology** | Transparent documentation of data sources, cleaning protocols, deterministic semantic classification engine, and tools disclosure. |
 
 ---
 
-## 6. Forward Deployed Engineer (FDE) Approach
+## 4. Key Findings & Priorities
 
-The case study follows a disciplined engineering diagnostic methodology:
+Analysis of the 291 negative reviews identified acute friction clusters across the commuter journey:
+
+1. **Roster & Booking Management Failures (30 primary reviews):** Cutoff window timeouts, unconfirmed rosters, and silent allocation drops during peak booking periods.
+2. **Delayed & Frozen Live GPS Tracking (26 primary reviews):** Map pin freezes in place while the vehicle is approaching; stale coordinates leave commuters uncertain curbside.
+3. **App Stability (Triage Launch Crashes vs Freezing Independently):**
+   - **Post-Update Crash Loops (14 primary reviews):** Immediate crash on launch following updates (urgent P0 service lockout).
+   - **In-Transit App Freezing & Lag (27 primary reviews):** UI thread lockups and map frame degradation during active commutes (P1 performance refactor).
+   - *Methodological note: Crashes (14) and Freezing (27) are strictly separated and never combined into an artificial figure of 41.*
+
+### FDE Prioritized Sequence ("What I Would Fix First")
+1. **Booking Reliability:** Existential gating function; unblocks commuters from booking daily transit.
+2. **Live GPS Freshness:** Primary daily active touchpoint; eliminates blind curbside waiting panic.
+3. **App Stability:** Triage morning launch crashes via Android Vitals, then optimize in-transit map frame rates.
+
+### Best Quick Win
+- **Dismissible Post-Trip Rating Prompt (PRD 07):** Convert the current blocking modal into a dismissible bottom sheet with an explicit [Skip] button.  
+  *Analytical Boundary:* &quot;This is a potential rating-impact opportunity, not a proven population-level cause of low ratings.&quot;
+
+---
+
+## 5. Potential Direct Rating Levers
+
+To complement foundational reliability engineering, six targeted rating levers are specified:
+
+1. **Dismissible Rating Prompt:** Eliminate trapped navigation friction provoking punitive 1★ reviews.
+2. **Contextual In-App Rating Request:** Prompt for Play Store feedback only after milestone positive commutes (e.g., 5 consecutive on-time trips with 0 reported incidents). Suppress on delayed/cancelled trips.
+3. **Google Play In-App Review API:** Evaluate technical eligibility and UX fit with the Android product team before implementation (respects Google quota caps).
+4. **Responding to Relevant 1★ Reviews:** Operational SLA to respond to high-severity complaints within 24 hours with empathetic acknowledgment and issue tracking references.
+5. **Fix → Communicate → Reconsider:** Notify reviewers when specific bug fixes (e.g. startup crashes or booking timeouts) ship, inviting them to reconsider their score.
+6. **Release Safety via Staged Rollouts:** Phased rollout rings (1% → 5% → 20% → 100%) gated behind Android Vitals crash-free user thresholds (&gt; 99.5%) to arrest regressions before rating waves occur.
+
+---
+
+## 6. Evidence Quality Check & Denominator Audit
+
+An external review queried the proportion of reviews falling into unclassified or vague groupings. We conducted a verified denominator audit across the dataset:
+
+| Category | Review Count | Denominator Basis | Interpretation |
+| :--- | :---: | :---: | :--- |
+| **Truly Vague Dissatisfaction** | **76 reviews** | Negative complaints (299) | Pure emotional sentiment (&quot;worst app&quot;, &quot;pathetic&quot;) lacking actionable defect clues. |
+| **Low-Information Functional Complaints** | **17 reviews** | Negative complaints (299) | Brief functional complaints (&quot;not opening&quot;, &quot;login issue&quot;) without device or stack trace details. |
+| **Specific Functional Complaints** | **206 reviews** | Negative complaints (299) | Detailed, actionable defect reports (Booking, GPS, Detours, OTP, Crashes). |
+| **General / Other Praise** | **683 reviews** | Total reviews (1,000) | 4–5★ positive reviews with generic praise (&quot;good app&quot;, &quot;all good&quot;) default to &quot;Other&quot;; **never conflated** with negative complaints. |
+
+**Audit Conclusion:** 76 + 17 = **93 reviews** comprise the combined vague/low-information feedback within the **299 analyzed negative complaint assignments** (31.1%). In the raw theme classification, ~38.8% of negative reviews initially lacked functional taxonomy keywords before Step 6 clinical disambiguation.
+
+---
+
+## 7. Data Refresh Pipeline Architecture
+
+The repository includes a re-runnable data refresh pipeline in `scripts/data-refresh/` to prove that analysis is repeatable rather than a static one-time snapshot:
 
 ```
-Public Reviews (n=1,000)
-       │
-       ▼
-Data Cleaning & Normalization (Schema validation, deduplication)
-       │
-       ▼
-Rating & Longitudinal Trend Analysis (Bimodal distribution, monthly trajectory)
-       │
-       ▼
-Theme Classification (11 journey touchpoints)
-       │
-       ▼
-Semantic NLP Feature Extraction (Deterministic local classification engine)
-       │
-       ▼
-Root-Cause Hypothesis Formulation (14 diagnostic clusters)
-       │
-       ▼
-Multi-Dimensional Prioritization (P0 / P1 / P2 / P3 triage)
-       │
-       ▼
-Product & Engineering Specifications (9 PRDs, 5 technical briefs)
-       │
-       ▼
-Interactive Web Dashboard & Evidence Explorer
+scripts/data-refresh/
+├── collectReviews.js      # Stage 1: Public Google Play review scraping (google-play-scraper)
+├── cleanReviews.js        # Stage 2: Schema validation, deduplication, date normalization
+├── analyzeReviews.js      # Stage 3: Statistical distribution recalculation & change alert logic
+├── classifyReviews.js     # Stage 4: Deterministic semantic theme classification
+└── refresh.js             # Master orchestrator: updates public JSON, metadata & dashboard data
 ```
 
-### Strict Epistemic Discipline
-To maintain engineering credibility when presenting to technical leadership:
-- **[OBSERVED]:** What users explicitly stated in public review text (e.g., "map pin didn't move for 10 minutes").
-- **[HYPOTHESIS]:** Inferred technical mechanisms requiring backend validation (e.g., "broker ingestion lag or driver background location throttling").
-- **[VALIDATION REQUIRED]:** Telemetry instrumentation needed before writing production code (e.g., "6-hop end-to-end timestamp tracing").
-- **[PROPOSED ACTION]:** Recommended product or engineering response.
-
----
-
-## 7. Dashboard Preview
-
-> **TODO: Dashboard Screenshots**  
-> Screenshots can be added to the repository to showcase the UI:
-> - `screenshots/01_overview.png` — Executive KPI summary, rating distribution, and monthly trends.
-> - `screenshots/02_priority_matrix.png` — Visual P0–P3 triage matrix and "What I Would Fix First" hierarchy.
-> - `screenshots/03_recommendations.png` — PRD specifications and the dismissible rating prompt Quick Win.
-> - `screenshots/04_evidence_explorer.png` — Real-time filterable audit table over 1,000 review records with detail inspection drawer.
-
----
-
-## 8. Tech Stack
-
-- **Framework:** React 19 + Vite (Modern JavaScript `.jsx`, zero TypeScript)
-- **Styling:** Tailwind CSS 3.4
-- **Charts:** Recharts
-- **Icons:** Lucide React
-- **Linter & Tooling:** Oxlint, PostCSS, Autoprefixer
-- **Data Layer:** Asynchronous client-side JSON ingestion (`public/data/processed_reviews.json`) with bundled fallback
-
----
-
-## 9. Project Structure
-
-```
-dashboard/
-├── public/
-│   ├── data/
-│   │   └── processed_reviews.json    # Complete 1,000-review dataset (zero PII)
-│   ├── favicon.svg
-│   └── icons.svg
-├── src/
-│   ├── components/
-│   │   ├── DataQualityBanner.jsx     # Epistemic notice & audit banner
-│   │   ├── Header.jsx                # Responsive header with live review badges
-│   │   ├── KPICard.jsx               # Reusable executive metric card
-│   │   └── Sidebar.jsx               # Navigation bar with desktop/mobile views
-│   ├── pages/
-│   │   ├── OverviewPage.jsx          # /overview: Executive dashboard & charts
-│   │   ├── UserProblemsPage.jsx      # /problems: 11 themes & detail drawer
-│   │   ├── RootCausesPage.jsx        # /root-causes: 4-layer diagnostic cards
-│   │   ├── PriorityMatrixPage.jsx    # /priorities: Triage matrix & FDE strategy
-│   │   ├── RecommendationsPage.jsx   # /recommendations: Actionable PRD cards
-│   │   ├── ProductBacklogPage.jsx    # /product-backlog: Tabular backlog
-│   │   ├── EngineeringPage.jsx       # /engineering: 5 investigation briefs
-│   │   ├── RoadmapPage.jsx           # /roadmap: 30-60-90 day phased roadmap
-│   │   └── EvidenceExplorerPage.jsx  # /evidence: 1,000-review audit engine
-│   ├── data/
-│   │   └── caseStudyData.js          # Compiled case study metrics & data
-│   ├── App.jsx                       # Routing & layout orchestration
-│   ├── index.css                     # Tailwind design tokens
-│   └── main.jsx                      # Application entry point
-├── package.json
-├── vite.config.js
-└── README.md
+### One-Command Refresh
+Run the complete pipeline from the repository root:
+```bash
+npm run refresh:data
 ```
 
+**Pipeline Sequence:**
+```
+npm run refresh:data
+        ↓
+1. collect (fetch latest public Play Store reviews)
+        ↓
+2. clean (validate schema, deduplicate, normalize)
+        ↓
+3. analyze (recalculate ratings, generate outputs/dashboard-alerts.json)
+        ↓
+4. classify (execute deterministic local semantic rules)
+        ↓
+5. dashboard JSON (write dashboard/public/data/processed_reviews.json)
+        ↓
+6. metadata (write dashboard/public/data/review_metadata.json with timestamps)
+        ↓
+Ready for build/deploy
+```
+
+### Automated Refresh Workflow
+A GitHub Actions workflow is provided at `.github/workflows/refresh-data.yml`:
+- Scheduled daily via GitHub Actions cron (`0 3 * * *`).
+- Installs dependencies, runs `npm run refresh:data`, checks git status for data changes, and commits updated datasets if changes exist.
+- *Notice:* Labeled as an **Automated refresh workflow**. Deployment integration can be connected after the repository is deployed to production. No external secrets are exposed.
+
+### Alert Logic (`outputs/dashboard-alerts.json`)
+The pipeline automatically computes:
+- Current period 1★/2★ share and average rating
+- Previous comparable period 1★/2★ share and average rating
+- Rating trend
+- Week-over-week change: Explicitly reports `"status": "insufficient_data"` when continuous daily sampling is sparse, avoiding fabricated historical comparisons.
+- Proposed alert thresholds (clearly labeled as proposed operational suggestions).
+
 ---
 
-## 10. Running Locally
+## 8. Methodology & Tools Disclosure
+
+- **Development:** React 19, Vite, JavaScript (ESM), Tailwind CSS, Lucide Icons, Recharts.
+- **Data Collection:** Node.js, `google-play-scraper`.
+- **Code Quality:** Oxlint.
+- **Semantic Analysis Engine:**  
+  *&quot;A deterministic local semantic analysis engine was used for reproducible classification and hypothesis generation. A live Gemini API call was not used because no Gemini API key was configured.&quot;*
+- **AI / Pair-Programming Assistance:**  
+  *&quot;AI assistance was used during development and analysis workflow design; analytical claims remain traceable to the collected review dataset.&quot;*
+
+---
+
+## 9. Running Locally
 
 ### Prerequisites
 - Node.js (v18 or higher recommended)
@@ -194,21 +178,21 @@ dashboard/
 ```bash
 # Clone the repository
 git clone https://github.com/imabhishek86/fde-case-study-dashboard.git
-
-# Navigate to the dashboard directory
 cd fde-case-study-dashboard
 
-# Install dependencies
+# Install root dependencies
+npm install
+
+# Run complete data refresh pipeline
+npm run refresh:data
+
+# Navigate to dashboard and install dependencies
+cd dashboard
 npm install
 
 # Start development server
 npm run dev
-```
 
-Open `http://localhost:5173/` in your browser.
-
-### Verification Commands
-```bash
 # Build production bundle
 npm run build
 
@@ -216,56 +200,33 @@ npm run build
 npm run lint
 ```
 
----
-
-## 11. Evidence Explorer
-
-The dashboard includes a dedicated **Evidence Explorer (`/#/evidence`)** designed for case study interviewers and auditors:
-
-- **1,000 Verified Records:** Complete review dataset compiled from Google Play Store public data.
-- **Case-Insensitive Search:** Real-time search across review ID, review text, and thematic tags.
-- **Multi-Faceted Filtering:**
-  - Star rating (1★, 2★, 3★, 4★, 5★)
-  - Defect severity (Critical, High, Medium, Low, None)
-  - Complaint theme (11 journey touchpoints)
-  - Journey stage (Pre-Trip booking, Curbside waiting, In-Transit ride, etc.)
-  - Priority tier (P0, P1, P2, P3, None)
-- **Review Detail Modal:** Click any review row to inspect full review text, classification tags, complaint flags, and UUID hash.
-- **Privacy Assurance:** No reviewer names, photos, or personally identifiable information (PII) are stored or displayed.
+Open `http://localhost:5173/` in your browser.
 
 ---
 
-## 12. Limitations
+## 10. Verification & Quality Audit Checklist
 
-1. **Bounded Public Sample:** Based on a sample of 1,000 public reviews collected between June 15 and October 11, 2026. It is not the complete MoveInSync historical dataset.
-2. **Self-Selection Bias:** Play Store reviews inherently over-represent extreme experiences (commuters who encountered severe blockers or users praising drivers).
-3. **Missing Internal Telemetry:** Root causes are engineering hypotheses inferred from user symptoms; they cannot be proven without access to internal logs, APM traces, and fleet dispatch databases.
-4. **Partial October Sample:** October 2026 contains a smaller partial-month sample (81 reviews), as collection concluded mid-month.
-5. **Non-Causal Rating Modeling:** Rating impact estimates reflect potential recovery opportunities, not guaranteed causal outcomes.
-
----
-
-## 13. Important Methodology Note
-
-- **Semantic Analysis Engine:** Semantic classification and feature extraction were performed using a deterministic local natural language processing (NLP) analysis engine.
-- **No External LLM Usage:** A live Gemini API key was not configured during review processing; findings reflect reproducible, deterministic keyword and semantic clustering rather than live Gemini API outputs.
-
----
-
-## 14. Future Work
-
-To transition these diagnostic findings into production engineering:
-
-1. **Internal Telemetry Ingestion:** Connect Firebase Crashlytics and Google Play Android Vitals to validate ANR rates and post-update crash stack traces.
-2. **Booking Concurrency Tracing:** Implement APM distributed tracing on the roster booking microservice during the final 15 minutes of shift cutoff windows.
-3. **GPS Freshness Instrumentation:** Instrument a 6-hop timestamp tracking pipeline (Driver GPS capture → Broker ingestion → Dispatch backend → Client receipt → UI rendering) to establish true P95 telemetry latency.
-4. **ETA Calibration Pipeline:** Build automated discrepancy telemetry comparing predicted arrival times against actual curb arrival timestamps and external road speed baselines.
-5. **Controlled A/B Experiments:** Run an experiment on the post-trip rating prompt (current forced modal vs. dismissible card) to measure impact on task completion and 1-star Play Store review inflow.
+- [x] All Recharts `<Bar>` implementations fixed with correct `<Cell>` children.
+- [x] Core dashboard KPIs dynamically derived from `processed_reviews.json`.
+- [x] Visible "Last refreshed" indicator driven by `review_metadata.json`.
+- [x] Re-runnable data refresh pipeline (`npm run refresh:data`) implemented and tested.
+- [x] Scheduled GitHub Actions refresh workflow configured (`.github/workflows/refresh-data.yml`).
+- [x] Machine-readable alerts output generated (`outputs/dashboard-alerts.json`).
+- [x] Methodology Page (`/#/methodology`) with honest NLP engine and tools disclosure.
+- [x] "Start Here" Decision Memo (`/#/start-here`) created with Day 1 sequence and metrics.
+- [x] Potential Direct Rating Levers section added to recommendations.
+- [x] Public Play Store listing rating strictly separated from analytical sample rating.
+- [x] Scope explicitly clarified for `com.moveinsync.ets`.
+- [x] Other/Vague denominator distinction documented without altering verified classifications.
+- [x] Zero obsolete TODO language.
+- [x] Build passes with 0 errors.
+- [x] Lint passes with 0 errors and 0 warnings.
+- [x] All 11 routes tested and verified.
 
 ---
 
-## 15. Author / Case Study
+## 11. Author / Case Study Focus
 
 **Role:** Forward Deployed Engineer (FDE) Case Study  
 **Domain:** Enterprise Mobility, Commute Reliability & Rating Intelligence  
-**Focus:** Diagnostic Analytics, Product Requirements & Engineering Prioritization
+**Focus:** Diagnostic Analytics, Telemetry Instrumentation, Product Requirements & Engineering Prioritization

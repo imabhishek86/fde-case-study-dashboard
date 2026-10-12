@@ -3,6 +3,7 @@ import { AlertOctagon, ArrowRight, X } from 'lucide-react';
 import {
   BarChart,
   Bar,
+  Cell,
   XAxis,
   YAxis,
   Tooltip,
@@ -158,7 +159,7 @@ export default function UserProblemsPage({ onNavigate }) {
                 />
                 <Bar dataKey="frequency" radius={[0, 4, 4, 0]} cursor="pointer">
                   {chartData.map((entry, index) => (
-                    <Bar key={`bar-${index}`} fill={entry.fillColor} />
+                    <Cell key={`bar-${index}`} fill={entry.fillColor} />
                   ))}
                 </Bar>
               </BarChart>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Compass,
   LayoutDashboard,
   AlertOctagon,
   SearchCode,
@@ -9,11 +10,12 @@ import {
   Cpu,
   CalendarDays,
   FileSearch,
-  X,
-  Compass
+  BookOpen,
+  X
 } from 'lucide-react';
 
 const NAV_ITEMS = [
+  { id: 'start-here', label: 'Start Here', icon: Compass },
   { id: 'overview', label: 'Overview', icon: LayoutDashboard },
   { id: 'problems', label: 'User Problems', icon: AlertOctagon },
   { id: 'root-causes', label: 'Root Causes', icon: SearchCode },
@@ -23,6 +25,7 @@ const NAV_ITEMS = [
   { id: 'engineering', label: 'Engineering', icon: Cpu },
   { id: 'roadmap', label: '30-60-90 Roadmap', icon: CalendarDays },
   { id: 'evidence', label: 'Evidence Explorer', icon: FileSearch },
+  { id: 'methodology', label: 'Methodology', icon: BookOpen },
 ];
 
 export default function Sidebar({ activeTab, setActiveTab, mobileOpen, setMobileOpen }) {
@@ -81,7 +84,7 @@ export default function Sidebar({ activeTab, setActiveTab, mobileOpen, setMobile
                 onClick={() => handleNavClick(item.id)}
                 className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all ${
                   isActive
-                    ? 'bg-indigo-600 text-white shadow-sm'
+                    ? 'bg-indigo-600 text-white shadow-sm font-bold'
                     : 'text-slate-300 hover:bg-slate-800/80 hover:text-white'
                 }`}
               >
