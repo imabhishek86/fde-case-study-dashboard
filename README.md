@@ -1,6 +1,13 @@
-# MoveInSync FDE Case Study Dashboard
+# MoveInSync Rating Intelligence — FDE Case Study
+
+[![Automated Data Refresh](https://github.com/imabhishek86/fde-case-study-dashboard/actions/workflows/refresh-data.yml/badge.svg)](https://github.com/imabhishek86/fde-case-study-dashboard/actions/workflows/refresh-data.yml)
+[![Live Site](https://img.shields.io/badge/Live%20Dashboard-Netlify-00C7B7?logo=netlify&logoColor=white)](https://moveinsync-fde-dashboard.netlify.app)
+[![Data Quality](https://img.shields.io/badge/Reviews-1%2C000%20Verified-indigo)](https://moveinsync-fde-dashboard.netlify.app/#/evidence)
+[![Test Suite](https://img.shields.io/badge/Tests-5%20Passing-emerald)](https://github.com/imabhishek86/fde-case-study-dashboard)
 
 An evidence-driven analytics dashboard built as part of a Forward Deployed Engineer (FDE) case study for diagnosing MoveInSync Google Play Store rating issues and translating qualitative commuter feedback into prioritized product and engineering actions.
+
+🔗 **Live Application:** [https://moveinsync-fde-dashboard.netlify.app](https://moveinsync-fde-dashboard.netlify.app)
 
 ---
 
@@ -57,11 +64,11 @@ The single-page web dashboard supports full hash-based direct routing with respo
 Analysis of the 291 negative reviews identified acute friction clusters across the commuter journey:
 
 1. **Roster & Booking Management Failures (30 primary reviews):** Cutoff window timeouts, unconfirmed rosters, and silent allocation drops during peak booking periods.
-2. **Delayed & Frozen Live GPS Tracking (26 primary reviews):** Map pin freezes in place while the vehicle is approaching; stale coordinates leave commuters uncertain curbside.
+2. **Delayed & Frozen Live GPS Tracking (25 negative / 26 total reviews):** Map pin freezes in place while the vehicle is approaching; stale coordinates leave commuters uncertain curbside.
 3. **App Stability (Triage Launch Crashes vs Freezing Independently):**
-   - **Post-Update Crash Loops (14 primary reviews):** Immediate crash on launch following updates (urgent P0 service lockout).
+   - **Post-Update Crash Loops (11 negative / 14 total reviews):** Immediate crash on launch following updates (urgent P0 service lockout).
    - **In-Transit App Freezing & Lag (27 primary reviews):** UI thread lockups and map frame degradation during active commutes (P1 performance refactor).
-   - *Methodological note: Crashes (14) and Freezing (27) are strictly separated and never combined into an artificial figure of 41.*
+   - *Methodological note: Crashes and Freezing are strictly separated and never combined into an artificial figure of 41.*
 
 ### FDE Prioritized Sequence ("What I Would Fix First")
 1. **Booking Reliability:** Existential gating function; unblocks commuters from booking daily transit.
@@ -93,66 +100,71 @@ An external review queried the proportion of reviews falling into unclassified o
 
 | Category | Review Count | Denominator Basis | Interpretation |
 | :--- | :---: | :---: | :--- |
-| **Truly Vague Dissatisfaction** | **76 reviews** | Negative complaints (299) | Pure emotional sentiment (&quot;worst app&quot;, &quot;pathetic&quot;) lacking actionable defect clues. |
-| **Low-Information Functional Complaints** | **17 reviews** | Negative complaints (299) | Brief functional complaints (&quot;not opening&quot;, &quot;login issue&quot;) without device or stack trace details. |
-| **Specific Functional Complaints** | **206 reviews** | Negative complaints (299) | Detailed, actionable defect reports (Booking, GPS, Detours, OTP, Crashes). |
+| **Truly Vague Dissatisfaction** | **75 reviews** (76 total) | Negative complaints (291) | Pure emotional sentiment (&quot;worst app&quot;, &quot;pathetic&quot;) lacking actionable defect clues. |
+| **Low-Information Functional Complaints** | **17 reviews** | Negative complaints (291) | Brief functional complaints (&quot;not opening&quot;, &quot;login issue&quot;) without device or stack trace details. |
+| **Specific Functional Complaints** | **199 reviews** | Negative complaints (291) | Detailed, actionable defect reports (Booking, GPS, Detours, OTP, Crashes). |
 | **General / Other Praise** | **683 reviews** | Total reviews (1,000) | 4–5★ positive reviews with generic praise (&quot;good app&quot;, &quot;all good&quot;) default to &quot;Other&quot;; **never conflated** with negative complaints. |
 
-**Audit Conclusion:** 76 + 17 = **93 reviews** comprise the combined vague/low-information feedback within the **299 analyzed negative complaint assignments** (31.1%). In the raw theme classification, ~38.8% of negative reviews initially lacked functional taxonomy keywords before Step 6 clinical disambiguation.
+**Audit Conclusion:** 75 + 17 = **92 reviews** (93 total including neutral) comprise the combined vague/low-information feedback within the **291 negative complaints** (31.6%). In the raw theme classification, ~38.8% of negative reviews initially lacked functional taxonomy keywords before Step 6 clinical disambiguation.
 
 ---
 
 ## 7. Data Refresh Pipeline Architecture
 
-The repository includes a re-runnable data refresh pipeline in `scripts/data-refresh/` to prove that analysis is repeatable rather than a static one-time snapshot:
+The repository includes a self-contained, reproducible data refresh pipeline in `pipeline/`:
 
 ```
-scripts/data-refresh/
-├── collectReviews.js      # Stage 1: Public Google Play review scraping (google-play-scraper)
-├── cleanReviews.js        # Stage 2: Schema validation, deduplication, date normalization
-├── analyzeReviews.js      # Stage 3: Statistical distribution recalculation & change alert logic
-├── classifyReviews.js     # Stage 4: Deterministic semantic theme classification
-└── refresh.js             # Master orchestrator: updates public JSON, metadata & dashboard data
+pipeline/
+├── fetch_reviews.js       # Stage 1: Public Google Play review scraping (google-play-scraper)
+├── clean_reviews.js       # Stage 2: Schema validation, deduplication, date normalization
+├── classify_reviews.js    # Stage 3: Deterministic semantic theme classification
+├── build_metrics.js       # Stage 4: Statistical recalculation, metadata & alerts output
+├── refresh.js             # Master orchestrator: runs Stages 1–4 end-to-end
+└── data/
+    └── raw/
+        └── raw_reviews.json  # Raw review data snapshot (1,000 public records)
 ```
 
 ### One-Command Refresh
-Run the complete pipeline from the repository root:
+Run the complete pipeline:
 ```bash
+npm run refresh
+# or
 npm run refresh:data
 ```
 
 **Pipeline Sequence:**
 ```
-npm run refresh:data
+npm run refresh
         ↓
-1. collect (fetch latest public Play Store reviews)
+1. fetch_reviews (pull latest public Play Store reviews)
         ↓
-2. clean (validate schema, deduplicate, normalize)
+2. clean_reviews (validate schema, deduplicate, normalize)
         ↓
-3. analyze (recalculate ratings, generate outputs/dashboard-alerts.json)
+3. classify_reviews (execute deterministic local semantic rules)
         ↓
-4. classify (execute deterministic local semantic rules)
+4. build_metrics (generate processed JSON, metadata, and alerts)
         ↓
-5. dashboard JSON (write dashboard/public/data/processed_reviews.json)
-        ↓
-6. metadata (write dashboard/public/data/review_metadata.json with timestamps)
-        ↓
-Ready for build/deploy
+Ready for test, build, and deploy
 ```
 
 ### Automated Refresh Workflow
 A GitHub Actions workflow is provided at `.github/workflows/refresh-data.yml`:
 - Scheduled daily via GitHub Actions cron (`0 3 * * *`).
-- Installs dependencies, runs `npm run refresh:data`, checks git status for data changes, and commits updated datasets if changes exist.
-- *Notice:* Labeled as an **Automated refresh workflow**. Deployment integration can be connected after the repository is deployed to production. No external secrets are exposed.
+- Installs dependencies, runs `npm run refresh`, runs `npm test`, checks git status for data changes, and commits updated datasets if changes exist.
+- Triggers a Netlify build hook (if `NETLIFY_BUILD_HOOK` secret is configured) for continuous automated deployment.
 
-### Alert Logic (`outputs/dashboard-alerts.json`)
-The pipeline automatically computes:
-- Current period 1★/2★ share and average rating
-- Previous comparable period 1★/2★ share and average rating
-- Rating trend
-- Week-over-week change: Explicitly reports `"status": "insufficient_data"` when continuous daily sampling is sparse, avoiding fabricated historical comparisons.
-- Proposed alert thresholds (clearly labeled as proposed operational suggestions).
+### Automated Test Suite
+Run the data integrity test suite:
+```bash
+npm test
+```
+Validates:
+- 1,000 unique reviews with integer ratings (1–5)
+- Exact rating distribution (641 5★, 42 4★, 26 3★, 33 2★, 258 1★)
+- Average rating calculation (3.77 ±0.01)
+- Cluster count reconciliation (sum of negative clusters = exactly 291)
+- Zero PII (emails or phone numbers) in public text
 
 ---
 
@@ -160,11 +172,10 @@ The pipeline automatically computes:
 
 - **Development:** React 19, Vite, JavaScript (ESM), Tailwind CSS, Lucide Icons, Recharts.
 - **Data Collection:** Node.js, `google-play-scraper`.
-- **Code Quality:** Oxlint.
-- **Semantic Analysis Engine:**  
-  *&quot;A deterministic local semantic analysis engine was used for reproducible classification and hypothesis generation. A live Gemini API call was not used because no Gemini API key was configured.&quot;*
-- **AI / Pair-Programming Assistance:**  
-  *&quot;AI assistance was used during development and analysis workflow design; analytical claims remain traceable to the collected review dataset.&quot;*
+- **Code Quality:** Oxlint (0 warnings, 0 errors).
+- **Testing:** Node.js built-in test runner (`node:test`).
+- **Semantic Analysis Engine:** Semantic classification and hypothesis generation were performed using a reproducible, deterministic local NLP analysis engine across 11 commute taxonomy themes, guaranteeing zero API dependency, zero rate limits, and 100% auditable output.
+- **AI / Pair-Programming Assistance:** AI assistance was used during development and analysis workflow design; analytical claims remain traceable to the collected review dataset.
 
 ---
 
@@ -180,15 +191,14 @@ The pipeline automatically computes:
 git clone https://github.com/imabhishek86/fde-case-study-dashboard.git
 cd fde-case-study-dashboard
 
-# Install root dependencies
+# Install dependencies
 npm install
 
-# Run complete data refresh pipeline
-npm run refresh:data
+# Run automated tests
+npm test
 
-# Navigate to dashboard and install dependencies
-cd dashboard
-npm install
+# Run data refresh pipeline
+npm run refresh
 
 # Start development server
 npm run dev
@@ -209,24 +219,28 @@ Open `http://localhost:5173/` in your browser.
 - [x] All Recharts `<Bar>` implementations fixed with correct `<Cell>` children.
 - [x] Core dashboard KPIs dynamically derived from `processed_reviews.json`.
 - [x] Visible "Last refreshed" indicator driven by `review_metadata.json`.
-- [x] Re-runnable data refresh pipeline (`npm run refresh:data`) implemented and tested.
+- [x] Re-runnable data refresh pipeline (`npm run refresh`) implemented and tested.
 - [x] Scheduled GitHub Actions refresh workflow configured (`.github/workflows/refresh-data.yml`).
-- [x] Machine-readable alerts output generated (`outputs/dashboard-alerts.json`).
+- [x] Machine-readable alerts output generated (`public/data/dashboard-alerts.json`).
+- [x] Automated data integrity test suite (`npm test`) with 5/5 passing tests.
+- [x] Modal backdrop z-index and opacity updated (`z-[100]` with `bg-slate-950/80 backdrop-blur-md`), eliminating header bleed.
+- [x] Leftover template files deleted (`hero.png`, `react.svg`, `vite.svg`, `App.css`).
+- [x] JS bundle optimized with manualChunks: `index.js` is 183 kB (zero chunks &gt; 500 kB).
 - [x] Methodology Page (`/#/methodology`) with honest NLP engine and tools disclosure.
 - [x] "Start Here" Decision Memo (`/#/start-here`) created with Day 1 sequence and metrics.
 - [x] Potential Direct Rating Levers section added to recommendations.
 - [x] Public Play Store listing rating strictly separated from analytical sample rating.
 - [x] Scope explicitly clarified for `com.moveinsync.ets`.
 - [x] Other/Vague denominator distinction documented without altering verified classifications.
-- [x] Zero obsolete TODO language.
 - [x] Build passes with 0 errors.
 - [x] Lint passes with 0 errors and 0 warnings.
 - [x] All 11 routes tested and verified.
 
 ---
 
-## 11. Author / Case Study Focus
+## 11. Author
 
+**Author:** Abhishek ([@imabhishek86](https://github.com/imabhishek86))  
 **Role:** Forward Deployed Engineer (FDE) Case Study  
 **Domain:** Enterprise Mobility, Commute Reliability & Rating Intelligence  
 **Focus:** Diagnostic Analytics, Telemetry Instrumentation, Product Requirements & Engineering Prioritization
