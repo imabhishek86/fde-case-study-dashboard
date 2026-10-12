@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "generatedAt": "2026-10-12T09:07:20.335Z",
+    "step": "Step 6 Quality Refinement",
+    "totalAnalyzedReviews": 299,
+    "totalProblemClusters": 14
+  },
+  "confidenceDistribution": {
+    "highConfidenceHypotheses": 4,
+    "mediumConfidenceHypotheses": 19,
+    "lowConfidenceHypotheses": 2,
+    "unknownHypotheses": 2
+  },
+  "vagueReviewRefinement": {
+    "totalOriginallyVague": 93,
+    "trulyVagueReviews": 76,
+    "lowInformationFunctionalComplaints": 17,
+    "classificationRule": "Reviews with specific functional keywords (e.g., \"not opening\", \"verifying number\", \"mobile data\") were extracted from the vague group into Low-Information Functional Complaints with Unknown technical cause."
+  },
+  "evidenceQualityFlags": {
+    "isolatedKeywordFilterApplied": true,
+    "isolatedKeywordExamples": [
+      "driver",
+      "cab",
+      "OTP",
+      "login",
+      "pickup"
+    ],
+    "rule": "Isolated keywords without contextual narrative are treated as thematic indicators only and do not support technical root-cause hypotheses."
+  },
+  "ratingModalFinding": {
+    "evidenceQuote": "forcing me to give rating after every ride, so I came here to give you 1 star. because if I don't rate, I can't use the app as there is no skip option.",
+    "findingDescription": "At least one reviewer explicitly stated that the mandatory rating flow motivated their 1-star Play Store review.",
+    "extrapolationConstraint": "This finding is recorded as an empirical instance of policy friction; it is not extrapolated into a population-level percentage or causal claim."
+  },
+  "crossThemeFrequencyLabeling": {
+    "rule": "All cross-theme metrics are explicitly labeled as non-unique review occurrences to prevent double-counting of affected users."
+  },
+  "claimsRequiringInternalTelemetry": [
+    "SQLite / Room database schema migration regression on app launch",
+    "Roster booking API concurrency bottlenecks and timeout thresholds",
+    "Driver partner device background location throttling and OS power manager constraints",
+    "WebSocket / MQTT telemetry latency and delivery success rates",
+    "SMS gateway latency vs client-side auth token TTL settings",
+    "Static vs dynamic traffic speed assumptions in ETA calculations"
+  ],
+  "prematureRecommendationsRemoved": [
+    "Removed \"Introduce dismiss/skip button\" -> Replaced with \"Test whether making the rating prompt skippable reduces task abandonment and negative rating behavior\"",
+    "Removed \"Enforce 1.5x detour cap\" -> Replaced with \"Validate whether passenger detour duration correlates with routing clustering constraints\"",
+    "Removed \"Redesign mandatory seatbelt safety prompts into non-blocking inline banners\" -> Replaced with \"Investigate non-blocking notification alternatives to mandatory compliance popups during time-sensitive boarding flows\"",
+    "Removed \"Introduce in-app self-service exception resolution\" -> Replaced with \"Evaluate whether self-service exception workflows reduce helpdesk ticket volume\""
+  ]
+}

@@ -1,0 +1,1930 @@
+[
+  {
+    "clusterId": "cluster_booking_failure",
+    "problem": "Roster and booking management failure",
+    "frequency": 30,
+    "severity": "High",
+    "observedSymptom": "Commuters report inability to book rides, unexpected booking failures, or unconfirmed shift rosters.",
+    "userImpact": "Commuters risk missing daily office transit and are forced to make last-minute alternative transport arrangements.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Possible concurrency bottlenecks or timeout failures in the roster booking API during peak shift cutoff windows.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      },
+      {
+        "hypothesis": "Possible mismatch between enterprise employee roster demand and allocated vendor vehicle fleet capacity.",
+        "type": "Operations",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "Booking API transaction success/failure logs at peak cutoff hours",
+      "Waitlist conversion rates and seat capacity allocation rules",
+      "Corporate HR/Admin shift change synchronization schedules"
+    ],
+    "validationNeeded": [
+      "Analyze booking service latency and error rates during 5-minute pre-cutoff peak windows",
+      "Measure waitlist drop-off vs confirmed seat allocation ratios",
+      "Audit roster synchronization pipelines connecting enterprise HRMS with MoveInSync"
+    ],
+    "evidence": [
+      {
+        "reviewId": "43d90b3c-0443-4073-8647-6aee98c78bd4",
+        "rating": 1,
+        "evidence": "booked the trip it keep sends the push notification that trip is not booked"
+      },
+      {
+        "reviewId": "bc736dc0-8fd1-45e8-b39e-b16020a4e2f7",
+        "rating": 1,
+        "evidence": "mobile number is not visible once cab is booked, I can not see latest notification, since seems like notification sta..."
+      },
+      {
+        "reviewId": "823b9c8b-afde-47e7-abad-fb60f14ea562",
+        "rating": 1,
+        "evidence": "app stuck all the time unable to schedule pathetic"
+      },
+      {
+        "reviewId": "d980e749-b3df-4f90-ba1a-0987168cfe13",
+        "rating": 2,
+        "evidence": "Barely works for metro bookings. Even after trying to tell the issues I faced multiple times, seems to have fallen on..."
+      },
+      {
+        "reviewId": "0b1041ae-ce09-4947-b5f9-744e9014a639",
+        "rating": 2,
+        "evidence": "cancel"
+      },
+      {
+        "reviewId": "ac05786a-a047-40b3-8174-d8434282ad60",
+        "rating": 1,
+        "evidence": "waste app. driver will come to pickup point and wait for 1 hour but won't give a short call. this app will only accep..."
+      },
+      {
+        "reviewId": "5b8a7608-5d55-47f7-a262-6872ef125240",
+        "rating": 1,
+        "evidence": "unable to book"
+      },
+      {
+        "reviewId": "8018129f-9ca4-4d16-8b16-575d62c5f6b2",
+        "rating": 1,
+        "evidence": "Always help desk number is not reachable and for updating the mobile number is also not available 😕 😔 and for adhoc..."
+      },
+      {
+        "reviewId": "6cd34a09-fc56-4cdc-88e4-3207678aa833",
+        "rating": 1,
+        "evidence": "not able to book cab."
+      },
+      {
+        "reviewId": "83accd38-8f36-4604-8d48-7f1064ff7782",
+        "rating": 1,
+        "evidence": "They provide pickup and drop to the middle of nowhere from where its double work reaching our home or office from the..."
+      },
+      {
+        "reviewId": "d90a3c31-8385-4613-b575-85002f768a9b",
+        "rating": 1,
+        "evidence": "works well overall, but they don't listen to feedback. for example, pick ups from same apartment complex are schedule..."
+      },
+      {
+        "reviewId": "558d5be1-21f2-48ca-add2-ee7274698591",
+        "rating": 2,
+        "evidence": "cancel"
+      },
+      {
+        "reviewId": "0f174a4a-7c30-49db-b25f-1bb0af96ff71",
+        "rating": 2,
+        "evidence": "cancel"
+      },
+      {
+        "reviewId": "e381c775-7ce2-4e70-8f69-3c036a1f930f",
+        "rating": 1,
+        "evidence": "unable to book"
+      },
+      {
+        "reviewId": "85fd3b91-f6ea-471f-9272-ba3e814635ab",
+        "rating": 2,
+        "evidence": "they are not making shorter routes they schedule long and time taking routes cab delay every time in new building also"
+      },
+      {
+        "reviewId": "84aa4e23-364f-4a20-a92c-ef64b2f1143b",
+        "rating": 1,
+        "evidence": "very confusing when booking drop for team members after 00:00 hrs"
+      },
+      {
+        "reviewId": "1b9de328-01d0-419d-be17-2f50535dfd47",
+        "rating": 1,
+        "evidence": "worst experience ..delay in application , booking difficult"
+      },
+      {
+        "reviewId": "086afcac-ea8b-4371-9708-0af164b4a5bc",
+        "rating": 1,
+        "evidence": "poor app, does allow me to search for an employee while booking a cab for my team."
+      },
+      {
+        "reviewId": "b3b64566-798f-42cc-b6a3-ff52e46a86c9",
+        "rating": 1,
+        "evidence": "Worst service I've ever experienced. I wish I could give 0 stars—they deserve -10000. My logout cab was scheduled for..."
+      },
+      {
+        "reviewId": "e67b7faa-1b4e-4462-9a67-235d74a2af45",
+        "rating": 1,
+        "evidence": "I have not been able to book for pickup for 2 weeks. I have reported the issue, but no feedback"
+      },
+      {
+        "reviewId": "caf37d59-c444-4d68-890f-08cd13771e69",
+        "rating": 1,
+        "evidence": "Unable to schedule my pick up and drops"
+      },
+      {
+        "reviewId": "f7551505-b053-42d1-af7c-5eda85114dcc",
+        "rating": 2,
+        "evidence": "cancel"
+      },
+      {
+        "reviewId": "31c4a837-4503-42db-baa6-6857ff954f03",
+        "rating": 1,
+        "evidence": "after update this app us worst i have ever aeen any booking app"
+      },
+      {
+        "reviewId": "f13bfea9-81c3-4886-b8d5-94e4bfdec9d1",
+        "rating": 1,
+        "evidence": "cancel"
+      },
+      {
+        "reviewId": "69035a8e-3ccf-4c79-8178-0d848871b9aa",
+        "rating": 1,
+        "evidence": "The previous app was easy to use and showed shuttle timing more precisely.This app is not very helpful and gives me a..."
+      },
+      {
+        "reviewId": "ec513f95-d2c4-4eb6-a186-7b658221a805",
+        "rating": 1,
+        "evidence": "Unable to schedule book"
+      },
+      {
+        "reviewId": "a290e189-c7ba-4997-ac44-90de447a7448",
+        "rating": 2,
+        "evidence": "Can not see booked cab schedule. Too much conservative and limited."
+      },
+      {
+        "reviewId": "2a42eb99-eb5e-4077-91ff-297cc7c99303",
+        "rating": 2,
+        "evidence": "Does not allow me to make amendments even though it is made immediately after incorrect booking"
+      },
+      {
+        "reviewId": "0b11d7d5-f655-4951-855e-710761f2552e",
+        "rating": 1,
+        "evidence": "I am extremely frustrated with this app. Booking transport has become unnecessarily difficult because even when I car..."
+      },
+      {
+        "reviewId": "c025c564-55e4-4c74-9741-f3577da10e2a",
+        "rating": 1,
+        "evidence": "SAP employee, got logged out and now shows web login error, not able to book vehicle since one week"
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_app_performance",
+    "problem": "App freezing and performance degradation",
+    "frequency": 27,
+    "severity": "High",
+    "observedSymptom": "Commuters observe app hanging, lagging, or becoming unresponsive during tracking and navigation.",
+    "userImpact": "Commuters experience frustrating lag and screen unresponsiveness during critical pre-boarding moments.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Possible client-side memory leakage or excessive re-renders during background GPS polling on the tracking view.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      },
+      {
+        "hypothesis": "Possible unoptimized local database operations blocking the main Android UI thread.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "Android Application Not Responding (ANR) rates from Google Play Console",
+      "Client-side frame drop rates and memory allocation profiles",
+      "Device model and RAM distribution of affected users"
+    ],
+    "validationNeeded": [
+      "Profile CPU and memory footprint during 15-minute live tracking sessions",
+      "Benchmark app launch and screen render times on low-to-mid range Android devices (e.g., 3GB-4GB RAM)"
+    ],
+    "evidence": [
+      {
+        "reviewId": "e735e280-9992-470e-b8df-d9b4a0e1e214",
+        "rating": 1,
+        "evidence": "Unable to open the app on my phone. closes as soon as I try to open"
+      },
+      {
+        "reviewId": "9936bf10-67dd-4e3e-aeb3-2bc420fb487a",
+        "rating": 1,
+        "evidence": "crash"
+      },
+      {
+        "reviewId": "e64560af-5a09-4910-86bf-fdc689ab6bc1",
+        "rating": 1,
+        "evidence": "You can't even write in built in feedback text box. full of bugs."
+      },
+      {
+        "reviewId": "93d75126-98c3-43de-9fdf-cee95c3ed1c6",
+        "rating": 2,
+        "evidence": "Please fix the bug..Quite frequently it gives error as\"move in synch application can not be installed/opened as it wa..."
+      },
+      {
+        "reviewId": "11da949e-d57d-4f25-b876-cf9a96bed7ac",
+        "rating": 1,
+        "evidence": "it bugs all the time"
+      },
+      {
+        "reviewId": "90549e2d-6239-4ea2-b6d9-8377168c8e3f",
+        "rating": 2,
+        "evidence": "slow"
+      },
+      {
+        "reviewId": "0f947251-87c6-4244-92b9-0df3218ca71e",
+        "rating": 2,
+        "evidence": "hang"
+      },
+      {
+        "reviewId": "2b1d5a87-3cdf-44c9-9e75-54abae6ae991",
+        "rating": 1,
+        "evidence": "just keeps giving a blank screen everytime i try to open it"
+      },
+      {
+        "reviewId": "f01b63b7-917d-477d-9b44-cbae0f383bae",
+        "rating": 1,
+        "evidence": "slow"
+      },
+      {
+        "reviewId": "67cc8690-4382-4891-89cc-8bc50a5eb386",
+        "rating": 1,
+        "evidence": "crash"
+      },
+      {
+        "reviewId": "81c1530f-e7fd-40c9-866a-49d248c31c28",
+        "rating": 1,
+        "evidence": "slow"
+      },
+      {
+        "reviewId": "79708a81-7362-4207-be30-f7817b66eb16",
+        "rating": 1,
+        "evidence": "hang"
+      },
+      {
+        "reviewId": "b0bfdf1c-0857-4cf2-9064-fa7c5fc3c3cd",
+        "rating": 1,
+        "evidence": "crash"
+      },
+      {
+        "reviewId": "7eb737f8-071d-4fc9-aeda-3ceee47c1034",
+        "rating": 1,
+        "evidence": "hang"
+      },
+      {
+        "reviewId": "3f781b95-26ee-4822-9cea-a9ea9056d3e6",
+        "rating": 1,
+        "evidence": "it will not be properly, fix the bug"
+      },
+      {
+        "reviewId": "b6ec124e-28c6-44e1-9e9a-623a6f772d7a",
+        "rating": 1,
+        "evidence": "slow"
+      },
+      {
+        "reviewId": "6d5c0ac6-0cf9-459d-9457-09939cb3fb9d",
+        "rating": 1,
+        "evidence": "not opening always shows the install of the app from the play store"
+      },
+      {
+        "reviewId": "a746d34e-0817-45f0-8443-79577a41a20a",
+        "rating": 1,
+        "evidence": "hang"
+      },
+      {
+        "reviewId": "c1b25db9-7a1d-4467-aa00-14823e82fe2f",
+        "rating": 1,
+        "evidence": "freeze"
+      },
+      {
+        "reviewId": "64f10d36-2386-4e04-9b4e-a35310f50aab",
+        "rating": 1,
+        "evidence": "slow"
+      },
+      {
+        "reviewId": "25e66ed8-a1f8-48c9-a726-0465003938b4",
+        "rating": 1,
+        "evidence": "unable to get otp via message, whatsapp or email. may be their is some glitch. hope the team is working on it."
+      },
+      {
+        "reviewId": "145945f0-2aa0-4377-a968-022fd372ebfe",
+        "rating": 1,
+        "evidence": "hang"
+      },
+      {
+        "reviewId": "eca3c8b0-9d11-40fe-877d-1b1ce7d029ad",
+        "rating": 1,
+        "evidence": "slow"
+      },
+      {
+        "reviewId": "f7df20ab-fe77-4454-9a07-55438ce28c6e",
+        "rating": 1,
+        "evidence": "hang"
+      },
+      {
+        "reviewId": "93f3c4e5-dc0d-4543-8568-16c9b40c9216",
+        "rating": 1,
+        "evidence": "most of the time app keeps loading even in good internet connectivity."
+      },
+      {
+        "reviewId": "f5347b3d-f7ab-405d-a482-bae26ecd5368",
+        "rating": 1,
+        "evidence": "hang"
+      },
+      {
+        "reviewId": "0de5b0b9-835e-4a7d-b4e6-842fd95deff2",
+        "rating": 1,
+        "evidence": "hang"
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_delayed_gps_tracking",
+    "problem": "Delayed or frozen live GPS tracking",
+    "frequency": 26,
+    "severity": "High",
+    "observedSymptom": "Commuters report cab location pins freezing, lagging, or failing to update on the live tracking map.",
+    "userImpact": "Employees cannot reliably know vehicle location, causing missed pickups and high curbside anxiety.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Delayed synchronization of vehicle location telemetry to the commuter-facing tracking interface.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      },
+      {
+        "hypothesis": "Aggressive Android OS background battery optimization throttling location broadcasts from driver partner devices.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "Driver device GPS broadcast frequency (e.g., 5s vs 30s intervals)",
+      "Backend telemetry ingestion to WebSocket client delivery latency",
+      "GPS signal accuracy and drift rate in urban canyon areas"
+    ],
+    "validationNeeded": [
+      "Compare driver device GPS capture timestamps with passenger app UI render timestamps",
+      "Audit WebSocket / MQTT message delivery reliability under poor 4G network handovers",
+      "Verify driver app foreground service configurations for background location permissions"
+    ],
+    "evidence": [
+      {
+        "reviewId": "2ce14584-824f-4d19-a7ce-95a17656fc8f",
+        "rating": 1,
+        "evidence": "ETA calculator very bad. not sure on what basis its done. google maps always shows 3x the time shown in moveinsync ap..."
+      },
+      {
+        "reviewId": "61a4a85f-902d-4e2c-beff-9ff5850a16b7",
+        "rating": 1,
+        "evidence": "wont let you track"
+      },
+      {
+        "reviewId": "66e6cdc7-e911-4b93-82c7-01d7f9420284",
+        "rating": 1,
+        "evidence": "Worst mapping"
+      },
+      {
+        "reviewId": "82341476-c4db-46e0-86f1-670fe93b74ca",
+        "rating": 1,
+        "evidence": "filthy app, stupid pickup location for login time. The handlers of this app lack common sense. The best thing to do i..."
+      },
+      {
+        "reviewId": "7a6441a0-2383-4dd7-83f7-8d54c4af8111",
+        "rating": 1,
+        "evidence": "live track"
+      },
+      {
+        "reviewId": "0e4dbe76-d1d1-49f2-8f4b-e608c076e7c1",
+        "rating": 1,
+        "evidence": "worst routing location"
+      },
+      {
+        "reviewId": "da4ad9ad-acbe-4600-8d32-46883fab9fdd",
+        "rating": 1,
+        "evidence": "There should be an option to directly search for seat number instead of using the map. There should be an option to s..."
+      },
+      {
+        "reviewId": "25656a47-c872-4e03-baa7-861134241f1f",
+        "rating": 1,
+        "evidence": "location and its root is accurate many times, hangs for unknown reasons, no feedback option to feedback about the app..."
+      },
+      {
+        "reviewId": "99a6f069-b1a1-4810-9377-c80b50b6d01c",
+        "rating": 1,
+        "evidence": "cab are always late and track is also not available many time"
+      },
+      {
+        "reviewId": "c789c25d-4efe-4fd4-8986-de67be5beeba",
+        "rating": 1,
+        "evidence": "Driver for cab number HR 47-G-7055 is ridiculous.dont hire people with no manners .misbehaved with girl employee. dro..."
+      },
+      {
+        "reviewId": "ed3e271f-cdd0-48b5-8601-159d9c4de8fc",
+        "rating": 1,
+        "evidence": "not a complete soution , not work when most required , cab location always wrong , message alerts are not at time,"
+      },
+      {
+        "reviewId": "27e47fba-8807-4da0-9dc7-fefe983b8b17",
+        "rating": 5,
+        "evidence": "I love the service they are providing. worked with 2 organisations with this app, and has made my commute simplified,..."
+      },
+      {
+        "reviewId": "03b568c0-1a3b-4ac4-8b93-5b883882a26a",
+        "rating": 1,
+        "evidence": "Very bad experience. The device is showing a completely different location from the one we updated in the app."
+      },
+      {
+        "reviewId": "ccba873d-c5c1-4c86-808d-d0b5885f1113",
+        "rating": 1,
+        "evidence": "location, it shows one or two hour"
+      },
+      {
+        "reviewId": "3adc2e4e-19ce-4115-b8fe-52716d4c1561",
+        "rating": 2,
+        "evidence": "this app doesn't give realtime continuous update on maps. It is updated after minutes which is very reliable. It will..."
+      },
+      {
+        "reviewId": "c184e82e-5fe4-41fd-b73c-6ad9a1e31e61",
+        "rating": 2,
+        "evidence": "Unable to book a shuttle at this time. App stuck at \"Finding your location\" for several minutes. But I'm happy that t..."
+      },
+      {
+        "reviewId": "c6d30800-250c-4541-9335-7e6114e0474b",
+        "rating": 2,
+        "evidence": "Address and locations are not matching, different location show's up for the address entered."
+      },
+      {
+        "reviewId": "fd4e8200-294d-4877-b4f5-b1e12528ce8d",
+        "rating": 1,
+        "evidence": "does not let you book a bus if location accuracy is off. why do you need location accuracy? are you going to bring th..."
+      },
+      {
+        "reviewId": "5a65342f-208a-4b60-a9b0-243be3617f8f",
+        "rating": 1,
+        "evidence": "before the upgrade the app was good as we could see the shuttles location which is now not available causing tremendo..."
+      },
+      {
+        "reviewId": "6c2c9546-09f9-460d-a61a-0fbe76078cd9",
+        "rating": 1,
+        "evidence": "The GPS tracking system is very slow, and the pickup and drop timings are frequently incorrect. Additionally, the liv..."
+      },
+      {
+        "reviewId": "fd597af6-1a11-4706-b50a-089dbbe64aed",
+        "rating": 2,
+        "evidence": "accurate navigation must be part of this app"
+      },
+      {
+        "reviewId": "5d14e08b-ceb3-4849-8e3b-2b94f6f06a07",
+        "rating": 1,
+        "evidence": "most of the time driver location get stuck and keeps on showing at same place for like 30 mins"
+      },
+      {
+        "reviewId": "0b1f3921-67f8-49fd-b329-f1fa6f3c615f",
+        "rating": 1,
+        "evidence": "pick up location and home location is far and app not taking exact location"
+      },
+      {
+        "reviewId": "e8e11e4d-3c5e-4a3f-8c77-4ea59704daf7",
+        "rating": 2,
+        "evidence": "the app is most of the time not working and it's showing the wrong location many time due to this employee getting mi..."
+      },
+      {
+        "reviewId": "37e43024-606f-4bdc-a44d-ec24657de1e1",
+        "rating": 1,
+        "evidence": "Eventhough my cab well within 4 hours of booking timing and my trip started, it shows error and cant track cab locati..."
+      },
+      {
+        "reviewId": "36701372-998b-4ff8-ba0a-9bb17b1daf50",
+        "rating": 1,
+        "evidence": "Neither can change the address nor can track cab properly"
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_driver_vehicle",
+    "problem": "Driver behavioral issues and vehicle maintenance deficiencies",
+    "frequency": 24,
+    "severity": "Medium",
+    "observedSymptom": "Commuters report driver unpunctuality, rude behavior, non-working AC, or unwashed vehicles.",
+    "userImpact": "Uncomfortable, stressful, or unhygienic daily travel; commuter dissatisfaction with cab environment.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "May indicate gaps in driver partner service level agreement (SLA) enforcement, driver training, or vehicle inspection auditing.",
+        "type": "Driver / Fleet",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      },
+      {
+        "hypothesis": "Lack of automated driver performance penalty or feedback loop tied to persistent vehicle AC/punctuality complaints.",
+        "type": "Operations",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "Vendor fleet audit scores and cab AC maintenance inspection logs",
+      "Driver cancellation and late arrival incident statistics",
+      "Driver feedback resolution tracking in partner vendor portals"
+    ],
+    "validationNeeded": [
+      "Cross-reference driver complaints in reviews with internal driver rating records",
+      "Audit vendor fleet compliance checks and penalties for non-functional AC"
+    ],
+    "evidence": [
+      {
+        "reviewId": "98db1b19-26e2-4e6d-937b-7319944a6fc0",
+        "rating": 1,
+        "evidence": "Driver"
+      },
+      {
+        "reviewId": "88fa8703-20ab-4e8f-ab4d-07f59f254952",
+        "rating": 1,
+        "evidence": "cab"
+      },
+      {
+        "reviewId": "785327ff-5759-41b8-ba5f-c6eabed81c01",
+        "rating": 2,
+        "evidence": "ac"
+      },
+      {
+        "reviewId": "dba61dc5-b7e3-482a-a596-5be145a9e1e4",
+        "rating": 1,
+        "evidence": "cab"
+      },
+      {
+        "reviewId": "e6077207-c5c0-4521-8a4e-ee00d18263aa",
+        "rating": 1,
+        "evidence": "cab"
+      },
+      {
+        "reviewId": "edf9c82f-f269-4a7a-a3b4-a6342ea5afc3",
+        "rating": 1,
+        "evidence": "ac"
+      },
+      {
+        "reviewId": "2767a152-7aaa-4a0e-904c-1d620a20052f",
+        "rating": 1,
+        "evidence": "ac"
+      },
+      {
+        "reviewId": "a2233738-7d08-4cfc-9f30-3756b03c91c6",
+        "rating": 1,
+        "evidence": "ac"
+      },
+      {
+        "reviewId": "4e1b5eb0-ed79-4970-bc7c-8968c1379619",
+        "rating": 1,
+        "evidence": "cab"
+      },
+      {
+        "reviewId": "f5890267-a88c-4c91-a588-439ca31ef0bf",
+        "rating": 1,
+        "evidence": "cab"
+      },
+      {
+        "reviewId": "2109668e-b908-4604-a7c0-dc526e27ea9e",
+        "rating": 1,
+        "evidence": "driver"
+      },
+      {
+        "reviewId": "0941f657-db8a-4543-8835-c9d45bbc63fe",
+        "rating": 1,
+        "evidence": "ac"
+      },
+      {
+        "reviewId": "05f57703-91a6-4801-ae93-339dee43008d",
+        "rating": 1,
+        "evidence": "ac"
+      },
+      {
+        "reviewId": "ae1d3e41-e481-4c1e-ac8f-633cef5a35bb",
+        "rating": 2,
+        "evidence": "cab"
+      },
+      {
+        "reviewId": "7c4c4d35-5911-4ee1-aef4-8672e91f6c9c",
+        "rating": 1,
+        "evidence": "ac"
+      },
+      {
+        "reviewId": "e30ca486-7919-4d63-8528-4527738f0469",
+        "rating": 2,
+        "evidence": "Cab"
+      },
+      {
+        "reviewId": "df539c86-3773-42ed-b11f-5f7a9a05ded6",
+        "rating": 1,
+        "evidence": "ac"
+      },
+      {
+        "reviewId": "338538b9-732e-4e76-beeb-b942c13b33c9",
+        "rating": 5,
+        "evidence": "driver"
+      },
+      {
+        "reviewId": "028ff030-f768-44f9-ab4b-cd632defa30d",
+        "rating": 1,
+        "evidence": "driver"
+      },
+      {
+        "reviewId": "7569516c-7aa2-44dd-9cc2-3f730fcc7750",
+        "rating": 1,
+        "evidence": "driver"
+      },
+      {
+        "reviewId": "40400046-7a3f-4096-a04c-ce01076b8be3",
+        "rating": 1,
+        "evidence": "cab"
+      },
+      {
+        "reviewId": "d428801b-7a7e-4264-aede-94a9c72076b0",
+        "rating": 5,
+        "evidence": "driver"
+      },
+      {
+        "reviewId": "fbd502a7-e27b-4156-b373-9ae410e95633",
+        "rating": 1,
+        "evidence": "cab"
+      },
+      {
+        "reviewId": "56157c9c-eea4-44c3-b8c4-9b32577038a8",
+        "rating": 1,
+        "evidence": "trash app. I don't understand why companies even use it."
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_ui_redesign",
+    "problem": "Unfavorable UI redesign and workflow complexity",
+    "frequency": 21,
+    "severity": "Medium",
+    "observedSymptom": "Commuters express frustration with multi-step navigation, confusing interface changes, and mandatory feedback popups.",
+    "userImpact": "Increased cognitive load and friction in executing daily transit tasks; user backlash against unskippable rating popups.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Rollout of major UI redesign introduced multi-click navigation pathways for formerly 1-click habitual actions.",
+        "type": "Product / UX",
+        "confidence": "High",
+        "telemetryRequired": false
+      },
+      {
+        "hypothesis": "Mandatory rating modal blocking UI navigation with no skip option directly motivated punitive 1-star Play Store reviews.",
+        "type": "Product / UX",
+        "confidence": "High",
+        "telemetryRequired": false
+      }
+    ],
+    "missingEvidence": [
+      "User drop-off and completion time funnels for core tasks before vs after redesign",
+      "Rating modal dismissal rates and session replay data"
+    ],
+    "validationNeeded": [
+      "Evaluate task completion time for booking and viewing trip details across old vs new UI",
+      "Test whether making the post-ride rating prompt skippable reduces task abandonment and negative rating behavior"
+    ],
+    "evidence": [
+      {
+        "reviewId": "f9fce9fe-8115-4a30-8d09-d8bdac76837d",
+        "rating": 1,
+        "evidence": "forcing me to give rating after every ride, so I came here to give you 1 star. because if I don't rate, I can't use the app as there is no skip"
+      },
+      {
+        "reviewId": "6b0ec80a-f39e-4548-85a7-cefd18c99c83",
+        "rating": 1,
+        "evidence": "update made it worse"
+      },
+      {
+        "reviewId": "5f781610-319a-4412-b308-95a6ec8ee6f6",
+        "rating": 1,
+        "evidence": "Bring the old"
+      },
+      {
+        "reviewId": "3a411c1e-a2cd-4d87-83d6-e89e9f76460d",
+        "rating": 1,
+        "evidence": "confusing"
+      },
+      {
+        "reviewId": "724fa773-e6c0-47ec-b76d-8c5ae25850ed",
+        "rating": 1,
+        "evidence": "👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎👎who the hell is giving them 5 star ⭐ rating worst punctuation, my cab has to assign o..."
+      },
+      {
+        "reviewId": "852dfa4f-b414-4559-ae8d-5cc955fe97db",
+        "rating": 1,
+        "evidence": "app stopped working in oneplus 12 android, please look into it."
+      },
+      {
+        "reviewId": "c4c982a7-763c-4e2b-889a-17109a961dc7",
+        "rating": 1,
+        "evidence": "why the hell no option of skip rating.if I don't want rate."
+      },
+      {
+        "reviewId": "fb887543-7a35-42b3-9490-f61c28b841d9",
+        "rating": 1,
+        "evidence": "Extremely disappointing experience with Move In Sync. Why does the company keep assigning rude, disrespectful, and ab..."
+      },
+      {
+        "reviewId": "2211ba73-2abc-4b42-8664-6f77105ff11b",
+        "rating": 1,
+        "evidence": "The Cab Tracker is useless, and it doesn't even update on time."
+      },
+      {
+        "reviewId": "46d3b709-e3eb-4be3-a5af-50868cfc215a",
+        "rating": 1,
+        "evidence": "Need to simplify the UI. There is alot of simplification needed"
+      },
+      {
+        "reviewId": "714eb4f9-7828-4af2-a2a8-0d690feffa59",
+        "rating": 1,
+        "evidence": "always keeps asking for rating"
+      },
+      {
+        "reviewId": "a1e5d1c8-5b4f-46d3-a313-2070b7675515",
+        "rating": 1,
+        "evidence": "I'm not sure how this app got a 4-star rating that doesn't even bother to get a 1star rating."
+      },
+      {
+        "reviewId": "ff2dcc55-ccd6-4830-9f9d-88f149db3dd6",
+        "rating": 1,
+        "evidence": "Need a serious update.... Add a place where we can see who all are clubbed and assigned to travel"
+      },
+      {
+        "reviewId": "5e41c6b5-feed-46fc-9dcc-9d7425010f0d",
+        "rating": 1,
+        "evidence": "horrible app. ui is horrible and is not user friendly."
+      },
+      {
+        "reviewId": "28af5dc5-9cf3-4464-9004-dd45694cdd22",
+        "rating": 1,
+        "evidence": "having frequent trouble in opening the app. throwing error that the app was not installed thru playstore. frustrating"
+      },
+      {
+        "reviewId": "50c50294-38c3-4c13-b8f3-6a794f79b1fe",
+        "rating": 2,
+        "evidence": "I found the app to be buggy and the features to quite inflexible to user feedback."
+      },
+      {
+        "reviewId": "c49d2624-a9ed-4345-a079-4a735db03c72",
+        "rating": 2,
+        "evidence": "The Move In Sync app needs to seriously rethink its rating system. It’s frustrating that users are only given options..."
+      },
+      {
+        "reviewId": "bc7ef500-8552-43ed-9c08-86393f17dbe3",
+        "rating": 1,
+        "evidence": "Driver rating is forced in the new UX"
+      },
+      {
+        "reviewId": "a2fa2beb-c4b4-4db5-9c4e-2f1950cfee79",
+        "rating": 1,
+        "evidence": "for new update"
+      },
+      {
+        "reviewId": "e0203c10-6ec2-418b-af25-145b20119a24",
+        "rating": 2,
+        "evidence": "After update it requires multiple hits to load the shuttle information"
+      },
+      {
+        "reviewId": "90bf938f-0b0e-4116-a5e7-07956b733b9d",
+        "rating": 1,
+        "evidence": "the UX and UI of the app is poor...and why a fresh disclaimer statement every time when you minimize the app even for..."
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_otp_session_friction",
+    "problem": "OTP delivery latency, verification & session friction",
+    "frequency": 20,
+    "severity": "High",
+    "observedSymptom": "Commuters report frequent logouts on app resume, delayed SMS OTP delivery, or difficulty accessing boarding OTP.",
+    "userImpact": "Commuters standing at curbs cannot rapidly access or show verification codes to board vehicles, causing boarding delays.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Premature auth token invalidation or lack of silent refresh token rotation causing unexpected logouts on app resume.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      },
+      {
+        "hypothesis": "SMS gateway delivery latency or client-side caching delays when retrieving boarding OTPs.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "Client-side session token TTL settings and token refresh failure logs",
+      "SMS gateway delivery success rate and P95 delivery latency"
+    ],
+    "validationNeeded": [
+      "Audit mobile app auth token lifecycle when app resumes from background state",
+      "Verify offline or local cryptographic generation capability for boarding OTPs"
+    ],
+    "evidence": [
+      {
+        "reviewId": "72e74b90-1da1-49cc-87c0-6bc42af65ba3",
+        "rating": 1,
+        "evidence": "logs out every time"
+      },
+      {
+        "reviewId": "f603466c-c648-4802-94e4-44f2c9916d32",
+        "rating": 1,
+        "evidence": "otp"
+      },
+      {
+        "reviewId": "e0d68839-6e59-4dd7-8f00-052cda79a063",
+        "rating": 1,
+        "evidence": "login"
+      },
+      {
+        "reviewId": "1d73eadd-7250-425f-9cbe-c906414e5049",
+        "rating": 1,
+        "evidence": "OTP"
+      },
+      {
+        "reviewId": "c9c2d1f3-da5a-457f-b3cd-479afddacd8a",
+        "rating": 1,
+        "evidence": "logged out"
+      },
+      {
+        "reviewId": "d6cbf0b5-c7e3-4474-8a61-6a65d98ba8cf",
+        "rating": 1,
+        "evidence": "login"
+      },
+      {
+        "reviewId": "d0013885-22ce-4c15-b188-eb1b58d912d3",
+        "rating": 1,
+        "evidence": "OTP"
+      },
+      {
+        "reviewId": "19c6de5d-efbf-4f17-b143-fd1f3c48ac48",
+        "rating": 1,
+        "evidence": "otp"
+      },
+      {
+        "reviewId": "90c5e4ac-a4cd-41a0-b791-0afd21073740",
+        "rating": 1,
+        "evidence": "OTP"
+      },
+      {
+        "reviewId": "fdf12a9d-6be8-4631-8a8c-8bda542aa022",
+        "rating": 1,
+        "evidence": "login"
+      },
+      {
+        "reviewId": "97a529b2-c0ac-4531-9d73-484471fe75e1",
+        "rating": 1,
+        "evidence": "login"
+      },
+      {
+        "reviewId": "687a9573-d6cb-4801-8578-7eb948c6a722",
+        "rating": 1,
+        "evidence": "otp"
+      },
+      {
+        "reviewId": "72b21544-5b6e-4ae8-b33e-1c641857b98f",
+        "rating": 1,
+        "evidence": "logout"
+      },
+      {
+        "reviewId": "9fc3d772-0fa8-461f-bcaf-193c6e051c27",
+        "rating": 1,
+        "evidence": "sign in"
+      },
+      {
+        "reviewId": "155b972f-7663-4624-be7d-49d4cd126c41",
+        "rating": 1,
+        "evidence": "login"
+      },
+      {
+        "reviewId": "75ca7255-ab6c-418d-bc7f-6862d7ceee32",
+        "rating": 1,
+        "evidence": "OTP"
+      },
+      {
+        "reviewId": "d4e87ea5-b356-4cc5-a84b-7fe68e4bbd65",
+        "rating": 1,
+        "evidence": "login"
+      },
+      {
+        "reviewId": "ad4d0479-e453-45fd-a5fc-9aed99bc2b46",
+        "rating": 1,
+        "evidence": "otp"
+      },
+      {
+        "reviewId": "a5823b6c-30e6-4c0f-9633-4a164e42132b",
+        "rating": 3,
+        "evidence": "OTP"
+      },
+      {
+        "reviewId": "5cbe074d-ac59-4be3-8422-51aa229067a6",
+        "rating": 1,
+        "evidence": "logout"
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_post_update_crash",
+    "problem": "Post-update app launch crash loop",
+    "frequency": 14,
+    "severity": "High",
+    "observedSymptom": "Commuters report that the app fails to open after updates and requires repeated uninstall/reinstall cycles.",
+    "userImpact": "Severe blocker: commuters are completely locked out of transport services and forced into uninstall/reinstall loops.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Likely regression in application startup initialization, local database schema migration, or corrupted preferences.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      },
+      {
+        "hypothesis": "Uncaught native or runtime exception occurring prior to main activity render on specific Android OS builds.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "Firebase Crashlytics / Google Play Console stack traces on app startup",
+      "Crash breakdown by Android OS version (e.g., Android 12/13/14) and manufacturer skin (MIUI, OneUI, etc.)"
+    ],
+    "validationNeeded": [
+      "Test automated upgrade migrations from previous N-1 and N-2 versions to latest build with pre-populated local storage",
+      "Examine Android Vitals Crash Rate and ANR metrics immediately following releases"
+    ],
+    "evidence": [
+      {
+        "reviewId": "60798e45-939e-4a99-8f5b-17383a891db6",
+        "rating": 1,
+        "evidence": "whenever i update this app, i am not able to open"
+      },
+      {
+        "reviewId": "133d2b88-b2d2-4fd4-9594-1ac26caf819e",
+        "rating": 3,
+        "evidence": "a few days ago this app was working fine on my phone, but for the last 3 days it's not working at all. The app doesn'..."
+      },
+      {
+        "reviewId": "7781ccc3-e390-49cb-b574-fb3213c2e74a",
+        "rating": 1,
+        "evidence": "application not working with pixel 8 android version 17... installed and uninstalled...still not working...open and c..."
+      },
+      {
+        "reviewId": "0def625f-f0c8-4d3a-859d-4891c82c80ab",
+        "rating": 1,
+        "evidence": "This aap keeps on crashing due to some bug and there is No Update Available Yet... What will Working Professionals do..."
+      },
+      {
+        "reviewId": "8b0735a9-bd5e-453a-b1c8-81f741153ef2",
+        "rating": 1,
+        "evidence": "Slow after the update"
+      },
+      {
+        "reviewId": "4f55dc55-8f92-49fa-95c0-9b9a12934888",
+        "rating": 1,
+        "evidence": "Move in sync app after every couple of days when I try to use it it shows unable to open as the app was not downloade..."
+      },
+      {
+        "reviewId": "bd2d3dd2-2098-443e-8594-cd31210aa22b",
+        "rating": 1,
+        "evidence": "useless app, need to uninstall very frequently and install ...i guess developer forgot make it compatible to android ..."
+      },
+      {
+        "reviewId": "8d06b861-b7d5-4530-9261-df8362e2df86",
+        "rating": 1,
+        "evidence": "Doesn't Open, always gets stuck. tried all options reinstall, upgrade, different networks."
+      },
+      {
+        "reviewId": "3e08397b-6e7b-4b3e-8146-4a7c1f1c690f",
+        "rating": 1,
+        "evidence": "uninstall and reinstall"
+      },
+      {
+        "reviewId": "341feb49-ec55-4cca-b783-64699751ab75",
+        "rating": 3,
+        "evidence": "after 48 hours it shows an error. you haven't installed it from playstore try and reinstall it."
+      },
+      {
+        "reviewId": "c349d5f4-65c1-444a-aa69-670da8eebaeb",
+        "rating": 2,
+        "evidence": "again and again it's getting stopped.. showing that it can't open as it is not downloaded from playstore. in last 3 w..."
+      },
+      {
+        "reviewId": "5fadff5a-d9f6-4001-b8c7-86e5adb0998f",
+        "rating": 2,
+        "evidence": "The app keeps uninstalling and asks to be reinstalled. Please fix this."
+      },
+      {
+        "reviewId": "bc48ce4f-05c7-4414-9f7b-9c08b3272ab5",
+        "rating": 3,
+        "evidence": "we use this app for our office commute, but it always crashes, giving an error that this app is not downloaded from a..."
+      },
+      {
+        "reviewId": "6663f7b1-7087-45e5-9320-c8a7fbfc6307",
+        "rating": 1,
+        "evidence": "The recent updates in the UI have made the app very difficult to use. Booking a shuttle is now a 2 step process previ..."
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_eta_inaccuracies",
+    "problem": "Inaccurate or delayed ETA estimation",
+    "frequency": 10,
+    "severity": "High",
+    "observedSymptom": "Commuters report major discrepancies between displayed ETA and actual cab arrival (often 3x difference compared to Google Maps).",
+    "userImpact": "Commuters cannot reliably pace their departure, resulting in either missed rides or excessive roadside waiting.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Possible deficiency in dynamic traffic model integration, causing reliance on static distance calculations in congested corridors.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      },
+      {
+        "hypothesis": "Lack of algorithmic compensation for cumulative multi-passenger boarding dwell times at preceding stops.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "Variance delta between predicted ETA and actual cab arrival timestamp across historical rides",
+      "Third-party traffic provider integration health and refresh cadence"
+    ],
+    "validationNeeded": [
+      "Compare MoveInSync predicted ETA against actual arrival timestamps and Google Maps Distance Matrix benchmarks",
+      "Validate whether incorporating dynamic passenger boarding dwell time buffers improves arrival accuracy"
+    ],
+    "evidence": [
+      {
+        "reviewId": "7476b129-f0da-458e-8f86-d77ba2f9a710",
+        "rating": 1,
+        "evidence": "ETA is an abstract joke"
+      },
+      {
+        "reviewId": "145e34ef-5530-438b-bb8b-9dff2aed6e90",
+        "rating": 1,
+        "evidence": "first if the all the app itself is garbage , would crash after every 20days. Then the service , I dont know why compa..."
+      },
+      {
+        "reviewId": "0fddfa5e-4c05-4aee-9412-1a44d52a9f1c",
+        "rating": 1,
+        "evidence": "Sometimes, the map gets stuck, which can cause delays. Please add an important feature where the timer starts at leas..."
+      },
+      {
+        "reviewId": "1239e342-ffd6-4a27-b815-54f7f3711b06",
+        "rating": 1,
+        "evidence": "When trying to reach helpdesk, the line disconnects. Cab ETA keeps changing and the worst part is routing & pickup ti..."
+      },
+      {
+        "reviewId": "5ac20968-6bad-4b53-9d1d-a0af6da248ed",
+        "rating": 1,
+        "evidence": "very confusing and retain incorrect preferences"
+      },
+      {
+        "reviewId": "372c9fae-d5ea-4aa1-a446-4475e4d0da44",
+        "rating": 2,
+        "evidence": "when we have zoomed in the map to track a vehicle what's the necessity to zoom out and show the ETA"
+      },
+      {
+        "reviewId": "b6566e1a-4d36-4eb4-83d7-506fec1e1823",
+        "rating": 1,
+        "evidence": "As an employee, I am unable to see the pickup locations of my fellow cab mates. Since employees are picked up from di..."
+      },
+      {
+        "reviewId": "17b2d6dd-a6ac-4683-b5ac-e69ad1150f6e",
+        "rating": 1,
+        "evidence": "After an update, I can't able to track the trip details in the app it is continuously loading, only able to see the t..."
+      },
+      {
+        "reviewId": "03a5111c-29a6-45df-873f-8a6d45b4723b",
+        "rating": 1,
+        "evidence": "very poor service, cab allocation is getting delayed on an everyday basis, very unprofessional"
+      },
+      {
+        "reviewId": "3b8ea3b9-b52b-4c34-9b1f-cd7a8c93d7ff",
+        "rating": 1,
+        "evidence": "-still as horrible as it can be. I had the details loaded on my wifi. I stepped in a no network zone and it logged me..."
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_pickup_route_assignment",
+    "problem": "Incorrect pickup/drop assignment and circuitous routing",
+    "frequency": 16,
+    "severity": "High",
+    "observedSymptom": "Commuters report grouping of distant passengers into single vehicles and extreme circuitous detours (\"Bharat Darshan\").",
+    "userImpact": "Commuters endure excessive transit times, fatigue, and frustration from long detours or wrong boarding landmarks.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Vehicle routing solver prioritizing seat utilization metrics without strict constraint bounds on maximum allowable passenger detour ratios.",
+        "type": "Product / UX & Operations",
+        "confidence": "High",
+        "telemetryRequired": false
+      },
+      {
+        "hypothesis": "Geocoding inaccuracies or imprecise nodal clustering grouping geographically separated employees into single vehicle routes.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "Routing optimization objective function weights (occupancy vs travel time)",
+      "Average in-transit duration per employee compared to direct point-to-point duration"
+    ],
+    "validationNeeded": [
+      "Validate whether passenger detour duration correlates with routing clustering constraints",
+      "Verify enterprise landmark geocoding accuracy against physical office boarding gates"
+    ],
+    "evidence": [
+      {
+        "reviewId": "85146e08-4f64-4ea2-9541-7a3d22af578e",
+        "rating": 1,
+        "evidence": "worst app, no feedback option for routing and journey."
+      },
+      {
+        "reviewId": "864d85ff-1c4e-4967-a488-1b1225a406f7",
+        "rating": 1,
+        "evidence": "Poor UI. takes forever to load. Routing is the worst!"
+      },
+      {
+        "reviewId": "85646808-3624-479f-8724-72f2f6461b4d",
+        "rating": 1,
+        "evidence": "pickup"
+      },
+      {
+        "reviewId": "397df87d-f01f-4486-8218-064d93f1679f",
+        "rating": 1,
+        "evidence": "worst routine system... all idiots engineers low profile people are making tool and giving routing system worst. my h..."
+      },
+      {
+        "reviewId": "c8dd8ff6-e11d-4820-801f-67e4055ac1bc",
+        "rating": 1,
+        "evidence": "This has terrible routing - picks the wrong and longer route"
+      },
+      {
+        "reviewId": "03f8b2a4-fbcd-4fb0-b755-afa3f7209436",
+        "rating": 1,
+        "evidence": "They do clubbing very badly, even club people in a single cab where people are not from the same route."
+      },
+      {
+        "reviewId": "82470ef9-f10c-495c-8f65-b0f5acd0aca2",
+        "rating": 1,
+        "evidence": "why pick up time too early"
+      },
+      {
+        "reviewId": "1f01f748-b40a-488d-914b-b3bcc99a2a6a",
+        "rating": 1,
+        "evidence": "Hi Team, The MoveInSync app is forcing users to grant microphone access, even though it does not provide any direct i..."
+      },
+      {
+        "reviewId": "3aa862df-73eb-4868-a695-42158aaced5e",
+        "rating": 1,
+        "evidence": "long route"
+      },
+      {
+        "reviewId": "9f5985d8-632e-4c78-b2c2-14f05de44f96",
+        "rating": 1,
+        "evidence": "To early picks done and pick up time varies by 15-20 minutes despite having same cab mates boarding every day"
+      },
+      {
+        "reviewId": "777cca04-24b9-42d6-8af9-29e1971e5a25",
+        "rating": 1,
+        "evidence": "drop"
+      },
+      {
+        "reviewId": "c7d2fb3d-da87-413e-82ba-bb13c1349160",
+        "rating": 1,
+        "evidence": "drop"
+      },
+      {
+        "reviewId": "ed66ceda-ed87-4eec-b838-97a7b11aa91e",
+        "rating": 1,
+        "evidence": "On this new app where is the pick up time"
+      },
+      {
+        "reviewId": "7e184ad5-066a-4d36-b7a0-73a0a56bf8a3",
+        "rating": 1,
+        "evidence": "pickup"
+      },
+      {
+        "reviewId": "4ea31605-cf5f-4a4a-b47f-3030f55143fa",
+        "rating": 1,
+        "evidence": "worst routing"
+      },
+      {
+        "reviewId": "5abe2cac-b91b-4df6-902d-a4c36d5d84fd",
+        "rating": 1,
+        "evidence": "cab is never assigned on time...always late ..no value of others time...after logout every day we have to wait for 40..."
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_support_responsiveness",
+    "problem": "Customer support and transport helpdesk responsiveness",
+    "frequency": 8,
+    "severity": "Medium",
+    "observedSymptom": "Commuters report unhelpful responses or lack of assistance from transport management and support desks.",
+    "userImpact": "Commuters feel abandoned when encountering critical transit exceptions or roster errors.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Likely under-resourced helpdesk queues during shift transition peaks, leading to abandoned chats or unread tickets.",
+        "type": "Support",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      },
+      {
+        "hypothesis": "Disconnected grievance escalation workflows between enterprise transport administrators and central MoveInSync support.",
+        "type": "Operations",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "First Response Time (FRT) and Mean Time to Resolve (MTTR) during shift transition hours",
+      "Ticket deflection rates and in-app support chat SLA adherence logs"
+    ],
+    "validationNeeded": [
+      "Review helpdesk ticket volume and resolution SLAs during shift turnover windows",
+      "Evaluate whether self-service exception workflows reduce helpdesk ticket volume"
+    ],
+    "evidence": [
+      {
+        "reviewId": "225d87f1-5d2f-4d23-ac26-ecda35211579",
+        "rating": 1,
+        "evidence": "transport management which very bad, they are not ready to help"
+      },
+      {
+        "reviewId": "1d7aa4a5-419d-42f4-8be5-d9096c09746d",
+        "rating": 1,
+        "evidence": "not avle to connect with helpdesk"
+      },
+      {
+        "reviewId": "2964c65f-3c5f-4e55-9816-0db634fae32d",
+        "rating": 1,
+        "evidence": "super bad service with bad transport management. Company should release these transport vendors."
+      },
+      {
+        "reviewId": "f61b87be-2625-4997-88c2-421a89dd01fe",
+        "rating": 1,
+        "evidence": "This is a third class app which is not at all user friendly for employees, this is just made to the convenience of ve..."
+      },
+      {
+        "reviewId": "760cc5ba-26c9-48c6-8e86-13fdb106d7e7",
+        "rating": 1,
+        "evidence": "Complaint Regarding Pathetic Transport Service I would like to raise a complaint regarding the pathetic transport ser..."
+      },
+      {
+        "reviewId": "fd99acd0-05e7-46e3-a90c-91bada1b560e",
+        "rating": 1,
+        "evidence": "support"
+      },
+      {
+        "reviewId": "3668eb36-579b-4fbf-ad0e-14f9ddc75a97",
+        "rating": 1,
+        "evidence": "What's the use of help desk when it's always busy"
+      },
+      {
+        "reviewId": "32b8b1f5-83f8-4603-a599-89108ead489c",
+        "rating": 1,
+        "evidence": "support"
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_notifications",
+    "problem": "Trip push notification delivery delays and false alerts",
+    "frequency": 4,
+    "severity": "Medium",
+    "observedSymptom": "Commuters report delayed vehicle approach alerts or false unbooked alerts after completing bookings.",
+    "userImpact": "Commuters receive delayed vehicle approach alerts or false unbooked alerts after completing bookings, causing panic.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Possible push notification gateway queuing latency or improper payload synchronization on backend event triggers.",
+        "type": "Technical",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "FCM / APNS dispatch-to-receipt latency logs",
+      "Event queue depth during bulk roster confirmation hours"
+    ],
+    "validationNeeded": [
+      "Measure P95 latency of vehicle dispatch push alerts",
+      "Verify payload idempotency to prevent phantom alerts"
+    ],
+    "evidence": [
+      {
+        "reviewId": "bb8bc95d-2aca-4ea1-8ec2-a6f74f5de33f",
+        "rating": 1,
+        "evidence": "notification"
+      },
+      {
+        "reviewId": "cdb0fe80-5aca-4f0e-b3e6-2f5585fba265",
+        "rating": 1,
+        "evidence": "Notification"
+      },
+      {
+        "reviewId": "43186954-9fdb-4b8d-99ce-490c819f59a9",
+        "rating": 1,
+        "evidence": "notification"
+      },
+      {
+        "reviewId": "01f30f3f-6bb0-4751-9bc4-013948a2e9c8",
+        "rating": 1,
+        "evidence": "notification"
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_safety_prompt_friction",
+    "problem": "Safety concerns and compliance prompt friction",
+    "frequency": 6,
+    "severity": "Critical",
+    "observedSymptom": "Commuters cite security and emergency responsiveness concerns, as well as intrusive seatbelt popups intercepting OTP display.",
+    "userImpact": "Commuter anxiety regarding security protocols; friction from intrusive compliance modals blocking fast OTP access.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Mandatory seatbelt compliance modal placed directly across the time-sensitive OTP display path creates unnecessary workflow friction.",
+        "type": "Product / UX",
+        "confidence": "High",
+        "telemetryRequired": false
+      },
+      {
+        "hypothesis": "Gaps in rapid emergency SOS response workflows or lack of real-time escalation feedback to distressed commuters.",
+        "type": "Operations",
+        "confidence": "Medium",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "SOS trigger audit logs and Central Command Center response latency",
+      "Click-through rates and dismissal friction on seatbelt safety prompts"
+    ],
+    "validationNeeded": [
+      "Verify 24/7 SOS dispatch and escalation protocols with enterprise transport desks",
+      "Investigate non-blocking notification alternatives to mandatory compliance popups during time-sensitive boarding flows"
+    ],
+    "evidence": [
+      {
+        "reviewId": "3d87f169-2508-4a07-9e5a-d63b2c548ed3",
+        "rating": 2,
+        "evidence": "when you click view otp , it pops up the seat belt safely first"
+      },
+      {
+        "reviewId": "387a67a5-1843-45ee-b837-91d7eb1fccce",
+        "rating": 1,
+        "evidence": "threat"
+      },
+      {
+        "reviewId": "e12ed49a-d376-4cf2-9cfd-45cae0162feb",
+        "rating": 1,
+        "evidence": "This app is going from bad to horrible. The seat buckle verification is absolutely horrendous and the OTP keeps disap..."
+      },
+      {
+        "reviewId": "b1814d48-3e54-4903-a109-e09e05bc3145",
+        "rating": 2,
+        "evidence": "Too much pop up notification, which won't close easily. even you close the app and restart again it will show pop up ..."
+      },
+      {
+        "reviewId": "ab22d06f-a3be-49e3-a460-5ef157ec534c",
+        "rating": 1,
+        "evidence": "unsafe"
+      },
+      {
+        "reviewId": "3c7dbf56-0d12-466a-a4de-d4c5452106b1",
+        "rating": 1,
+        "evidence": "danger"
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_low_info_functional",
+    "problem": "Low-information functional complaints",
+    "frequency": 17,
+    "severity": "Medium",
+    "observedSymptom": "Brief complaints mentioning a functional symptom (e.g., \"app not opening\", \"not verifying number\", \"mobile data issue\", \"permission issue\") without deeper operational context.",
+    "userImpact": "Commuters encounter blocking functional bugs but provide insufficient context to diagnose.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Unknown technical cause; functional symptom reported by user requires client crash/telemetry diagnostics.",
+        "type": "Unknown",
+        "confidence": "Low",
+        "telemetryRequired": true
+      }
+    ],
+    "missingEvidence": [
+      "Device OS version, network conditions, and detailed exception logs",
+      "Step-by-step reproduction sequence"
+    ],
+    "validationNeeded": [
+      "Cross-reference user accounts with client exception breadcrumbs in Google Play Console and Crashlytics"
+    ],
+    "evidence": [
+      {
+        "reviewId": "3abb674f-e2b3-41d7-8439-772cfb23cd27",
+        "rating": 1,
+        "evidence": "the application is not working properly show app error please fix it"
+      },
+      {
+        "reviewId": "a0ca92c8-e8ae-448b-81e6-5e4102107c94",
+        "rating": 1,
+        "evidence": "not working and opening"
+      },
+      {
+        "reviewId": "ef2acf20-b61f-4d2a-ba57-23d5206d418b",
+        "rating": 1,
+        "evidence": "everytime I download it won't open again after 1-2 days and I have to download it again"
+      },
+      {
+        "reviewId": "80fb6601-efa8-460c-903d-2835315a4322",
+        "rating": 1,
+        "evidence": "not open"
+      },
+      {
+        "reviewId": "05721a7c-55c6-4988-aad4-294192414118",
+        "rating": 1,
+        "evidence": "Taytay-Five Neo 615pm sched is always late! Always more than an hour late!"
+      },
+      {
+        "reviewId": "c988bdd4-9208-485e-b843-ec01a15a0e6e",
+        "rating": 2,
+        "evidence": "it ask too much permission when I open the app on regular basis"
+      },
+      {
+        "reviewId": "73674f3d-0411-4948-b335-e3c379e3ba59",
+        "rating": 1,
+        "evidence": "app is not working at all. it's not verifying my no neither my email."
+      },
+      {
+        "reviewId": "c8818d4d-e060-4f33-8025-07cd16bded1c",
+        "rating": 1,
+        "evidence": "third class app, not working on mobile data anymore from last few days. works only on wifi. do you expect people carr..."
+      },
+      {
+        "reviewId": "c7389c6d-0164-4499-a896-485b66516a22",
+        "rating": 1,
+        "evidence": "I'm getting calling permission is disabled as per company policy"
+      },
+      {
+        "reviewId": "5d8b03fa-d0d1-42c6-9ecc-aa92a8c1d0f1",
+        "rating": 1,
+        "evidence": "very bad , this app is not updated every thing on time"
+      },
+      {
+        "reviewId": "da70ae8d-1bae-4485-a660-7373b3a7a469",
+        "rating": 1,
+        "evidence": "they dont come on time"
+      },
+      {
+        "reviewId": "7dd834b0-8906-4e8d-88d8-bee85025334b",
+        "rating": 1,
+        "evidence": "after every 2 days getting error of \"not installed from play store even though I'm installing from play store\". do we..."
+      },
+      {
+        "reviewId": "f7329b75-30f3-4b4e-ba7e-16c58f3de279",
+        "rating": 1,
+        "evidence": "Pathetic experience. nothing gets updated in real-time. It's extremely not user friendly."
+      },
+      {
+        "reviewId": "01a2771b-5f70-4893-b7ac-04116943221a",
+        "rating": 1,
+        "evidence": "take too much time to load an application"
+      },
+      {
+        "reviewId": "9dd4ac02-19d4-4650-9a90-f510b523e0ab",
+        "rating": 2,
+        "evidence": "Please stop excessively notifying for Play Store reviews after every ride. It's wasting user time by repeated clicks."
+      },
+      {
+        "reviewId": "973a24d0-5aa3-4c41-9d83-d26b53bdda90",
+        "rating": 1,
+        "evidence": "Sometimes open the app and showing not installed"
+      },
+      {
+        "reviewId": "a931c389-4223-4c5c-921e-4c22b4545467",
+        "rating": 1,
+        "evidence": "not working most of time, Useless App"
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_truly_vague_dissatisfaction",
+    "problem": "Truly vague dissatisfaction",
+    "frequency": 76,
+    "severity": "Medium",
+    "observedSymptom": "Pure emotional negative sentiment (e.g., \"worst app\", \"bekar hai\", \"pathetic\", \"rubbish\", \"disappointment\") without citing any feature or defect.",
+    "userImpact": "Commuters express general discontent, contributing directly to negative Google Play Store star ratings.",
+    "possibleRootCauses": [
+      {
+        "hypothesis": "Unknown / Insufficient Evidence. The review text expresses pure sentiment without mentioning any functional defect or feature.",
+        "type": "Unknown",
+        "confidence": "Low",
+        "telemetryRequired": false
+      }
+    ],
+    "missingEvidence": [
+      "Zero functional or technical details provided in review text"
+    ],
+    "validationNeeded": [
+      "Cannot validate technical root cause from text alone; address through proactive in-app customer satisfaction (CSAT) micro-surveys"
+    ],
+    "evidence": [
+      {
+        "reviewId": "40363b38-fa55-4571-af0f-ff6fb0463015",
+        "rating": 1,
+        "evidence": "worst app"
+      },
+      {
+        "reviewId": "5a892b9d-a4d4-4ead-b699-c98f71a94d57",
+        "rating": 1,
+        "evidence": "bhot bekar hai"
+      },
+      {
+        "reviewId": "527ddedf-47fb-452b-95f9-c968896d1aaf",
+        "rating": 1,
+        "evidence": "good"
+      },
+      {
+        "reviewId": "210e4ab0-822c-4248-9e16-297d736f8fe0",
+        "rating": 1,
+        "evidence": "worst experience"
+      },
+      {
+        "reviewId": "85082941-1df5-4350-91cf-983886fbb10a",
+        "rating": 1,
+        "evidence": "worst transport ever had"
+      },
+      {
+        "reviewId": "eb176d64-81d0-447f-884f-fa7e1fa5e860",
+        "rating": 1,
+        "evidence": "pathetic application"
+      },
+      {
+        "reviewId": "7a707363-5c87-4607-a969-c1145075c724",
+        "rating": 1,
+        "evidence": "good app"
+      },
+      {
+        "reviewId": "7e2ab2b0-6370-4a94-81f6-36182d8a9ccc",
+        "rating": 1,
+        "evidence": "absolutely rubbishhhhhh and disgusting application"
+      },
+      {
+        "reviewId": "9aa5b917-0428-41c6-a7af-9be2e4cde043",
+        "rating": 1,
+        "evidence": "worst app"
+      },
+      {
+        "reviewId": "e2aa92a6-7a35-4f92-8d57-edfdf74799b8",
+        "rating": 1,
+        "evidence": "Worst app and Worst experience"
+      },
+      {
+        "reviewId": "abf9ce53-a36d-4897-9fad-031610d57d88",
+        "rating": 1,
+        "evidence": "disaponintmetnt"
+      },
+      {
+        "reviewId": "cb59dae2-185b-491b-b075-4042f4908825",
+        "rating": 1,
+        "evidence": "bad"
+      },
+      {
+        "reviewId": "fe44d5ef-c3aa-44f7-9762-7173c2ad97e6",
+        "rating": 1,
+        "evidence": "bekaar"
+      },
+      {
+        "reviewId": "dc194232-5824-46a2-ae7e-055e657105ed",
+        "rating": 1,
+        "evidence": "bekar"
+      },
+      {
+        "reviewId": "29869433-ee7b-46d7-bd21-b374b7dd8406",
+        "rating": 1,
+        "evidence": "not good app"
+      },
+      {
+        "reviewId": "907f3c80-e25a-4702-8fdd-33e0e538f88b",
+        "rating": 1,
+        "evidence": "waste"
+      },
+      {
+        "reviewId": "3090c84f-7a5e-4041-b578-2090f3a70536",
+        "rating": 1,
+        "evidence": "it has good features"
+      },
+      {
+        "reviewId": "0bd62eff-171a-49ee-b384-3e468d20094e",
+        "rating": 1,
+        "evidence": "Such a worst App and worst moveinsync team"
+      },
+      {
+        "reviewId": "efd234c0-5557-4143-b7e4-f850b2da668e",
+        "rating": 1,
+        "evidence": "can't even wait for 10min"
+      },
+      {
+        "reviewId": "225443f9-4d69-4543-bb85-6c04f9f9a28a",
+        "rating": 1,
+        "evidence": "The worst service as well as the worst app."
+      },
+      {
+        "reviewId": "d385448a-e035-4a20-a220-aad62186e061",
+        "rating": 1,
+        "evidence": "worst apl ever"
+      },
+      {
+        "reviewId": "155c8dd0-561d-433d-b9b9-7d0a3751e451",
+        "rating": 1,
+        "evidence": "worst transportation app I have ever seen"
+      },
+      {
+        "reviewId": "73ba1ed6-a1f0-4f10-916b-84bec17ced7e",
+        "rating": 1,
+        "evidence": "worst service provider"
+      },
+      {
+        "reviewId": "2b5b4c19-7f15-4e3a-907a-8ed47e7daf82",
+        "rating": 1,
+        "evidence": "The service is absolutely terrible, extremelypoor... They only care about the money."
+      },
+      {
+        "reviewId": "7e94a761-56b3-43c0-8193-89cb1ed5adcd",
+        "rating": 1,
+        "evidence": "Just because my organization is using this service, we have to come to the office 1.5 hours before our shift starts, ..."
+      },
+      {
+        "reviewId": "017f9b49-9dfd-4bd8-96d6-cd3ba770e552",
+        "rating": 1,
+        "evidence": "too bad"
+      },
+      {
+        "reviewId": "026f59c9-7c13-4841-bba0-b4f9c3c5857b",
+        "rating": 1,
+        "evidence": "bad"
+      },
+      {
+        "reviewId": "f9bd1ac7-1f27-43b2-b91b-c36c53390057",
+        "rating": 1,
+        "evidence": "Should be available to Huawei devices"
+      },
+      {
+        "reviewId": "4d7a32f4-4eb1-4fff-bde9-b569d8484916",
+        "rating": 1,
+        "evidence": "worst experience i choose to go by myself instead of using this"
+      },
+      {
+        "reviewId": "512425e1-1a88-4793-b3cd-bcdf91cd9ac9",
+        "rating": 2,
+        "evidence": "navigating inside the app is not easy"
+      },
+      {
+        "reviewId": "2bdc519f-5771-4a49-bee2-4ab1b4497ce1",
+        "rating": 1,
+        "evidence": "useless app, doesn't function"
+      },
+      {
+        "reviewId": "12aed373-a245-4d39-9a5c-f57839b6dcce",
+        "rating": 1,
+        "evidence": "Worst application"
+      },
+      {
+        "reviewId": "e1d0d2ae-e409-46f3-9683-0588d14e7d42",
+        "rating": 1,
+        "evidence": "scripted app , baler app"
+      },
+      {
+        "reviewId": "74af5ef8-abac-458b-97c7-364f06c960c6",
+        "rating": 1,
+        "evidence": "wrost"
+      },
+      {
+        "reviewId": "87af9279-dcde-42bb-b21e-6af87d3d99b8",
+        "rating": 1,
+        "evidence": "efmem is more reliable"
+      },
+      {
+        "reviewId": "c974e9a7-0937-4df2-9a93-16921d0a0b38",
+        "rating": 1,
+        "evidence": "worse and pathetic experience with this application"
+      },
+      {
+        "reviewId": "4adacbd5-81fc-4293-a08e-c9663b142535",
+        "rating": 1,
+        "evidence": "the worst app ever"
+      },
+      {
+        "reviewId": "401d832c-e10c-4b0c-bbdd-c02c718d47d3",
+        "rating": 1,
+        "evidence": "worst app, they mark my no show for no reason."
+      },
+      {
+        "reviewId": "da5acfbc-5084-4887-9276-88e04a9c8318",
+        "rating": 1,
+        "evidence": "worst app"
+      },
+      {
+        "reviewId": "6cee5191-f6ea-44de-a4e3-a0fdb09e2034",
+        "rating": 1,
+        "evidence": "complete unreliable"
+      },
+      {
+        "reviewId": "ccf0a018-422b-42c9-a994-16960d3d348e",
+        "rating": 1,
+        "evidence": "not a reliable aap"
+      },
+      {
+        "reviewId": "8a05df9e-08c8-4b1c-badb-6faaeb2d0e1d",
+        "rating": 1,
+        "evidence": "3rd class application. dr. driving much better"
+      },
+      {
+        "reviewId": "a2606d7b-6689-4224-9481-829dab688779",
+        "rating": 1,
+        "evidence": "one of the worst applications I have ever used"
+      },
+      {
+        "reviewId": "f0a85d8a-9017-4b66-a4d9-d00008a035d0",
+        "rating": 1,
+        "evidence": "bad app , not working properly"
+      },
+      {
+        "reviewId": "f4368a93-4ceb-4f14-8e24-e9bcaae0fba6",
+        "rating": 2,
+        "evidence": "bad"
+      },
+      {
+        "reviewId": "e4e22fba-68aa-425a-8882-4e6392fc26ae",
+        "rating": 1,
+        "evidence": "worst app ever seen"
+      },
+      {
+        "reviewId": "5f8071d4-f377-4ce7-83ab-dda2ae898e6d",
+        "rating": 2,
+        "evidence": "not great"
+      },
+      {
+        "reviewId": "c0a638f7-13b2-4090-a93a-d2104065a717",
+        "rating": 1,
+        "evidence": "worst app"
+      },
+      {
+        "reviewId": "c54819fe-e6f1-400f-81e4-d739ead14d7c",
+        "rating": 1,
+        "evidence": "app not working"
+      },
+      {
+        "reviewId": "871cfeae-327c-4867-aedb-4b5817b39fc3",
+        "rating": 1,
+        "evidence": "shittiest app I've used till now"
+      },
+      {
+        "reviewId": "8d818e34-450b-40e5-b0a9-5dc92b6b0492",
+        "rating": 1,
+        "evidence": "very poor."
+      },
+      {
+        "reviewId": "49265a73-bf3f-4930-8134-70d35d453621",
+        "rating": 1,
+        "evidence": "wrost"
+      },
+      {
+        "reviewId": "6a17c7e8-754b-4ff5-b36b-7f06b6e84fb9",
+        "rating": 1,
+        "evidence": "worst"
+      },
+      {
+        "reviewId": "8000e4ad-b976-40f6-8e54-471b4f0d9388",
+        "rating": 1,
+        "evidence": "worst app to use, not user friendly most of the things does not work"
+      },
+      {
+        "reviewId": "511c1ff5-1b4a-4918-add7-8d90bbf43fdd",
+        "rating": 1,
+        "evidence": "বালের app"
+      },
+      {
+        "reviewId": "c6b00b72-6eed-4083-8290-78a0c1f3b023",
+        "rating": 1,
+        "evidence": "one of the worst app"
+      },
+      {
+        "reviewId": "55544b53-92da-4cde-a3ff-ecc91ae04392",
+        "rating": 1,
+        "evidence": "very poor app"
+      },
+      {
+        "reviewId": "ae73eb81-37a6-4dba-b5a4-316b4bdc2bc8",
+        "rating": 1,
+        "evidence": "worst app"
+      },
+      {
+        "reviewId": "6fdfc545-cb81-48c5-93ee-38e46918c906",
+        "rating": 1,
+        "evidence": "bakwaas"
+      },
+      {
+        "reviewId": "d12b990a-28dd-4266-a994-4c63f3f1308a",
+        "rating": 1,
+        "evidence": "it's not getting opened"
+      },
+      {
+        "reviewId": "aacca54a-b743-4829-8868-79bf96ebed62",
+        "rating": 1,
+        "evidence": "very bad for handling. Disgusting"
+      },
+      {
+        "reviewId": "6e5d3497-9942-4dc6-8e6d-36a425c767c0",
+        "rating": 1,
+        "evidence": "poor app maintenance and management."
+      },
+      {
+        "reviewId": "3059c5c2-028f-4098-bdd3-c57fb23f87a2",
+        "rating": 1,
+        "evidence": "The only thing they have is to move , sync is out of the equation."
+      },
+      {
+        "reviewId": "25ec74bc-866a-4d79-9fae-228cdc5690d6",
+        "rating": 1,
+        "evidence": "Useless app,"
+      },
+      {
+        "reviewId": "8175606f-b68a-4c7b-93a5-e179174916fe",
+        "rating": 2,
+        "evidence": "Unreliable application. Sometimes their application is down and it creates chaos."
+      },
+      {
+        "reviewId": "56d0661d-1d09-4f7a-a7ba-f72339cbc2e7",
+        "rating": 1,
+        "evidence": "Worst app I have seen ever"
+      },
+      {
+        "reviewId": "e6af0c44-e3be-47ae-a983-425e941815c5",
+        "rating": 1,
+        "evidence": "no calling option"
+      },
+      {
+        "reviewId": "22e2d05f-6d00-4c6d-8129-775797890892",
+        "rating": 1,
+        "evidence": "too much bad poor"
+      },
+      {
+        "reviewId": "76ce5941-ffa6-4581-bddc-f1d4162432ab",
+        "rating": 1,
+        "evidence": "we don't have any edit options"
+      },
+      {
+        "reviewId": "640f589b-4b06-4e4c-a045-90280fd3316f",
+        "rating": 1,
+        "evidence": "3rd class service"
+      },
+      {
+        "reviewId": "034dbcb2-962c-4a54-a7e0-ec0bf7e081de",
+        "rating": 1,
+        "evidence": "worst app"
+      },
+      {
+        "reviewId": "06562316-2eea-41f6-9bab-d2c64b8841fc",
+        "rating": 1,
+        "evidence": "Worst app and service"
+      },
+      {
+        "reviewId": "f3c35365-e75f-456a-8c4c-bda5fee6e1bf",
+        "rating": 1,
+        "evidence": "third class service, i never recommend this app to anyone"
+      },
+      {
+        "reviewId": "f96d8859-6e44-4dc2-a415-3b979754eb89",
+        "rating": 3,
+        "evidence": "worst ever"
+      },
+      {
+        "reviewId": "00243521-f795-4f0b-9f57-a0908d43c51c",
+        "rating": 1,
+        "evidence": "worst app ever"
+      },
+      {
+        "reviewId": "f3bf5118-f310-4e20-9638-6bbfc5907b2a",
+        "rating": 1,
+        "evidence": "worst app"
+      }
+    ]
+  }
+]

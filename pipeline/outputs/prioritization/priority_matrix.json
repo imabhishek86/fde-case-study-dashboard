@@ -1,0 +1,454 @@
+{
+  "metadata": {
+    "generatedAt": "2026-10-12T09:28:11.254Z",
+    "auditVersion": "Step 7 Quality Refinement — Evidence-Quality Audited",
+    "framework": "Multi-Dimensional: Frequency / Severity / Journey Impact / Evidence Strength / Rating Impact / Qualitative Effort",
+    "totalClusters": 14,
+    "priorityCounts": {
+      "P0": 5,
+      "P1": 5,
+      "P2": 2,
+      "P3": 2
+    }
+  },
+  "prioritizationMatrix": [
+    {
+      "clusterId": "cluster_booking_failure",
+      "issue": "Roster & Booking Management Failure",
+      "priority": "P0",
+      "frequency": 30,
+      "severity": "High",
+      "journeyImpact": "Booking & Shift Scheduling (Pre-Trip)",
+      "evidence": "Medium [OBSERVED] (30 review assignments citing failed bookings, unconfirmed rosters, and booking errors during shift cutoffs)",
+      "ratingImpact": "High [INFERRED]",
+      "effort": "High [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "Largest volume actionable functional defect (30 primary reviews). Booking failure directly prevents employee attendance at workplace shifts.",
+      "whyNow": "Foundational utility of MoveInSync. If employees cannot successfully secure transport, all downstream ride and tracking experiences are rendered moot.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "43d90b3c-0443-4073-8647-6aee98c78bd4"
+    },
+    {
+      "clusterId": "cluster_delayed_gps_tracking",
+      "issue": "Delayed or Frozen Live GPS Tracking",
+      "priority": "P0",
+      "frequency": 26,
+      "severity": "High",
+      "journeyImpact": "Live Tracking (Curbside Waiting)",
+      "evidence": "Medium [OBSERVED] (26 review assignments reporting frozen vehicle map pins and stale telemetry updates)",
+      "ratingImpact": "High [INFERRED]",
+      "effort": "Medium [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "Primary driver of curbside anxiety. When vehicle coordinates freeze, commuters cannot determine vehicle arrival, risking missed pickups.",
+      "whyNow": "Core real-time transit value proposition. Loss of live visibility directly breaks commuter trust during time-critical morning and evening transitions.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "0c3f59e9-b593-4e34-bcae-214ad60c1d68"
+    },
+    {
+      "clusterId": "cluster_app_performance",
+      "issue": "App Freezing & In-Ride Performance Degradation",
+      "priority": "P0",
+      "frequency": 27,
+      "severity": "High",
+      "journeyImpact": "Trip / Ride & Active Navigation (In-Transit & Pre-Trip)",
+      "evidence": "Medium [OBSERVED] (27 review assignments reporting screen unresponsiveness, lag, and sluggish app interaction)",
+      "ratingImpact": "High [INFERRED]",
+      "effort": "Medium [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "Second largest actionable functional complaint volume (27 primary reviews). Severely impairs app usability during live tracking and schedule management.",
+      "whyNow": "Persistent UI lag and freezing prevent commuters from completing fast actions (viewing cab details, verifying pickup status) during time-pressured commute windows.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "ec21d492-2ba6-455b-bf7d-944a1ae9df69"
+    },
+    {
+      "clusterId": "cluster_post_update_crash",
+      "issue": "Post-Update App Launch Crash Loop",
+      "priority": "P0",
+      "frequency": 14,
+      "severity": "High",
+      "journeyImpact": "Pre-Commute Launch (Immediate Service Lockout)",
+      "evidence": "Medium [OBSERVED] (14 review assignments explicitly reporting app failing to open after an update, requiring repeated uninstall/reinstall cycles)",
+      "ratingImpact": "High [INFERRED]",
+      "effort": "Medium [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "Complete service lockout. Commuters unable to open the app on commute morning cannot access cab details, driver contact, or OTP.",
+      "whyNow": "Immediate operational blocker. Commuters facing launch failures cannot use transport services, driving acute frustration and uninstallations.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "60798e45-939e-4a99-8f5b-17383a891db6"
+    },
+    {
+      "clusterId": "cluster_safety_prompt_friction",
+      "issue": "Safety Concerns & Compliance Popup Friction",
+      "priority": "P0",
+      "frequency": 6,
+      "severity": "Critical",
+      "journeyImpact": "Safety, Emergency & Curbside Boarding",
+      "evidence": "High [OBSERVED] (6 review assignments: 3 cite compliance popup/OTP friction, 3 cite acute safety/emergency concerns)",
+      "ratingImpact": "High [INFERRED]",
+      "effort": "Low / Medium [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "Highest severity in dataset (Critical). Combines passenger safety duty of care with boarding verification friction.",
+      "whyNow": "Passenger physical safety perception and regulatory compliance must be audited immediately; intrusive popup blocking OTP can be rapidly refactored.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "3d87f169-2508-4a07-9e5a-d63b2c548ed3"
+    },
+    {
+      "clusterId": "cluster_ui_redesign",
+      "issue": "Unfavorable UI Redesign & Mandatory Rating Friction",
+      "priority": "P1",
+      "frequency": 21,
+      "severity": "Medium",
+      "journeyImpact": "Post-Ride Feedback & General Navigation",
+      "evidence": "High [OBSERVED] (21 review assignments; at least one reviewer explicitly stated the forced rating prompt motivated their 1-star Play Store review)",
+      "ratingImpact": "High [INFERRED - Potential low-effort rating-impact opportunity]",
+      "effort": "Low [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "Highest-leverage Quick Win candidate. Unskippable rating prompt creates avoidable friction, while UI clutter degrades daily usability.",
+      "whyNow": "Removing mandatory rating modal block is an immediate low-effort candidate to eliminate an observed catalyst for negative Play Store ratings.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "f9fce9fe-8115-4a30-8d09-d8bdac76837d"
+    },
+    {
+      "clusterId": "cluster_otp_session_friction",
+      "issue": "OTP Delivery Latency, Verification & Session Friction",
+      "priority": "P1",
+      "frequency": 20,
+      "severity": "High",
+      "journeyImpact": "Pickup & Boarding Verification",
+      "evidence": "Medium [OBSERVED] (20 review assignments reporting unexpected session logouts and delayed OTP delivery at curbside)",
+      "ratingImpact": "High [INFERRED]",
+      "effort": "Low / Medium [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "High operational friction at boarding gates. Session logouts while waiting in cab queues delay vehicle departures.",
+      "whyNow": "Directly impacts on-time fleet dispatch and commuter boarding throughput; solvable via standard background token refresh patterns.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "3ad0aa79-d576-4348-8df0-7d72c1143892"
+    },
+    {
+      "clusterId": "cluster_pickup_route_assignment",
+      "issue": "Incorrect Pickup/Drop Assignment & Circuitous Routing",
+      "priority": "P1",
+      "frequency": 16,
+      "severity": "High",
+      "journeyImpact": "Pickup & Mid-Commute Transit",
+      "evidence": "High [OBSERVED] (16 review assignments providing detailed accounts of extreme detours, multi-zone passenger grouping, and delayed drop-offs)",
+      "ratingImpact": "High [INFERRED]",
+      "effort": "High [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "Causes physical fatigue and prolonged transit times (\"Bharat Darshan\"), degrading enterprise employee satisfaction.",
+      "whyNow": "Critical for passenger trust and employee well-being; requires routing solver constraint tuning.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "b780df2b-1a98-4c6e-bdf0-4b684cb3229b"
+    },
+    {
+      "clusterId": "cluster_eta_inaccuracies",
+      "issue": "Inaccurate or Delayed ETA Estimation",
+      "priority": "P1",
+      "frequency": 10,
+      "severity": "High",
+      "journeyImpact": "Pre-Trip Departure Pacing & In-Transit Planning",
+      "evidence": "Medium [OBSERVED] (10 review assignments citing fluctuating ETAs; at least one reviewer reported an approximately 3x discrepancy versus Google Maps)",
+      "ratingImpact": "Medium [INFERRED]",
+      "effort": "Medium / High [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "Distorts commuter arrival expectations, leading to rushed boarding or prolonged curbside exposure.",
+      "whyNow": "Directly complements live GPS tracking fixes to establish predictable transit pacing.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "7476b129-f0da-458e-8f86-d77ba2f9a710"
+    },
+    {
+      "clusterId": "cluster_driver_vehicle",
+      "issue": "Driver Behavioral Issues & Vehicle Maintenance Deficiencies",
+      "priority": "P1",
+      "frequency": 24,
+      "severity": "Medium",
+      "journeyImpact": "Trip / Ride (In-Cabin Experience)",
+      "evidence": "Medium [OBSERVED] (24 review assignments citing non-functional AC, vehicle cleanliness, speeding, or driver conduct)",
+      "ratingImpact": "Medium [INFERRED]",
+      "effort": "Medium / High (Operational Vendor Fleet Governance) [Qualitative effort estimate; requires operational validation]",
+      "whyThisPriority": "Substantial volume (24 reviews). Daily in-cabin comfort and driver professionalism strongly affect commute quality.",
+      "whyNow": "Requires ongoing vendor fleet partner audit and vehicle compliance checks, executed alongside software enhancements.",
+      "whyLater": null,
+      "missingEvidence": null,
+      "sampleReviewId": "57b28271-9252-4c28-912b-31952a220fc5"
+    },
+    {
+      "clusterId": "cluster_support_responsiveness",
+      "issue": "Customer Support & Transport Helpdesk Responsiveness",
+      "priority": "P2",
+      "frequency": 8,
+      "severity": "Medium",
+      "journeyImpact": "Post-Trip & Exception Resolution",
+      "evidence": "Medium [OBSERVED] (8 review assignments citing unhelpful responses or disconnected calls from transport helpdesk)",
+      "ratingImpact": "Low / Medium [INFERRED]",
+      "effort": "Medium [Qualitative effort estimate; requires operational validation]",
+      "whyThisPriority": "Secondary operational friction (8 reviews). Exception handling is important but secondary to preventing transit failures.",
+      "whyNow": null,
+      "whyLater": "Remediating upstream booking, tracking, and crash blockers will inherently prevent transit exceptions, naturally reducing support ticket volume before helpdesk overhaul.",
+      "missingEvidence": "Enterprise helpdesk call disposition logs and first-contact resolution metrics.",
+      "sampleReviewId": "3c401314-8fef-4857-8979-33b2a2656d05"
+    },
+    {
+      "clusterId": "cluster_notifications",
+      "issue": "Trip Push Notification Delivery Delays & False Alerts",
+      "priority": "P2",
+      "frequency": 4,
+      "severity": "Medium",
+      "journeyImpact": "Vehicle Assignment & Approach Alert",
+      "evidence": "Medium [OBSERVED] (4 review assignments citing delayed or inaccurate notifications)",
+      "ratingImpact": "Low / Medium [INFERRED]",
+      "effort": "Low / Medium [Qualitative effort estimate; requires engineering validation]",
+      "whyThisPriority": "Narrow complaint volume (4 reviews). Contributes to timely boarding but represents localized failure.",
+      "whyNow": null,
+      "whyLater": "Can be addressed in conjunction with auth token refresh and push gateway delivery optimization during later sprints.",
+      "missingEvidence": "FCM push delivery latency distributions and client notification receipt logs.",
+      "sampleReviewId": "bb8bc95d-2aca-4ea1-8ec2-a6f74f5de33f"
+    },
+    {
+      "clusterId": "cluster_low_info_functional",
+      "issue": "Low-Information Functional Complaints",
+      "priority": "P3",
+      "frequency": 17,
+      "severity": "Medium",
+      "journeyImpact": "Various Unspecified Stages",
+      "evidence": "Low [OBSERVED] (17 review assignments noting brief symptoms: \"app not opening\", \"login issue\" without diagnostic context)",
+      "ratingImpact": "Medium [INFERRED]",
+      "effort": "Unknown [Qualitative effort estimate; requires technical diagnosis]",
+      "whyThisPriority": "Diagnostic evidence gap: indicates genuine functional frustration but lacks sufficient technical detail for engineering action.",
+      "whyNow": null,
+      "whyLater": null,
+      "missingEvidence": "Lacks device model, Android OS version, network conditions, and Crashlytics stack trace correlation.",
+      "sampleReviewId": "a0ca92c8-e8ae-448b-81e6-5e4102107c94"
+    },
+    {
+      "clusterId": "cluster_truly_vague_dissatisfaction",
+      "issue": "Truly Vague Dissatisfaction (Pure Sentiment)",
+      "priority": "P3",
+      "frequency": 76,
+      "severity": "Medium",
+      "journeyImpact": "General Non-Specific Sentiment",
+      "evidence": "Low / Unknown [OBSERVED] (76 review assignments containing purely emotional sentiment: \"worst app\", \"bekar\", \"pathetic\")",
+      "ratingImpact": "Unknown",
+      "effort": "Unknown",
+      "whyThisPriority": "Diagnostic evidence gap: pure emotional dissatisfaction devoid of functional, feature, or workflow references.",
+      "whyNow": null,
+      "whyLater": null,
+      "missingEvidence": "Lacks any factual symptom or technical clue; cannot be engineered directly and must be monitored via general CSAT pulse surveys.",
+      "sampleReviewId": "40363b38-fa55-4571-af0f-ff6fb0463015"
+    }
+  ],
+  "top3Issues": [
+    {
+      "rank": 1,
+      "clusterId": "cluster_booking_failure",
+      "problem": "Roster & Booking Management Failure",
+      "frequency": "30 verified primary reviews (no cross-theme combination)",
+      "evidence": "[OBSERVED] Review evidence documents booking transaction failures and unconfirmed rosters during peak cutoff hours (e.g., ID: 43d90b3c...: \"booked the trip it keep sends the push notification that trip is not booked\", ID: 823b9c8b...: \"app stuck all the time unable to schedule pathetic\").",
+      "whyItMatters": "Failure of foundational product utility. If an employee cannot reserve their seat or shift roster, they are stranded without transport, directly impacting workplace shift attendance.",
+      "whatShouldBeInvestigated": "Analyze booking service APM transaction success rates, P95/P99 latency, and database connection pool saturation during the final 15 minutes of shift cutoff windows; audit HRMS roster synchronization pipelines. (Internal backend causes remain hypotheses until telemetry confirms).",
+      "expectedUserImpact": "[INFERRED] High booking reliability gives employees peace of mind that daily workplace transit is guaranteed upon schedule submission.",
+      "evidenceLimitations": "[OBSERVED limitation] Reviews reflect failed booking symptoms but cannot differentiate between backend API timeouts, enterprise HRMS sync delays, or genuine seat capacity exhaustion without telemetry.",
+      "metricsToMonitor": "Booking transaction success rate (Proposed validation target: > 99.8%, subject to engineering baseline and SLA review), booking API P99 latency (Proposed validation target: < 1.5s, subject to engineering baseline and SLA review)."
+    },
+    {
+      "rank": 2,
+      "clusterId": "cluster_delayed_gps_tracking",
+      "problem": "Delayed or Frozen Live GPS Tracking",
+      "frequency": "26 verified primary reviews (no cross-theme combination)",
+      "evidence": "[OBSERVED] Review evidence consistently cites frozen vehicle pins and stale location tracking (e.g., ID: 0c3f59e9...: \"the update is worse. it wont let you track the location of the van under an hour\").",
+      "whyItMatters": "Primary driver of curbside anxiety. When live tracking freezes, commuters cannot determine whether their vehicle is approaching or delayed, leading to missed pickups and acute stress.",
+      "whatShouldBeInvestigated": "Benchmark end-to-end telemetry latency: compare driver partner GPS capture timestamps, backend ingestion queue latency, and client WebSocket map render latency across vehicle fleets.",
+      "expectedUserImpact": "[INFERRED] Smooth, real-time map updates provide commuters with reliable vehicle positioning, drastically reducing anxiety and missed pickups.",
+      "evidenceLimitations": "[OBSERVED limitation] Public reviews show the symptom of stale maps but cannot isolate whether latency stems from driver background location throttling, network drops, or client rendering lag.",
+      "metricsToMonitor": "Location freshness (Proposed validation target: P95 location age < 10s during active tracking, subject to engineering baseline and SLA review), WebSocket connection drop rate."
+    },
+    {
+      "rank": 3,
+      "clusterId": "cluster_app_performance",
+      "problem": "App Freezing & In-Ride Performance Degradation",
+      "frequency": "27 verified primary reviews (distinct from post-update crash loop = 14)",
+      "evidence": "[OBSERVED] Review evidence reports pervasive interface lag, unresponsiveness, and screen freezing during active app usage (e.g., ID: ec21d492...: \"Very slow and laggy app... freezes frequently\", ID: 823b9c8b...: \"app stuck all the time\").",
+      "whyItMatters": "Substantial complaint volume (27 reviews). Severely impairs app usability during time-critical commute operations like reviewing cab details and active tracking.",
+      "whatShouldBeInvestigated": "Profile client-side main UI thread execution, memory consumption, and map render draw cycles on mid-tier and budget Android devices; investigate layout overdraw and garbage collection pauses.",
+      "expectedUserImpact": "[INFERRED] Fluid UI interactions ensure commuters can swiftly access commute information without frustration or missed operational cues.",
+      "evidenceLimitations": "[OBSERVED limitation] Reviews report freezing symptoms but cannot pinpoint whether lags stem from JS thread blocking, native memory leaks, or unoptimized map SDK render loops without device profiling.",
+      "metricsToMonitor": "Android Vitals ANR rate (Proposed validation target: < 0.2%, subject to engineering baseline and SLA review), slow render frame rate (Proposed validation target: < 5%, subject to engineering baseline and SLA review)."
+    }
+  ],
+  "quickWins": [
+    {
+      "title": "Make In-App Post-Trip Rating Prompt Dismissible",
+      "clusterId": "cluster_ui_redesign",
+      "observedProblem": "[OBSERVED] Review evidence shows commuters encounter an unskippable in-app rating modal after trips that intercepts normal usage.",
+      "evidence": "[OBSERVED] At least one reviewer explicitly linked the forced rating flow to a negative Play Store rating: \"forcing me to give rating after every ride, so I came here to give you 1 star. because if I don't rate, I can't use the app as there is no skip option.\" (Review ID: f9fce9fe...)",
+      "whyMayBeLowMediumEffort": "[INFERRED] Adding a \"Skip\" / \"Dismiss\" button or auto-dismiss timeout to the existing modal is typically a client-side UI layout change.",
+      "whyEffortIsStillAnEstimate": "Qualitative effort estimate; requires engineering validation (subject to client UI architecture and analytics instrumentation requirements).",
+      "expectedImpact": "[INFERRED] Potential low-effort rating-impact opportunity. Immediately removes an observed catalyst for negative Play Store ratings without coercing users.",
+      "validationMetric": "Rating modal skip rate vs completion rate, Play Store 1-star review inflow rate following release (Proposed validation target, subject to engineering baseline and SLA review)."
+    },
+    {
+      "title": "Convert Mandatory Seatbelt Compliance Popup to Non-Blocking Inline Banner",
+      "clusterId": "cluster_safety_prompt_friction",
+      "observedProblem": "[OBSERVED] Commuters report that clicking \"View OTP\" triggers an intrusive seatbelt safety modal that adds friction when rapidly boarding cabs.",
+      "evidence": "[OBSERVED] Direct user testimony: \"when you click view otp , it pops up the seat belt safely first. Why do you ask for user input one more click . very annoying I should be able to see the otp in one click.\" (Review ID: 3d87f169...)",
+      "whyMayBeLowMediumEffort": "[INFERRED] Refactoring an intercepting modal into an inline banner or persistent header badge preserves safety messaging while unblocking one-click OTP access.",
+      "whyEffortIsStillAnEstimate": "Qualitative effort estimate; requires engineering validation (enterprise client compliance requirements may dictate safety prompt rules).",
+      "expectedImpact": "[INFERRED] Eliminates boarding friction at vehicle entry while maintaining mandatory regulatory safety advisories.",
+      "validationMetric": "Time-to-OTP-display on boarding card, boarding gate dwell duration (Proposed validation target, subject to engineering baseline and SLA review)."
+    },
+    {
+      "title": "Implement Silent Background Token Refresh on App Resume",
+      "clusterId": "cluster_otp_session_friction",
+      "observedProblem": "[OBSERVED] Commuters report frequent unexpected session logouts when switching back to the app at curbside, forcing repeated credential entry.",
+      "evidence": "[OBSERVED] Reviewers report: \"Pathetic . it logs out every time.\" (Review ID: 3ad0aa79...) and unexpected logouts in weak network conditions.",
+      "whyMayBeLowMediumEffort": "[INFERRED] Standard client-side session management pattern using silent refresh token exchange in background lifecycle before rendering the authenticated screen.",
+      "whyEffortIsStillAnEstimate": "Qualitative effort estimate; requires engineering validation (dependent on backend OAuth / JWT architecture and session TTL configurations).",
+      "expectedImpact": "[INFERRED] Prevents curbside re-authentication delays and ensures seamless vehicle boarding.",
+      "validationMetric": "Session logout rate on app foreground resume (Proposed validation target, subject to engineering baseline and SLA review)."
+    }
+  ],
+  "deepEngineeringInvestigations": [
+    {
+      "problem": "Post-Update App Launch Crash Loop [OBSERVED]",
+      "evidence": "14 primary review assignments explicitly citing startup launch failures requiring reinstallation.",
+      "unknown": "Actual startup crash mechanism: native crash, unhandled runtime exception, or SQLite / Room schema migration regression.",
+      "telemetryRequired": "Google Play Console Android Vitals startup crash logs, Firebase Crashlytics release traces segmented by device OEM skins (MIUI, OneUI, ColorOS) across recent releases.",
+      "decisionGate": "Prioritize immediate hotfix remediation if release-specific crash/ANR regression is confirmed via telemetry."
+    },
+    {
+      "problem": "Delayed or Frozen Live GPS Tracking [OBSERVED]",
+      "evidence": "26 primary review assignments citing frozen vehicle pins and delayed tracking map updates.",
+      "unknown": "Bottleneck location: driver partner device OS background location throttling vs network packet loss vs backend ingestion queue lag vs client map rendering lag.",
+      "telemetryRequired": "End-to-end timestamp tracing: driver device GPS capture timestamp → backend ingestion timestamp → WebSocket dispatch timestamp → commuter UI map render timestamp.",
+      "decisionGate": "Prioritize telemetry pipeline optimization if systematic freshness degradation is confirmed across driver fleets or carrier networks."
+    },
+    {
+      "problem": "Roster & Booking Management Failures at Peak Cutoffs [OBSERVED]",
+      "evidence": "30 primary review assignments citing booking errors, unconfirmed trips, and dropped rosters.",
+      "unknown": "Root failure cause: booking API concurrency lock contention vs backend database connection pool exhaustion vs enterprise HRMS synchronization delays vs fleet seat capacity exhaustion.",
+      "telemetryRequired": "Booking microservice APM metrics (Datadog/NewRelic), transaction P99 latency, database connection pool saturation, and roster sync queue error logs during peak 15-minute cutoff windows.",
+      "decisionGate": "Prioritize horizontal scaling and optimistic concurrency architecture if API/database bottleneck is confirmed; prioritize fleet capacity allocation if seat exhaustion is confirmed."
+    },
+    {
+      "problem": "Circuitous Multi-Passenger Routing Detours [OBSERVED]",
+      "evidence": "16 primary review assignments describing extreme detour times and multi-zone passenger grouping (\"Bharat Darshan\").",
+      "unknown": "Routing optimization solver objective function weights and maximum allowable detour ratio configurations.",
+      "telemetryRequired": "Historical trip route metrics: total in-transit passenger duration vs direct origin-to-destination drive duration, detour ratio distribution across city clusters.",
+      "decisionGate": "Recalibrate routing solver objective function and enforce maximum detour ratio constraints if telemetry confirms systematic detour inflation beyond planned routing parameters."
+    },
+    {
+      "problem": "Discrepancies in ETA Estimation [OBSERVED]",
+      "evidence": "10 primary review assignments citing changing ETAs and abstract estimates; at least one reviewer reported an approximately 3x discrepancy versus Google Maps.",
+      "unknown": "Root discrepancy factor: static vs dynamic traffic congestion feed ingestion, driver boarding dwell time miscalculation, or multi-stop routing delay propagation.",
+      "telemetryRequired": "Predicted ETA → Actual arrival timestamp → Route conditions → Comparison against an appropriate reference baseline across trip stages. (Note: Google Maps is not automatically treated as ground truth).",
+      "decisionGate": "Prioritize dynamic congestion feed calibration and dwell time buffering if systematic predictive drift is confirmed against actual vehicle arrival timestamps."
+    }
+  ],
+  "executivePriorityStack": {
+    "P0": [
+      {
+        "issue": "Roster & Booking Management Failure",
+        "frequency": 30,
+        "severity": "High",
+        "effort": "High [Qualitative effort estimate; requires engineering validation]",
+        "whyNow": "Foundational utility of MoveInSync. If employees cannot successfully secure transport, all downstream ride and tracking experiences are rendered moot."
+      },
+      {
+        "issue": "Delayed or Frozen Live GPS Tracking",
+        "frequency": 26,
+        "severity": "High",
+        "effort": "Medium [Qualitative effort estimate; requires engineering validation]",
+        "whyNow": "Core real-time transit value proposition. Loss of live visibility directly breaks commuter trust during time-critical morning and evening transitions."
+      },
+      {
+        "issue": "App Freezing & In-Ride Performance Degradation",
+        "frequency": 27,
+        "severity": "High",
+        "effort": "Medium [Qualitative effort estimate; requires engineering validation]",
+        "whyNow": "Persistent UI lag and freezing prevent commuters from completing fast actions (viewing cab details, verifying pickup status) during time-pressured commute windows."
+      },
+      {
+        "issue": "Post-Update App Launch Crash Loop",
+        "frequency": 14,
+        "severity": "High",
+        "effort": "Medium [Qualitative effort estimate; requires engineering validation]",
+        "whyNow": "Immediate operational blocker. Commuters facing launch failures cannot use transport services, driving acute frustration and uninstallations."
+      },
+      {
+        "issue": "Safety Concerns & Compliance Popup Friction",
+        "frequency": 6,
+        "severity": "Critical",
+        "effort": "Low / Medium [Qualitative effort estimate; requires engineering validation]",
+        "whyNow": "Passenger physical safety perception and regulatory compliance must be audited immediately; intrusive popup blocking OTP can be rapidly refactored."
+      }
+    ],
+    "P1": [
+      {
+        "issue": "Unfavorable UI Redesign & Mandatory Rating Friction",
+        "frequency": 21,
+        "severity": "Medium",
+        "effort": "Low [Qualitative effort estimate; requires engineering validation]",
+        "whyNow": "Removing mandatory rating modal block is an immediate low-effort candidate to eliminate an observed catalyst for negative Play Store ratings."
+      },
+      {
+        "issue": "OTP Delivery Latency, Verification & Session Friction",
+        "frequency": 20,
+        "severity": "High",
+        "effort": "Low / Medium [Qualitative effort estimate; requires engineering validation]",
+        "whyNow": "Directly impacts on-time fleet dispatch and commuter boarding throughput; solvable via standard background token refresh patterns."
+      },
+      {
+        "issue": "Incorrect Pickup/Drop Assignment & Circuitous Routing",
+        "frequency": 16,
+        "severity": "High",
+        "effort": "High [Qualitative effort estimate; requires engineering validation]",
+        "whyNow": "Critical for passenger trust and employee well-being; requires routing solver constraint tuning."
+      },
+      {
+        "issue": "Inaccurate or Delayed ETA Estimation",
+        "frequency": 10,
+        "severity": "High",
+        "effort": "Medium / High [Qualitative effort estimate; requires engineering validation]",
+        "whyNow": "Directly complements live GPS tracking fixes to establish predictable transit pacing."
+      },
+      {
+        "issue": "Driver Behavioral Issues & Vehicle Maintenance Deficiencies",
+        "frequency": 24,
+        "severity": "Medium",
+        "effort": "Medium / High (Operational Vendor Fleet Governance) [Qualitative effort estimate; requires operational validation]",
+        "whyNow": "Requires ongoing vendor fleet partner audit and vehicle compliance checks, executed alongside software enhancements."
+      }
+    ],
+    "P2": [
+      {
+        "issue": "Customer Support & Transport Helpdesk Responsiveness",
+        "frequency": 8,
+        "severity": "Medium",
+        "effort": "Medium [Qualitative effort estimate; requires operational validation]",
+        "whyLater": "Remediating upstream booking, tracking, and crash blockers will inherently prevent transit exceptions, naturally reducing support ticket volume before helpdesk overhaul."
+      },
+      {
+        "issue": "Trip Push Notification Delivery Delays & False Alerts",
+        "frequency": 4,
+        "severity": "Medium",
+        "effort": "Low / Medium [Qualitative effort estimate; requires engineering validation]",
+        "whyLater": "Can be addressed in conjunction with auth token refresh and push gateway delivery optimization during later sprints."
+      }
+    ],
+    "P3": [
+      {
+        "issue": "Low-Information Functional Complaints",
+        "frequency": 17,
+        "severity": "Medium",
+        "missingEvidence": "Lacks device model, Android OS version, network conditions, and Crashlytics stack trace correlation."
+      },
+      {
+        "issue": "Truly Vague Dissatisfaction (Pure Sentiment)",
+        "frequency": 76,
+        "severity": "Medium",
+        "missingEvidence": "Lacks any factual symptom or technical clue; cannot be engineered directly and must be monitored via general CSAT pulse surveys."
+      }
+    ]
+  },
+  "recommendedFirstMove": "Execute an immediate hotfix investigation on post-update launch crash loops (P0, 14 reviews) via Google Play Console Android Vitals and Crashlytics, while evaluating making the post-ride rating modal dismissible (Quick Win / P1, 21 reviews) as an immediate low-effort rating-impact opportunity."
+}

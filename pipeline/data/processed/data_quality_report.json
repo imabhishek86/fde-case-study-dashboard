@@ -1,0 +1,25 @@
+{
+  "totalInputReviews": 1000,
+  "totalOutputReviews": 1000,
+  "duplicateCount": 0,
+  "missingReviewIdCount": 0,
+  "missingRatingCount": 0,
+  "missingTextCount": 0,
+  "missingDateCount": 0,
+  "invalidRatingCount": 0,
+  "emptyTextCount": 0,
+  "earliestDate": "2026-06-15T13:02:35.642Z",
+  "latestDate": "2026-10-11T06:15:45.842Z",
+  "ratingDistribution": {
+    "5_star": 641,
+    "4_star": 42,
+    "3_star": 26,
+    "2_star": 33,
+    "1_star": 258
+  },
+  "ratingCategoryDistribution": {
+    "positive": 683,
+    "neutral": 26,
+    "negative": 291
+  }
+}

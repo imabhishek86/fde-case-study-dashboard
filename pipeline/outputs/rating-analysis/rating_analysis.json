@@ -1,0 +1,97 @@
+{
+  "totalReviews": 1000,
+  "averageRating": 3.77,
+  "ratingDistribution": {
+    "5_star": {
+      "count": 641,
+      "percentage": 64.1
+    },
+    "4_star": {
+      "count": 42,
+      "percentage": 4.2
+    },
+    "3_star": {
+      "count": 26,
+      "percentage": 2.6
+    },
+    "2_star": {
+      "count": 33,
+      "percentage": 3.3
+    },
+    "1_star": {
+      "count": 258,
+      "percentage": 25.8
+    }
+  },
+  "sentimentDistribution": {
+    "positive": {
+      "count": 683,
+      "percentage": 68.3
+    },
+    "neutral": {
+      "count": 26,
+      "percentage": 2.6
+    },
+    "negative": {
+      "count": 291,
+      "percentage": 29.1
+    }
+  },
+  "monthlyAnalysis": [
+    {
+      "month": "2026-06",
+      "reviewCount": 147,
+      "averageRating": 3.39,
+      "negativeCount": 56,
+      "negativePercentage": 38.1,
+      "positiveCount": 85,
+      "positivePercentage": 57.82,
+      "neutralCount": 6,
+      "neutralPercentage": 4.08
+    },
+    {
+      "month": "2026-07",
+      "reviewCount": 286,
+      "averageRating": 4.03,
+      "negativeCount": 65,
+      "negativePercentage": 22.73,
+      "positiveCount": 215,
+      "positivePercentage": 75.17,
+      "neutralCount": 6,
+      "neutralPercentage": 2.1
+    },
+    {
+      "month": "2026-08",
+      "reviewCount": 241,
+      "averageRating": 3.65,
+      "negativeCount": 77,
+      "negativePercentage": 31.95,
+      "positiveCount": 155,
+      "positivePercentage": 64.32,
+      "neutralCount": 9,
+      "neutralPercentage": 3.73
+    },
+    {
+      "month": "2026-09",
+      "reviewCount": 245,
+      "averageRating": 3.84,
+      "negativeCount": 68,
+      "negativePercentage": 27.76,
+      "positiveCount": 173,
+      "positivePercentage": 70.61,
+      "neutralCount": 4,
+      "neutralPercentage": 1.63
+    },
+    {
+      "month": "2026-10",
+      "reviewCount": 81,
+      "averageRating": 3.74,
+      "negativeCount": 25,
+      "negativePercentage": 30.86,
+      "positiveCount": 55,
+      "positivePercentage": 67.9,
+      "neutralCount": 1,
+      "neutralPercentage": 1.23
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoveInSync Rating Analysis Charts (Chart.js)</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+    h1 { font-size: 26px; text-align: center; margin-bottom: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
+    .card { background: #ffffff; border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+    .card h2 { font-size: 18px; margin-top: 0; margin-bottom: 16px; color: #334155; }
+    canvas { width: 100% !important; height: 320px !important; }
+  </style>
+</head>
+<body>
+  <h1>📊 MoveInSync Play Store Rating Analysis & Trends</h1>
+  <div class="grid">
+    <div class="card">
+      <h2>Chart 1: Rating Distribution (1★ to 5★)</h2>
+      <canvas id="chart1"></canvas>
+    </div>
+    <div class="card">
+      <h2>Chart 2: Average Rating by Month</h2>
+      <canvas id="chart2"></canvas>
+    </div>
+    <div class="card">
+      <h2>Chart 3: Negative Review Percentage (1-2★) by Month</h2>
+      <canvas id="chart3"></canvas>
+    </div>
+    <div class="card">
+      <h2>Chart 4: Positive vs Neutral vs Negative Share</h2>
+      <canvas id="chart4"></canvas>
+    </div>
+  </div>
+
+  <script>
+    const data = {"totalReviews":1000,"averageRating":3.77,"ratingDistribution":{"1_star":{"count":258,"percentage":25.8},"2_star":{"count":33,"percentage":3.3},"3_star":{"count":26,"percentage":2.6},"4_star":{"count":42,"percentage":4.2},"5_star":{"count":641,"percentage":64.1}},"sentimentDistribution":{"positive":{"count":683,"percentage":68.3},"neutral":{"count":26,"percentage":2.6},"negative":{"count":291,"percentage":29.1}},"monthlyAnalysis":[{"month":"2026-06","reviewCount":147,"averageRating":3.39,"star1":51,"star2":5,"star3":6,"star4":5,"star5":80,"positiveCount":85,"positivePercentage":57.82,"neutralCount":6,"neutralPercentage":4.08,"negativeCount":56,"negativePercentage":38.1},{"month":"2026-07","reviewCount":286,"averageRating":4.03,"star1":54,"star2":11,"star3":6,"star4":16,"star5":199,"positiveCount":215,"positivePercentage":75.17,"neutralCount":6,"neutralPercentage":2.1,"negativeCount":65,"negativePercentage":22.73},{"month":"2026-08","reviewCount":241,"averageRating":3.65,"star1":69,"star2":8,"star3":9,"star4":8,"star5":147,"positiveCount":155,"positivePercentage":64.32,"neutralCount":9,"neutralPercentage":3.73,"negativeCount":77,"negativePercentage":31.95},{"month":"2026-09","reviewCount":245,"averageRating":3.84,"star1":61,"star2":7,"star3":4,"star4":11,"star5":162,"positiveCount":173,"positivePercentage":70.61,"neutralCount":4,"neutralPercentage":1.63,"negativeCount":68,"negativePercentage":27.76},{"month":"2026-10","reviewCount":81,"averageRating":3.74,"star1":23,"star2":2,"star3":1,"star4":2,"star5":53,"positiveCount":55,"positivePercentage":67.9,"neutralCount":1,"neutralPercentage":1.23,"negativeCount":25,"negativePercentage":30.86}],"highestRatingMonth":{"month":"2026-07","averageRating":4.03,"reviewCount":286},"lowestRatingMonth":{"month":"2026-06","averageRating":3.39,"reviewCount":147},"highestNegativeReviewMonth":{"month":"2026-08","negativeCount":77,"reviewCount":241,"negativePercentage":31.95},"highestNegativePercentageMonth":{"month":"2026-06","negativePercentage":38.1,"negativeCount":56,"reviewCount":147}};
+
+    // Chart 1: Rating Distribution
+    new Chart(document.getElementById('chart1'), {
+      type: 'bar',
+      data: {
+        labels: ['1 Star', '2 Stars', '3 Stars', '4 Stars', '5 Stars'],
+        datasets: [{
+          label: 'Number of Reviews',
+          data: [
+            data.ratingDistribution['1_star'].count,
+            data.ratingDistribution['2_star'].count,
+            data.ratingDistribution['3_star'].count,
+            data.ratingDistribution['4_star'].count,
+            data.ratingDistribution['5_star'].count
+          ],
+          backgroundColor: ['#ef4444', '#f97316', '#eab308', '#3b82f6', '#10b981'],
+          borderRadius: 6
+        }]
+      },
+      options: { responsive: true, plugins: { legend: { display: false } } }
+    });
+
+    // Chart 2: Average Rating by Month
+    new Chart(document.getElementById('chart2'), {
+      type: 'line',
+      data: {
+        labels: data.monthlyAnalysis.map(m => m.month),
+        datasets: [{
+          label: 'Average Rating',
+          data: data.monthlyAnalysis.map(m => m.averageRating),
+          borderColor: '#2563eb',
+          backgroundColor: 'rgba(37, 99, 235, 0.1)',
+          tension: 0.3,
+          fill: true,
+          pointRadius: 6
+        }]
+      },
+      options: { responsive: true, scales: { y: { min: 1, max: 5 } } }
+    });
+
+    // Chart 3: Negative Review % by Month
+    new Chart(document.getElementById('chart3'), {
+      type: 'bar',
+      data: {
+        labels: data.monthlyAnalysis.map(m => m.month),
+        datasets: [{
+          label: 'Negative Review % (1-2★)',
+          data: data.monthlyAnalysis.map(m => m.negativePercentage),
+          backgroundColor: '#ef4444',
+          borderRadius: 6
+        }]
+      },
+      options: { responsive: true, scales: { y: { min: 0, max: 50 } } }
+    });
+
+    // Chart 4: Sentiment Doughnut
+    new Chart(document.getElementById('chart4'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Positive (4-5★)', 'Neutral (3★)', 'Negative (1-2★)'],
+        datasets: [{
+          data: [
+            data.sentimentDistribution.positive.percentage,
+            data.sentimentDistribution.neutral.percentage,
+            data.sentimentDistribution.negative.percentage
+          ],
+          backgroundColor: ['#10b981', '#eab308', '#ef4444']
+        }]
+      },
+      options: { responsive: true }
+    });
+  </script>
+</body>
+</html>

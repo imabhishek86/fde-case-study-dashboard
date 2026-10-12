@@ -1,0 +1,38 @@
+{
+  "evaluatedAt": "2026-10-12T18:43:36.771Z",
+  "currentSampleOverview": {
+    "totalReviews": 1000,
+    "overallAverageRating": 3.77,
+    "overallNegativeShare": 29.1
+  },
+  "monthlyPeriodComparison": {
+    "status": "active_comparison",
+    "currentPeriod": {
+      "period": "2026-10",
+      "reviewCount": 81,
+      "negativeShare": 30.86,
+      "averageRating": 3.74
+    },
+    "previousPeriod": {
+      "period": "2026-09",
+      "reviewCount": 245,
+      "negativeShare": 27.76,
+      "averageRating": 3.84
+    },
+    "negativeShareChange": 3.1,
+    "ratingChange": -0.1,
+    "trend": "degrading"
+  },
+  "weekOverWeekComparison": {
+    "negativeShareChange": null,
+    "ratingChange": null,
+    "status": "insufficient_data",
+    "reason": "Insufficient data for reliable comparison: public Play Store scraper sample does not have continuous, daily uniform cohort density."
+  },
+  "proposedAlertThresholds": {
+    "note": "The following thresholds are labeled as PROPOSED for operational triage and are not hardcoded enterprise SLAs.",
+    "criticalNegativeSpike": ">= 5.0% increase in 1–2★ review share across 30 days",
+    "ratingDropWarning": ">= 0.20 drop in monthly average Play Store rating",
+    "acuteCrashAlert": ">= 3 launch crash reviews reported within any 48-hour window"
+  }
+}

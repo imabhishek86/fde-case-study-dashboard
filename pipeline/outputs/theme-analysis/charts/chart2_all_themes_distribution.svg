@@ -1,0 +1,51 @@
+
+<svg width="800" height="460" viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#ffffff" rx="8"/>
+  <text x="400" y="35}" font-size="18" font-weight="bold" fill="#0f172a" text-anchor="middle" font-family="sans-serif">Primary Theme Distribution (All 1000 Reviews)</text>
+  <line x1="60" y1="360" x2="760" y2="360" stroke="#94a3b8" stroke-width="2"/>
+  
+      <rect x="77.08333333333333" y="60" width="45" height="300" fill="#3b82f6" rx="4"/>
+      <text x="99.58333333333333" y="54" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">693</text>
+      <text x="99.58333333333333" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 99.58333333333333, 380)" font-family="sans-serif">Other</text>
+    
+      <rect x="139.16666666666666" y="338.35497835497836" width="45" height="21.645021645021643" fill="#3b82f6" rx="4"/>
+      <text x="161.66666666666666" y="332.35497835497836" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">50</text>
+      <text x="161.66666666666666" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 161.66666666666666, 380)" font-family="sans-serif">Driver_Vehicle</text>
+    
+      <rect x="201.25" y="340.95238095238096" width="45" height="19.047619047619047" fill="#3b82f6" rx="4"/>
+      <text x="223.75" y="334.95238095238096" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">44</text>
+      <text x="223.75" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 223.75, 380)" font-family="sans-serif">Tracking_GPS_ETA</text>
+    
+      <rect x="263.3333333333333" y="341.8181818181818" width="45" height="18.181818181818183" fill="#3b82f6" rx="4"/>
+      <text x="285.8333333333333" y="335.8181818181818" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">42</text>
+      <text x="285.8333333333333" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 285.8333333333333, 380)" font-family="sans-serif">Booking</text>
+    
+      <rect x="325.41666666666663" y="342.25108225108227" width="45" height="17.748917748917748" fill="#3b82f6" rx="4"/>
+      <text x="347.91666666666663" y="336.25108225108227" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">41</text>
+      <text x="347.91666666666663" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 347.91666666666663, 380)" font-family="sans-serif">App_Performance</text>
+    
+      <rect x="387.49999999999994" y="344.4155844155844" width="45" height="15.584415584415586" fill="#3b82f6" rx="4"/>
+      <text x="409.99999999999994" y="338.4155844155844" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">36</text>
+      <text x="409.99999999999994" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 409.99999999999994, 380)" font-family="sans-serif">UI_UX</text>
+    
+      <rect x="449.5833333333333" y="346.1471861471862" width="45" height="13.852813852813853" fill="#3b82f6" rx="4"/>
+      <text x="472.0833333333333" y="340.1471861471862" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">32</text>
+      <text x="472.0833333333333" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 472.0833333333333, 380)" font-family="sans-serif">Pickup_Route</text>
+    
+      <rect x="511.66666666666663" y="348.7445887445887" width="45" height="11.255411255411255" fill="#3b82f6" rx="4"/>
+      <text x="534.1666666666666" y="342.7445887445887" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">26</text>
+      <text x="534.1666666666666" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 534.1666666666666, 380)" font-family="sans-serif">Login_OTP</text>
+    
+      <rect x="573.75" y="352.2077922077922" width="45" height="7.792207792207793" fill="#3b82f6" rx="4"/>
+      <text x="596.25" y="346.2077922077922" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">18</text>
+      <text x="596.25" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 596.25, 380)" font-family="sans-serif">Safety</text>
+    
+      <rect x="635.8333333333334" y="354.3722943722944" width="45" height="5.627705627705628" fill="#3b82f6" rx="4"/>
+      <text x="658.3333333333334" y="348.3722943722944" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">13</text>
+      <text x="658.3333333333334" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 658.3333333333334, 380)" font-family="sans-serif">Support</text>
+    
+      <rect x="697.9166666666666" y="357.83549783549785" width="45" height="2.1645021645021645" fill="#3b82f6" rx="4"/>
+      <text x="720.4166666666666" y="351.83549783549785" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">5</text>
+      <text x="720.4166666666666" y="380" font-size="11" fill="#475569" text-anchor="end" transform="rotate(-40, 720.4166666666666, 380)" font-family="sans-serif">Notifications</text>
+    
+</svg>

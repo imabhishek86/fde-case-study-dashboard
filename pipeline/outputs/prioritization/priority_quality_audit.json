@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "generatedAt": "2026-10-12T09:28:11.253Z",
+    "step": "Step 7 Quality Refinement — Prioritization Audit",
+    "totalClustersAudited": 14,
+    "status": "AUDIT_PASSED"
+  },
+  "doubleCountingIssuesFound": [
+    {
+      "issue": "Post-Update App Launch Crash Loop & ANR Freezes combined frequency",
+      "auditFinding": "Previous draft combined Post-update app launch crash loop (14) + App freezing/performance (27) into a single 41-review frequency.",
+      "actionTaken": "Separated into distinct primary cluster counts: Post-update crash loop = 14, App freezing = 27. Maintained as distinct entities; no 41 combined review count presented as unique users."
+    },
+    {
+      "issue": "Cross-theme frequency presentation",
+      "auditFinding": "Ensured all 14 priority matrix issues strictly use primary cluster frequencies (summing exactly to 299 analyzed reviews).",
+      "actionTaken": "Audited and verified: no cross-theme combined frequencies represent unique affected users."
+    }
+  ],
+  "quantitativeClaimsAudited": [
+    {
+      "claim": "3x ETA divergence claim",
+      "originalText": "10 reviews documenting consistent 3x divergence between displayed ETA and Google Maps.",
+      "auditedText": "At least one reviewer reported an approximately 3x discrepancy versus Google Maps; this requires validation against actual predicted-versus-arrival data. (Predicted ETA → Actual arrival timestamp → Route conditions → Comparison against an appropriate reference).",
+      "status": "CORRECTED"
+    },
+    {
+      "claim": "App Stability combined volume",
+      "originalText": "41 combined reviews affected by crash/freeze",
+      "auditedText": "Distinguished as Post-update crash loop (14 reviews) and App freezing (27 reviews).",
+      "status": "CORRECTED"
+    }
+  ],
+  "unsupportedCausalClaims": [
+    {
+      "claim": "Mandatory rating modal causes 1-star reviews",
+      "originalText": "Highest rating-impact opportunity: directly motivates punitive 1-star ratings across users.",
+      "auditedText": "Potential low-effort rating-impact opportunity: At least one reviewer explicitly linked the forced rating flow to a negative Play Store rating. (No claim made that the modal caused a measurable population percentage of 1-star reviews).",
+      "status": "SOFTENED"
+    },
+    {
+      "claim": "Booking API concurrency confirmed cause",
+      "originalText": "Booking API concurrency is the confirmed cause of peak-hour failures.",
+      "auditedText": "Booking failures are observed [OBSERVED]; peak-window API latency, transaction errors, roster synchronization and capacity allocation should be investigated [INFERRED/UNKNOWN]. Internal backend causes remain hypotheses until telemetry confirms.",
+      "status": "SOFTENED"
+    }
+  ],
+  "proposedTargetsRelabeled": [
+    {
+      "metric": "Crash-free user rate > 99.5%",
+      "relabeledTo": "Proposed validation target: > 99.5%, subject to engineering baseline and SLA review."
+    },
+    {
+      "metric": "App startup crash rate < 0.1%",
+      "relabeledTo": "Proposed validation target: < 0.1%, subject to engineering baseline and SLA review."
+    },
+    {
+      "metric": "P95 location freshness < 10s",
+      "relabeledTo": "Proposed validation target: P95 location age < 10s, subject to engineering baseline and SLA review."
+    },
+    {
+      "metric": "Booking transaction success rate > 99.8%",
+      "relabeledTo": "Proposed validation target: > 99.8%, subject to engineering baseline and SLA review."
+    },
+    {
+      "metric": "Booking API P99 latency < 1.5s",
+      "relabeledTo": "Proposed validation target: < 1.5s, subject to engineering baseline and SLA review."
+    },
+    {
+      "metric": "Android Vitals ANR rate < 0.2%",
+      "relabeledTo": "Proposed validation target: < 0.2%, subject to engineering baseline and SLA review."
+    }
+  ],
+  "ratingImpactClaimsAdjusted": [
+    "Softened claim on mandatory rating modal: labeled as \"Potential low-effort rating-impact opportunity\".",
+    "Confirmed that review dataset provides qualitative user testimony linking forced ratings to 1-star reviews, but does not provide population-level causal percentages."
+  ],
+  "p0Audit": {
+    "ruleChecked": "Every P0 must have High or Critical severity, core journey impact, sufficient evidence, and explicit \"Why now?\".",
+    "auditedP0Issues": [
+      {
+        "clusterId": "cluster_booking_failure",
+        "severity": "High",
+        "frequency": 30,
+        "journey": "Booking & Shift Scheduling",
+        "whyNowProvided": true
+      },
+      {
+        "clusterId": "cluster_delayed_gps_tracking",
+        "severity": "High",
+        "frequency": 26,
+        "journey": "Live Tracking (Curbside Waiting)",
+        "whyNowProvided": true
+      },
+      {
+        "clusterId": "cluster_app_performance",
+        "severity": "High",
+        "frequency": 27,
+        "journey": "Trip / Ride & Active Navigation",
+        "whyNowProvided": true
+      },
+      {
+        "clusterId": "cluster_post_update_crash",
+        "severity": "High",
+        "frequency": 14,
+        "journey": "Pre-Commute Launch (Lockout)",
+        "whyNowProvided": true
+      },
+      {
+        "clusterId": "cluster_safety_prompt_friction",
+        "severity": "Critical",
+        "frequency": 6,
+        "journey": "Safety & Curbside Boarding",
+        "whyNowProvided": true
+      }
+    ],
+    "adjustmentsMade": "Moved Unfavorable UI Redesign & Mandatory Rating Friction (cluster_ui_redesign) from P0 to P1 because its severity is Medium (P0 strictly reserved for High/Critical severity). Maintained as top Quick Win in P1."
+  },
+  "top3Audit": {
+    "ruleChecked": "Recalculated using primary cluster frequencies. No combining multiple primary clusters into one frequency.",
+    "recalculatedTop3": [
+      {
+        "rank": 1,
+        "issue": "Roster & Booking Management Failure",
+        "frequency": 30,
+        "rationale": "Largest actionable functional defect; core product prerequisite."
+      },
+      {
+        "rank": 2,
+        "issue": "Delayed or Frozen Live GPS Tracking",
+        "frequency": 26,
+        "rationale": "Primary driver of curbside anxiety; core real-time transit promise."
+      },
+      {
+        "rank": 3,
+        "issue": "App Freezing & In-Ride Performance Degradation",
+        "frequency": 27,
+        "rationale": "Second-largest functional complaint volume; impairs active commute interaction."
+      }
+    ],
+    "appStabilityDelineation": "Post-Update App Launch Crash Loop (14 reviews) is maintained as a co-equal P0 immediate investigation due to absolute service lockout severity, but is clearly separated from App Freezing (27 reviews). Not combined into an artificial 41-review frequency."
+  },
+  "safetyAudit": {
+    "ruleChecked": "Distinguish direct safety/emergency responsiveness from seatbelt/OTP popup friction. Do not assume all 6 reviews concern the same popup.",
+    "findings": {
+      "totalReviews": 6,
+      "subFacetA_emergencyResponsiveness": {
+        "reviewCount": 3,
+        "evidenceKeywords": [
+          "threat",
+          "unsafe",
+          "danger"
+        ],
+        "interpretation": "Physical safety perception and emergency protocol anxiety. Requires audit of 24/7 SOS dispatch and enterprise command center escalation workflows."
+      },
+      "subFacetB_compliancePopupFriction": {
+        "reviewCount": 3,
+        "evidenceQuotes": [
+          "when you click view otp , it pops up the seat belt safely first",
+          "The seat buckle verification is absolutely horrendous and the OTP keeps disappearing",
+          "Too much pop up notification, which won't close easily"
+        ],
+        "interpretation": "UI workflow friction from compliance modals intercepting time-critical OTP viewing at boarding. Candidate for non-blocking inline banner refactor."
+      }
+    }
+  },
+  "etaAudit": {
+    "ruleChecked": "Qualify 3x divergence claim and define required 4-stage validation pipeline.",
+    "statementAudited": "At least one reviewer reported an approximately 3x discrepancy versus Google Maps; this requires validation against actual predicted-versus-arrival data.",
+    "validationPipeline": [
+      "Stage 1: Predicted ETA capture at trip assignment and dynamic intervals",
+      "Stage 2: Actual cab arrival timestamp recorded at pickup geo-fence",
+      "Stage 3: Route conditions and multi-passenger boarding dwell time analysis",
+      "Stage 4: Comparison against an appropriate reference baseline (Google Maps is not automatically treated as ground truth)"
+    ]
+  },
+  "bookingAudit": {
+    "ruleChecked": "Backend causes must remain hypotheses until telemetry confirms.",
+    "confirmedHypothesisStatus": "Booking failures are observed [OBSERVED]; peak-window API latency, transaction errors, roster synchronization and capacity allocation should be investigated [INFERRED/UNKNOWN]. Internal backend causes remain hypotheses until telemetry confirms."
+  },
+  "deepInvestigationAudit": {
+    "ruleChecked": "Structure every deep investigation as: Problem, Evidence, Unknown, Telemetry Required, Decision Gate.",
+    "auditedInvestigationsCount": 5,
+    "structureCompliant": true
+  },
+  "finalValidationStatus": {
+    "noCrossThemeFrequencyAsUniqueUsers": true,
+    "noCombined41ReviewCrashFreezeClaim": true,
+    "noInventedBaselineMetrics": true,
+    "numericalTargetsLabeledProposed": true,
+    "noSingleReviewGeneralizationToPopulation": true,
+    "noUnsupportedCausalRatingClaims": true,
+    "eta3xStatementProperlyQualified": true,
+    "bookingBackendCausesRemainHypotheses": true,
+    "safetyEvidenceProperlySeparated": true,
+    "effortEstimatesLabeledQualitative": true,
+    "everyP0HasWhyNow": true,
+    "p2HasWhyLater": true,
+    "p3HasWhatEvidenceIsMissing": true,
+    "everyMajorClaimTraceableToEvidence": true,
+    "step6FilesUnchanged": true,
+    "noNewReviewsCollected": true,
+    "step8NotStarted": true
+  }
+}

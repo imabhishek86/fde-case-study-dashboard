@@ -1,0 +1,542 @@
+{
+  "metadata": {
+    "generatedAt": "2026-10-12T08:16:55.272Z",
+    "analyzedReviewsCount": 299
+  },
+  "top10SubProblems": [
+    {
+      "subProblem": "Unspecified general dissatisfaction",
+      "count": 93,
+      "percentage": 31.1
+    },
+    {
+      "subProblem": "Roster and booking management failure",
+      "count": 29,
+      "percentage": 9.7
+    },
+    {
+      "subProblem": "App freezing and performance degradation",
+      "count": 27,
+      "percentage": 9.03
+    },
+    {
+      "subProblem": "Delayed or frozen live GPS tracking",
+      "count": 26,
+      "percentage": 8.7
+    },
+    {
+      "subProblem": "Driver behavioral issues or vehicle maintenance deficiency",
+      "count": 24,
+      "percentage": 8.03
+    },
+    {
+      "subProblem": "Unfavorable UI redesign and workflow complexity",
+      "count": 20,
+      "percentage": 6.69
+    },
+    {
+      "subProblem": "OTP delivery latency or verification friction",
+      "count": 16,
+      "percentage": 5.35
+    },
+    {
+      "subProblem": "Post-update app launch crash loop",
+      "count": 14,
+      "percentage": 4.68
+    },
+    {
+      "subProblem": "Inaccurate or delayed ETA estimation",
+      "count": 10,
+      "percentage": 3.34
+    },
+    {
+      "subProblem": "Incorrect pickup or drop location assignment",
+      "count": 10,
+      "percentage": 3.34
+    }
+  ],
+  "rootCauseTypeDistribution": {
+    "Product / UX": 29,
+    "Unknown": 93,
+    "Technical": 130,
+    "Operations": 15,
+    "Support": 8,
+    "Driver / Fleet": 24
+  },
+  "journeyStageDistribution": {
+    "Pickup": 28,
+    "Other": 93,
+    "Trip / Ride": 71,
+    "ETA": 10,
+    "Drop": 1,
+    "Booking": 54,
+    "Live Tracking": 26,
+    "Safety": 4,
+    "Support": 8,
+    "Vehicle Assignment": 4
+  },
+  "severityDistribution": {
+    "Critical": 4,
+    "High": 121,
+    "Medium": 174,
+    "Low": 0
+  },
+  "confidenceDistribution": {
+    "High": 129,
+    "Medium": 77,
+    "Low": 93
+  },
+  "themeInsights": {
+    "Safety": {
+      "analyzedReviewsCount": 3,
+      "highOrCriticalSeverityCount": 1,
+      "commonSubProblems": [
+        {
+          "subProblem": "Intrusive safety popup blocking fast OTP access",
+          "count": 2
+        },
+        {
+          "subProblem": "Safety concern or lack of emergency responsiveness",
+          "count": 1
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "Possible UX design oversight where mandatory compliance modals intercept time-sensitive user flows.",
+        "May indicate gaps in driver vetting, emergency escalation workflows, or communication during incident reporting."
+      ],
+      "commonUserImpacts": [
+        "The employee experiences boarding delays and frustration when trying to display their boarding OTP to the driver.",
+        "Commuter feels unsafe, distressed, or unprotected during office transit."
+      ],
+      "confidenceDistribution": {
+        "High": 3,
+        "Medium": 0,
+        "Low": 0
+      }
+    },
+    "Other": {
+      "analyzedReviewsCount": 114,
+      "highOrCriticalSeverityCount": 4,
+      "commonSubProblems": [
+        {
+          "subProblem": "Unspecified general dissatisfaction",
+          "count": 93
+        },
+        {
+          "subProblem": "Driver behavioral issues or vehicle maintenance deficiency",
+          "count": 7
+        },
+        {
+          "subProblem": "Unfavorable UI redesign and workflow complexity",
+          "count": 6
+        },
+        {
+          "subProblem": "Unresponsive or unhelpful customer support desk",
+          "count": 2
+        },
+        {
+          "subProblem": "Post-update app launch crash loop",
+          "count": 2
+        },
+        {
+          "subProblem": "Delayed or frozen live GPS tracking",
+          "count": 1
+        },
+        {
+          "subProblem": "App freezing and performance degradation",
+          "count": 1
+        },
+        {
+          "subProblem": "Incorrect pickup or drop location assignment",
+          "count": 1
+        },
+        {
+          "subProblem": "OTP delivery latency or verification friction",
+          "count": 1
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "Could be caused by cumulative user frustration or an unstated friction point, but exact root cause cannot be confirmed from text alone.",
+        "Likely under-resourced helpdesk staffing, lack of empowered Tier-1 resolution authority, or disconnected ticketing systems.",
+        "Possible real-time socket connection latency, driver app background location throttling, or telemetry polling lag.",
+        "Likely regression in startup initialization, database migration failure, or missing backwards compatibility handling on specific Android versions.",
+        "May indicate gaps in driver partner service level enforcement, training, or vehicle inspection auditing."
+      ],
+      "commonUserImpacts": [
+        "Negative brand perception contributing to lowered Google Play Store rating.",
+        "Employees feel abandoned when encountering critical transit exceptions or billing/schedule issues.",
+        "Commuters are unable to locate their arriving cab, creating uncertainty and missed pickups.",
+        "Severe blockage: Commuters are completely locked out of transport services and unable to access cab details or book commutes.",
+        "Uncomfortable, unpleasant, or confrontational commute experience."
+      ],
+      "confidenceDistribution": {
+        "High": 11,
+        "Medium": 10,
+        "Low": 93
+      }
+    },
+    "App_Performance": {
+      "analyzedReviewsCount": 31,
+      "highOrCriticalSeverityCount": 29,
+      "commonSubProblems": [
+        {
+          "subProblem": "App freezing and performance degradation",
+          "count": 19
+        },
+        {
+          "subProblem": "Post-update app launch crash loop",
+          "count": 11
+        },
+        {
+          "subProblem": "Inaccurate or delayed ETA estimation",
+          "count": 1
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "Likely regression in startup initialization, database migration failure, or missing backwards compatibility handling on specific Android versions.",
+        "Possible memory leaks, inefficient client-side rendering, or unhandled background exceptions.",
+        "Possible deficiency in real-time traffic integration or algorithmic overestimation of speed in congested zones."
+      ],
+      "commonUserImpacts": [
+        "Severe blockage: Commuters are completely locked out of transport services and unable to access cab details or book commutes.",
+        "Frustration and delayed actions while trying to manage office travel.",
+        "Employees cannot reliably anticipate cab arrival, resulting in missed rides or unnecessary waiting on roads."
+      ],
+      "confidenceDistribution": {
+        "High": 12,
+        "Medium": 19,
+        "Low": 0
+      }
+    },
+    "Pickup_Route": {
+      "analyzedReviewsCount": 21,
+      "highOrCriticalSeverityCount": 11,
+      "commonSubProblems": [
+        {
+          "subProblem": "Incorrect pickup or drop location assignment",
+          "count": 9
+        },
+        {
+          "subProblem": "Suboptimal routing algorithm causing commute delays",
+          "count": 5
+        },
+        {
+          "subProblem": "Roster and booking management failure",
+          "count": 3
+        },
+        {
+          "subProblem": "Inaccurate or delayed ETA estimation",
+          "count": 2
+        },
+        {
+          "subProblem": "Delayed or frozen live GPS tracking",
+          "count": 1
+        },
+        {
+          "subProblem": "App freezing and performance degradation",
+          "count": 1
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "Possible deficiency in real-time traffic integration or algorithmic overestimation of speed in congested zones.",
+        "May indicate routing engine prioritizing vehicle occupancy over maximum allowable commuter travel duration constraints.",
+        "Possible real-time socket connection latency, driver app background location throttling, or telemetry polling lag.",
+        "Possible backend scheduling API timeouts or concurrency conflicts during peak roster cutoff windows.",
+        "Possible geocoding discrepancies or driver misinterpretation of assigned meeting landmarks."
+      ],
+      "commonUserImpacts": [
+        "Employees cannot reliably anticipate cab arrival, resulting in missed rides or unnecessary waiting on roads.",
+        "Commuters endure excessive transit times, fatigue, and recurrent office arrival delays.",
+        "Commuters are unable to locate their arriving cab, creating uncertainty and missed pickups.",
+        "Commuters risk missing their scheduled shift transport due to unconfirmed bookings.",
+        "Commuters must walk long distances or experience missed cab departures."
+      ],
+      "confidenceDistribution": {
+        "High": 11,
+        "Medium": 10,
+        "Low": 0
+      }
+    },
+    "UI_UX": {
+      "analyzedReviewsCount": 19,
+      "highOrCriticalSeverityCount": 5,
+      "commonSubProblems": [
+        {
+          "subProblem": "Unfavorable UI redesign and workflow complexity",
+          "count": 12
+        },
+        {
+          "subProblem": "Roster and booking management failure",
+          "count": 2
+        },
+        {
+          "subProblem": "Unskippable in-app rating modal friction",
+          "count": 1
+        },
+        {
+          "subProblem": "Suboptimal routing algorithm causing commute delays",
+          "count": 1
+        },
+        {
+          "subProblem": "Inaccurate or delayed ETA estimation",
+          "count": 1
+        },
+        {
+          "subProblem": "App freezing and performance degradation",
+          "count": 1
+        },
+        {
+          "subProblem": "Post-update app launch crash loop",
+          "count": 1
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "Possible aggressive customer feedback collection policy enforced via blocking UI modal dialogs.",
+        "Possible release of major UI redesign without adequate usability testing across core commuter routines.",
+        "Possible backend scheduling API timeouts or concurrency conflicts during peak roster cutoff windows.",
+        "May indicate routing engine prioritizing vehicle occupancy over maximum allowable commuter travel duration constraints.",
+        "Possible deficiency in real-time traffic integration or algorithmic overestimation of speed in congested zones."
+      ],
+      "commonUserImpacts": [
+        "Commuter feels coerced and inconvenienced, retaliating with 1-star Play Store reviews.",
+        "Increased cognitive load and friction in executing daily transit tasks.",
+        "Commuters risk missing their scheduled shift transport due to unconfirmed bookings.",
+        "Commuters endure excessive transit times, fatigue, and recurrent office arrival delays.",
+        "Employees cannot reliably anticipate cab arrival, resulting in missed rides or unnecessary waiting on roads."
+      ],
+      "confidenceDistribution": {
+        "High": 18,
+        "Medium": 1,
+        "Low": 0
+      }
+    },
+    "Tracking_GPS_ETA": {
+      "analyzedReviewsCount": 24,
+      "highOrCriticalSeverityCount": 24,
+      "commonSubProblems": [
+        {
+          "subProblem": "Delayed or frozen live GPS tracking",
+          "count": 20
+        },
+        {
+          "subProblem": "Inaccurate or delayed ETA estimation",
+          "count": 4
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "Possible real-time socket connection latency, driver app background location throttling, or telemetry polling lag.",
+        "Possible deficiency in real-time traffic integration or algorithmic overestimation of speed in congested zones."
+      ],
+      "commonUserImpacts": [
+        "Commuters are unable to locate their arriving cab, creating uncertainty and missed pickups.",
+        "Employees cannot reliably anticipate cab arrival, resulting in missed rides or unnecessary waiting on roads."
+      ],
+      "confidenceDistribution": {
+        "High": 24,
+        "Medium": 0,
+        "Low": 0
+      }
+    },
+    "Booking": {
+      "analyzedReviewsCount": 28,
+      "highOrCriticalSeverityCount": 27,
+      "commonSubProblems": [
+        {
+          "subProblem": "Roster and booking management failure",
+          "count": 20
+        },
+        {
+          "subProblem": "App freezing and performance degradation",
+          "count": 3
+        },
+        {
+          "subProblem": "Delayed or frozen live GPS tracking",
+          "count": 3
+        },
+        {
+          "subProblem": "Safety concern or lack of emergency responsiveness",
+          "count": 1
+        },
+        {
+          "subProblem": "Booking unavailability and opaque waitlisting",
+          "count": 1
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "May indicate gaps in driver vetting, emergency escalation workflows, or communication during incident reporting.",
+        "Possible backend scheduling API timeouts or concurrency conflicts during peak roster cutoff windows.",
+        "Could be caused by strict capacity limits, mismatched fleet allocation relative to demand spikes, or lack of real-time seat availability polling.",
+        "Possible memory leaks, inefficient client-side rendering, or unhandled background exceptions.",
+        "Possible real-time socket connection latency, driver app background location throttling, or telemetry polling lag."
+      ],
+      "commonUserImpacts": [
+        "Commuter feels unsafe, distressed, or unprotected during office transit.",
+        "Commuters risk missing their scheduled shift transport due to unconfirmed bookings.",
+        "Employees cannot guarantee their daily office travel and must make last-minute alternative transport arrangements.",
+        "Frustration and delayed actions while trying to manage office travel.",
+        "Commuters are unable to locate their arriving cab, creating uncertainty and missed pickups."
+      ],
+      "confidenceDistribution": {
+        "High": 25,
+        "Medium": 3,
+        "Low": 0
+      }
+    },
+    "Login_OTP": {
+      "analyzedReviewsCount": 20,
+      "highOrCriticalSeverityCount": 16,
+      "commonSubProblems": [
+        {
+          "subProblem": "OTP delivery latency or verification friction",
+          "count": 15
+        },
+        {
+          "subProblem": "Frequent session termination and repeated login prompts",
+          "count": 4
+        },
+        {
+          "subProblem": "Roster and booking management failure",
+          "count": 1
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "Possible premature token expiration, lack of silent refresh token rotation, or aggressive session teardown on app backgrounding.",
+        "Possible SMS gateway delivery congestion or client-side OTP modal rendering bugs.",
+        "Possible backend scheduling API timeouts or concurrency conflicts during peak roster cutoff windows."
+      ],
+      "commonUserImpacts": [
+        "Commuters face delays and friction when rapidly trying to verify cab details or show boarding credentials.",
+        "Commuters are unable to sign in or board assigned vehicles on schedule.",
+        "Commuters risk missing their scheduled shift transport due to unconfirmed bookings."
+      ],
+      "confidenceDistribution": {
+        "High": 5,
+        "Medium": 15,
+        "Low": 0
+      }
+    },
+    "Driver_Vehicle": {
+      "analyzedReviewsCount": 23,
+      "highOrCriticalSeverityCount": 5,
+      "commonSubProblems": [
+        {
+          "subProblem": "Driver behavioral issues or vehicle maintenance deficiency",
+          "count": 15
+        },
+        {
+          "subProblem": "Roster and booking management failure",
+          "count": 2
+        },
+        {
+          "subProblem": "App freezing and performance degradation",
+          "count": 2
+        },
+        {
+          "subProblem": "Unfavorable UI redesign and workflow complexity",
+          "count": 1
+        },
+        {
+          "subProblem": "Delayed or frozen live GPS tracking",
+          "count": 1
+        },
+        {
+          "subProblem": "Safety concern or lack of emergency responsiveness",
+          "count": 1
+        },
+        {
+          "subProblem": "Inaccurate or delayed ETA estimation",
+          "count": 1
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "May indicate gaps in driver partner service level enforcement, training, or vehicle inspection auditing.",
+        "Possible release of major UI redesign without adequate usability testing across core commuter routines.",
+        "Possible real-time socket connection latency, driver app background location throttling, or telemetry polling lag.",
+        "Possible backend scheduling API timeouts or concurrency conflicts during peak roster cutoff windows.",
+        "Possible memory leaks, inefficient client-side rendering, or unhandled background exceptions."
+      ],
+      "commonUserImpacts": [
+        "Uncomfortable, unpleasant, or confrontational commute experience.",
+        "Increased cognitive load and friction in executing daily transit tasks.",
+        "Commuters are unable to locate their arriving cab, creating uncertainty and missed pickups.",
+        "Commuters risk missing their scheduled shift transport due to unconfirmed bookings.",
+        "Frustration and delayed actions while trying to manage office travel."
+      ],
+      "confidenceDistribution": {
+        "High": 6,
+        "Medium": 17,
+        "Low": 0
+      }
+    },
+    "Support": {
+      "analyzedReviewsCount": 12,
+      "highOrCriticalSeverityCount": 3,
+      "commonSubProblems": [
+        {
+          "subProblem": "Unresponsive or unhelpful customer support desk",
+          "count": 6
+        },
+        {
+          "subProblem": "Driver behavioral issues or vehicle maintenance deficiency",
+          "count": 2
+        },
+        {
+          "subProblem": "Unfavorable UI redesign and workflow complexity",
+          "count": 1
+        },
+        {
+          "subProblem": "Inaccurate or delayed ETA estimation",
+          "count": 1
+        },
+        {
+          "subProblem": "Safety concern or lack of emergency responsiveness",
+          "count": 1
+        },
+        {
+          "subProblem": "Roster and booking management failure",
+          "count": 1
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "Possible release of major UI redesign without adequate usability testing across core commuter routines.",
+        "Likely under-resourced helpdesk staffing, lack of empowered Tier-1 resolution authority, or disconnected ticketing systems.",
+        "Possible deficiency in real-time traffic integration or algorithmic overestimation of speed in congested zones.",
+        "May indicate gaps in driver partner service level enforcement, training, or vehicle inspection auditing.",
+        "May indicate gaps in driver vetting, emergency escalation workflows, or communication during incident reporting."
+      ],
+      "commonUserImpacts": [
+        "Increased cognitive load and friction in executing daily transit tasks.",
+        "Employees feel abandoned when encountering critical transit exceptions or billing/schedule issues.",
+        "Employees cannot reliably anticipate cab arrival, resulting in missed rides or unnecessary waiting on roads.",
+        "Uncomfortable, unpleasant, or confrontational commute experience.",
+        "Commuter feels unsafe, distressed, or unprotected during office transit."
+      ],
+      "confidenceDistribution": {
+        "High": 10,
+        "Medium": 2,
+        "Low": 0
+      }
+    },
+    "Notifications": {
+      "analyzedReviewsCount": 4,
+      "highOrCriticalSeverityCount": 0,
+      "commonSubProblems": [
+        {
+          "subProblem": "Notification delivery delay or false alerts",
+          "count": 4
+        }
+      ],
+      "commonPossibleRootCauses": [
+        "Possible push notification gateway queuing latency or improper payload synchronization on backend event triggers."
+      ],
+      "commonUserImpacts": [
+        "Commuters are not alerted in time for vehicle arrival and risk missing their ride."
+      ],
+      "confidenceDistribution": {
+        "High": 4,
+        "Medium": 0,
+        "Low": 0
+      }
+    }
+  }
+}

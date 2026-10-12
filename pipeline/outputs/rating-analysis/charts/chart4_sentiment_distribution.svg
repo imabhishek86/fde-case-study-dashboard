@@ -1,0 +1,19 @@
+
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#ffffff" rx="8"/>
+  <text x="300" y="35}" font-size="18" font-weight="bold" fill="#0f172a" text-anchor="middle" font-family="sans-serif">Chart 4: Positive vs Neutral vs Negative Reviews</text>
+  <path d="M 200 200 L 200 80 A 120 120 0 1 1 90.4770095115797 249.03788896836195 Z" fill="#10b981" stroke="#ffffff" stroke-width="3"/><path d="M 200 200 L 90.4770095115797 249.03788896836195 A 120 120 0 0 1 180.48354017661387 81.59768669505584 Z" fill="#ef4444" stroke="#ffffff" stroke-width="3"/><path d="M 200 200 L 180.48354017661387 81.59768669505584 A 120 120 0 0 1 199.99999999999986 80 Z" fill="#eab308" stroke="#ffffff" stroke-width="3"/><circle cx="200" cy="200" r="60" fill="#ffffff"/><text x="200" y="205" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="sans-serif">1000 Total</text>
+  
+      <rect x="360" y="130" width="20" height="20" rx="4" fill="#10b981"/>
+      <text x="390" y="145" font-size="14" font-weight="bold" fill="#1e293b" font-family="sans-serif">Positive (4-5★)</text>
+      <text x="390" y="162" font-size="12" fill="#64748b" font-family="sans-serif">683 reviews (68.3%)</text>
+    
+      <rect x="360" y="180" width="20" height="20" rx="4" fill="#ef4444"/>
+      <text x="390" y="195" font-size="14" font-weight="bold" fill="#1e293b" font-family="sans-serif">Negative (1-2★)</text>
+      <text x="390" y="212" font-size="12" fill="#64748b" font-family="sans-serif">291 reviews (29.1%)</text>
+    
+      <rect x="360" y="230" width="20" height="20" rx="4" fill="#eab308"/>
+      <text x="390" y="245" font-size="14" font-weight="bold" fill="#1e293b" font-family="sans-serif">Neutral (3★)</text>
+      <text x="390" y="262" font-size="12" fill="#64748b" font-family="sans-serif">26 reviews (2.6%)</text>
+    
+</svg>

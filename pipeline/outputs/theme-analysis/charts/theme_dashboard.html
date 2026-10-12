@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoveInSync Theme Analysis Dashboard (Chart.js)</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }
+    h1 { font-size: 26px; text-align: center; margin-bottom: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
+    .card { background: #ffffff; border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+    .card h2 { font-size: 18px; margin-top: 0; margin-bottom: 16px; color: #334155; }
+    canvas { width: 100% !important; height: 320px !important; }
+  </style>
+</head>
+<body>
+  <h1>🏷️ MoveInSync Review Theme & Severity Dashboard</h1>
+  <div class="grid">
+    <div class="card">
+      <h2>Chart 1: Top Themes in Negative Reviews (1-2★)</h2>
+      <canvas id="chart1"></canvas>
+    </div>
+    <div class="card">
+      <h2>Chart 2: Primary Theme Distribution (All 1000)</h2>
+      <canvas id="chart2"></canvas>
+    </div>
+    <div class="card">
+      <h2>Chart 3: Severity Distribution</h2>
+      <canvas id="chart3"></canvas>
+    </div>
+    <div class="card">
+      <h2>Chart 4: Top Themes in 1-Star Reviews</h2>
+      <canvas id="chart4"></canvas>
+    </div>
+  </div>
+
+  <script>
+    const negData = [{"theme":"Other","count":113,"pct":38.83},{"theme":"Booking","count":28,"pct":9.62},{"theme":"App_Performance","count":28,"pct":9.62},{"theme":"Tracking_GPS_ETA","count":23,"pct":7.9},{"theme":"Pickup_Route","count":21,"pct":7.22},{"theme":"Driver_Vehicle","count":21,"pct":7.22},{"theme":"UI_UX","count":19,"pct":6.53},{"theme":"Login_OTP","count":19,"pct":6.53},{"theme":"Support","count":12,"pct":4.12},{"theme":"Notifications","count":4,"pct":1.37},{"theme":"Safety","count":3,"pct":1.03}];
+    const oneStarData = [{"theme":"Other","count":103,"pct":39.92},{"theme":"App_Performance","count":25,"pct":9.69},{"theme":"Pickup_Route","count":21,"pct":8.14},{"theme":"Booking","count":19,"pct":7.36},{"theme":"Driver_Vehicle","count":19,"pct":7.36},{"theme":"Login_OTP","count":19,"pct":7.36},{"theme":"Tracking_GPS_ETA","count":18,"pct":6.98},{"theme":"UI_UX","count":17,"pct":6.59},{"theme":"Support","count":12,"pct":4.65},{"theme":"Notifications","count":4,"pct":1.55},{"theme":"Safety","count":1,"pct":0.39}];
+    const severityData = {"Critical":3,"High":83,"Medium":207,"Low":3,"None":704};
+    const themeDist = {"Booking":{"totalOccurrences":42,"negativeOccurrences":28,"positiveOccurrences":12,"neutralOccurrences":2,"percentageOfAllReviews":4.2,"percentageOfNegativeReviews":9.62,"highOrCriticalSeverityCount":21},"Tracking_GPS_ETA":{"totalOccurrences":44,"negativeOccurrences":23,"positiveOccurrences":18,"neutralOccurrences":3,"percentageOfAllReviews":4.4,"percentageOfNegativeReviews":7.9,"highOrCriticalSeverityCount":18},"App_Performance":{"totalOccurrences":41,"negativeOccurrences":28,"positiveOccurrences":5,"neutralOccurrences":8,"percentageOfAllReviews":4.1,"percentageOfNegativeReviews":9.62,"highOrCriticalSeverityCount":28},"UI_UX":{"totalOccurrences":36,"negativeOccurrences":19,"positiveOccurrences":16,"neutralOccurrences":1,"percentageOfAllReviews":3.6,"percentageOfNegativeReviews":6.53,"highOrCriticalSeverityCount":2},"Pickup_Route":{"totalOccurrences":32,"negativeOccurrences":21,"positiveOccurrences":10,"neutralOccurrences":1,"percentageOfAllReviews":3.2,"percentageOfNegativeReviews":7.22,"highOrCriticalSeverityCount":6},"Driver_Vehicle":{"totalOccurrences":50,"negativeOccurrences":21,"positiveOccurrences":27,"neutralOccurrences":2,"percentageOfAllReviews":5,"percentageOfNegativeReviews":7.22,"highOrCriticalSeverityCount":2},"Notifications":{"totalOccurrences":5,"negativeOccurrences":4,"positiveOccurrences":1,"neutralOccurrences":0,"percentageOfAllReviews":0.5,"percentageOfNegativeReviews":1.37,"highOrCriticalSeverityCount":0},"Login_OTP":{"totalOccurrences":26,"negativeOccurrences":19,"positiveOccurrences":3,"neutralOccurrences":4,"percentageOfAllReviews":2.6,"percentageOfNegativeReviews":6.53,"highOrCriticalSeverityCount":3},"Support":{"totalOccurrences":13,"negativeOccurrences":12,"positiveOccurrences":1,"neutralOccurrences":0,"percentageOfAllReviews":1.3,"percentageOfNegativeReviews":4.12,"highOrCriticalSeverityCount":3},"Safety":{"totalOccurrences":18,"negativeOccurrences":3,"positiveOccurrences":15,"neutralOccurrences":0,"percentageOfAllReviews":1.8,"percentageOfNegativeReviews":1.03,"highOrCriticalSeverityCount":3},"Other":{"totalOccurrences":693,"negativeOccurrences":113,"positiveOccurrences":575,"neutralOccurrences":5,"percentageOfAllReviews":69.3,"percentageOfNegativeReviews":38.83,"highOrCriticalSeverityCount":0}};
+
+    // Chart 1: Negative themes horizontal bar
+    new Chart(document.getElementById('chart1'), {
+      type: 'bar',
+      data: {
+        labels: negData.map(d => d.theme),
+        datasets: [{
+          label: 'Negative Reviews',
+          data: negData.map(d => d.count),
+          backgroundColor: '#ef4444',
+          borderRadius: 4
+        }]
+      },
+      options: { indexAxis: 'y', responsive: true }
+    });
+
+    // Chart 2: Theme distribution
+    const themeKeys = Object.keys(themeDist);
+    new Chart(document.getElementById('chart2'), {
+      type: 'bar',
+      data: {
+        labels: themeKeys,
+        datasets: [{
+          label: 'Total Reviews',
+          data: themeKeys.map(k => themeDist[k].totalOccurrences),
+          backgroundColor: '#3b82f6',
+          borderRadius: 4
+        }]
+      },
+      options: { responsive: true }
+    });
+
+    // Chart 3: Severity
+    new Chart(document.getElementById('chart3'), {
+      type: 'doughnut',
+      data: {
+        labels: Object.keys(severityData),
+        datasets: [{
+          data: Object.values(severityData),
+          backgroundColor: ['#dc2626', '#ea580c', '#f59e0b', '#3b82f6', '#10b981']
+        }]
+      },
+      options: { responsive: true }
+    });
+
+    // Chart 4: 1-star themes
+    new Chart(document.getElementById('chart4'), {
+      type: 'bar',
+      data: {
+        labels: oneStarData.map(d => d.theme),
+        datasets: [{
+          label: '1-Star Reviews',
+          data: oneStarData.map(d => d.count),
+          backgroundColor: '#991b1b',
+          borderRadius: 4
+        }]
+      },
+      options: { indexAxis: 'y', responsive: true }
+    });
+  </script>
+</body>
+</html>

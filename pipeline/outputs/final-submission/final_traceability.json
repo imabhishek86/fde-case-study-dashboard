@@ -1,0 +1,353 @@
+{
+  "metadata": {
+    "generatedAt": "2026-10-12T09:49:15.391Z",
+    "step": "Step 9: Final Case Study Submission",
+    "totalReviewedReviews": 1000,
+    "totalAnalyzedNegativeReviews": 299,
+    "totalAuditedClusters": 14,
+    "status": "VERIFIED_AUDITED"
+  },
+  "traceabilityMatrix": [
+    {
+      "findingId": "FINDING-01",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/01_booking_reliability_prd.md"
+      ],
+      "clusterId": "cluster_booking_failure",
+      "clusterName": "Roster and booking management failure",
+      "priority": "P0",
+      "reviewFrequency": 30,
+      "severity": "High",
+      "journeyStage": "Shift/Roster Scheduling & Pre-Trip Booking",
+      "evidenceConfidence": "Medium [OBSERVED symptoms of booking errors and unconfirmed rosters]",
+      "verifiedReviewIds": [
+        "43d90b3c-0443-4073-8647-6aee98c78bd4",
+        "bc736dc0-8fd1-45e8-b39e-b16020a4e2f7",
+        "823b9c8b-afde-47e7-abad-fb60f14ea562",
+        "d980e749-b3df-4f90-ba1a-0987168cfe13",
+        "0b1041ae-ce09-4947-b5f9-744e9014a639"
+      ],
+      "rootCauseHypothesis": "Possible API concurrency bottlenecks, DB connection pool saturation during peak shift cutoffs, or mismatch with allocated vendor fleet capacity.",
+      "proposedAction": "Establish Booking Reliability workstream: idempotent booking submission, explicit client state machine, APM transaction tracing during cutoff windows, transparent waitlist UI.",
+      "validationMetric": "Booking transaction success rate > 99.8% (Proposed validation target, subject to engineering baseline and SLA review)."
+    },
+    {
+      "findingId": "FINDING-02",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/02_live_tracking_prd.md"
+      ],
+      "clusterId": "cluster_delayed_gps_tracking",
+      "clusterName": "Delayed or frozen live GPS tracking",
+      "priority": "P0",
+      "reviewFrequency": 26,
+      "severity": "High",
+      "journeyStage": "Live Tracking (Curbside Waiting & Boarding)",
+      "evidenceConfidence": "Medium [OBSERVED symptoms of stale map coordinates and frozen pins]",
+      "verifiedReviewIds": [
+        "2ce14584-824f-4d19-a7ce-95a17656fc8f",
+        "61a4a85f-902d-4e2c-beff-9ff5850a16b7",
+        "66e6cdc7-e911-4b93-82c7-01d7f9420284",
+        "82341476-c4db-46e0-86f1-670fe93b74ca",
+        "7a6441a0-2383-4dd7-83f7-8d54c4af8111"
+      ],
+      "rootCauseHypothesis": "Telemetry latency across driver background location capture, network transport, broker ingestion, or client rendering.",
+      "proposedAction": "Instrument 6-hop end-to-end location freshness pipeline; display last updated timestamp; render explicit stale state when telemetry age exceeds threshold.",
+      "validationMetric": "P95 location freshness < 10 seconds during active tracking (Proposed validation target, subject to engineering baseline and SLA review)."
+    },
+    {
+      "findingId": "FINDING-03",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/03_app_stability_prd.md"
+      ],
+      "clusterId": "cluster_post_update_crash",
+      "clusterName": "Post-update app launch crash loop",
+      "priority": "P0",
+      "reviewFrequency": 14,
+      "severity": "High",
+      "journeyStage": "Pre-commute Launch (Immediate Service Lockout)",
+      "evidenceConfidence": "Medium [OBSERVED symptoms of crash loops requiring uninstallation]",
+      "verifiedReviewIds": [
+        "60798e45-939e-4a99-8f5b-17383a891db6",
+        "133d2b88-b2d2-4fd4-9594-1ac26caf819e",
+        "7781ccc3-e390-49cb-b574-fb3213c2e74a",
+        "0def625f-f0c8-4d3a-859d-4891c82c80ab",
+        "8b0735a9-bd5e-453a-b1c8-81f741153ef2"
+      ],
+      "rootCauseHypothesis": "SQLite / Room database schema migration regression, unhandled startup runtime exception, or OEM-specific lifecycle initialization bug.",
+      "proposedAction": "Pull Android Vitals / Crashlytics startup stack traces across recent releases; build automated upgrade-path migration test suite; deploy defensive startup safe mode.",
+      "validationMetric": "App startup crash rate < 0.1% (Proposed validation target, subject to engineering baseline and SLA review)."
+    },
+    {
+      "findingId": "FINDING-04",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/03_app_stability_prd.md"
+      ],
+      "clusterId": "cluster_app_performance",
+      "clusterName": "App freezing and performance degradation",
+      "priority": "P0",
+      "reviewFrequency": 27,
+      "severity": "High",
+      "journeyStage": "Trip / Ride & Active Navigation (In-Transit)",
+      "evidenceConfidence": "Medium [OBSERVED symptoms of UI lag and screen freezing]",
+      "verifiedReviewIds": [
+        "e735e280-9992-470e-b8df-d9b4a0e1e214",
+        "9936bf10-67dd-4e3e-aeb3-2bc420fb487a",
+        "e64560af-5a09-4910-86bf-fdc689ab6bc1",
+        "93d75126-98c3-43de-9fdf-cee95c3ed1c6",
+        "11da949e-d57d-4f25-b876-cf9a96bed7ac"
+      ],
+      "rootCauseHypothesis": "UI main thread blocking from coordinate stream parsing, unoptimized map marker draw calls, or garbage collection pauses on mid-tier hardware.",
+      "proposedAction": "Decouple location telemetry parsing and caching from main UI thread to background workers; optimize map rendering draw calls; enforce ANR release gate.",
+      "validationMetric": "Android Vitals ANR rate < 0.2% (Proposed validation target, subject to engineering baseline and SLA review)."
+    },
+    {
+      "findingId": "FINDING-05",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/04_safety_experience_prd.md"
+      ],
+      "clusterId": "cluster_safety_prompt_friction",
+      "clusterName": "Safety concerns and compliance prompt friction",
+      "priority": "P0",
+      "reviewFrequency": 6,
+      "severity": "Critical",
+      "journeyStage": "Safety, Emergency & Curbside Boarding",
+      "evidenceConfidence": "High [OBSERVED direct testimony regarding modal blocking OTP and physical safety concerns]",
+      "verifiedReviewIds": [
+        "3d87f169-2508-4a07-9e5a-d63b2c548ed3",
+        "387a67a5-1843-45ee-b837-91d7eb1fccce",
+        "e12ed49a-d376-4cf2-9cfd-45cae0162feb",
+        "b1814d48-3e54-4903-a109-e09e05bc3145",
+        "ab22d06f-a3be-49e3-a460-5ef157ec534c"
+      ],
+      "rootCauseHypothesis": "Modal compliance popup placed synchronously across OTP view path adds friction; lack of visible 24/7 Command Center monitoring feedback.",
+      "proposedAction": "Refactor blocking seatbelt popup into persistent non-blocking inline advisory; enable 1-click OTP view; provide visible Central Command Center trip monitoring indicator.",
+      "validationMetric": "Time-to-OTP display reduction; SOS emergency dispatch acknowledgment < 30s (Proposed validation target, subject to SLA review)."
+    },
+    {
+      "findingId": "FINDING-06",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/07_ui_rating_prd.md"
+      ],
+      "clusterId": "cluster_ui_redesign",
+      "clusterName": "Unfavorable UI redesign and workflow complexity",
+      "priority": "P1",
+      "reviewFrequency": 21,
+      "severity": "Medium",
+      "journeyStage": "Post-Ride Feedback & General App Navigation",
+      "evidenceConfidence": "High [OBSERVED explicit testimony linking forced in-app rating modal to 1-star Play Store review]",
+      "verifiedReviewIds": [
+        "f9fce9fe-8115-4a30-8d09-d8bdac76837d",
+        "6b0ec80a-f39e-4548-85a7-cefd18c99c83",
+        "5f781610-319a-4412-b308-95a6ec8ee6f6",
+        "3a411c1e-a2cd-4d87-83d6-e89e9f76460d",
+        "724fa773-e6c0-47ec-b76d-8c5ae25850ed"
+      ],
+      "rootCauseHypothesis": "Unskippable post-trip feedback modal designed without dismiss action to maximize feedback capture, unintentionally frustrating commuters.",
+      "proposedAction": "Quick Win: Add clear \"Skip\" / \"Dismiss\" button to post-trip rating prompt; support swipe-down dismiss; streamline home card layout for core commute tasks.",
+      "validationMetric": "Zero task abandonment at rating prompt; reduction in retaliatory Play Store 1-star reviews citing forced ratings."
+    },
+    {
+      "findingId": "FINDING-07",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/05_otp_session_prd.md"
+      ],
+      "clusterId": "cluster_otp_session_friction",
+      "clusterName": "OTP delivery latency, verification & session friction",
+      "priority": "P1",
+      "reviewFrequency": 20,
+      "severity": "High",
+      "journeyStage": "Pickup & Boarding Verification (Curbside)",
+      "evidenceConfidence": "Medium [OBSERVED symptoms of unexpected logouts and delayed OTPs]",
+      "verifiedReviewIds": [
+        "72e74b90-1da1-49cc-87c0-6bc42af65ba3",
+        "f603466c-c648-4802-94e4-44f2c9916d32",
+        "e0d68839-6e59-4dd7-8f00-052cda79a063",
+        "1d73eadd-7250-425f-9cbe-c906414e5049",
+        "c9c2d1f3-da5a-457f-b3cd-479afddacd8a"
+      ],
+      "rootCauseHypothesis": "Aggressive client session timeout on background/resume; telecom SMS dispatch latency; lack of offline local caching for active ride boarding OTPs.",
+      "proposedAction": "Implement silent background token refresh in onResume; cache active ride OTP in encrypted local storage for offline basement access; display in-app OTP on primary card.",
+      "validationMetric": "Curbside session logout rate on resume < 0.5% (Proposed validation target, subject to engineering baseline review)."
+    },
+    {
+      "findingId": "FINDING-08",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/06_routing_eta_prd.md"
+      ],
+      "clusterId": "cluster_pickup_route_assignment",
+      "clusterName": "Incorrect pickup/drop assignment and circuitous routing",
+      "priority": "P1",
+      "reviewFrequency": 16,
+      "severity": "High",
+      "journeyStage": "Pickup & Mid-Commute Transit",
+      "evidenceConfidence": "High [OBSERVED detailed accounts of multi-zone passenger clustering and extreme detours]",
+      "verifiedReviewIds": [
+        "85146e08-4f64-4ea2-9541-7a3d22af578e",
+        "864d85ff-1c4e-4967-a488-1b1225a406f7",
+        "85646808-3624-479f-8724-72f2f6461b4d",
+        "397df87d-f01f-4486-8218-064d93f1679f",
+        "c8dd8ff6-e11d-4820-801f-67e4055ac1bc"
+      ],
+      "rootCauseHypothesis": "Routing solver objective function heavily prioritizes vehicle occupancy over individual passenger detour ratios.",
+      "proposedAction": "Enforce hard maximum detour ratio constraints in routing solver; simulate impact on historical fleet capacity; display pickup stop sequence to commuter.",
+      "validationMetric": "Detour ratio compliance > 95% of trips within acceptable detour thresholds (Proposed validation target, subject to review)."
+    },
+    {
+      "findingId": "FINDING-09",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/06_routing_eta_prd.md"
+      ],
+      "clusterId": "cluster_eta_inaccuracies",
+      "clusterName": "Inaccurate or delayed ETA estimation",
+      "priority": "P1",
+      "reviewFrequency": 10,
+      "severity": "High",
+      "journeyStage": "Pre-Trip Pacing & In-Transit Planning",
+      "evidenceConfidence": "Medium [OBSERVED symptoms of fluctuating and inaccurate arrival predictions]",
+      "verifiedReviewIds": [
+        "7476b129-f0da-458e-8f86-d77ba2f9a710",
+        "145e34ef-5530-438b-bb8b-9dff2aed6e90",
+        "0fddfa5e-4c05-4aee-9412-1a44d52a9f1c",
+        "1239e342-ffd6-4a27-b815-54f7f3711b06",
+        "5ac20968-6bad-4b53-9d1d-a0af6da248ed"
+      ],
+      "rootCauseHypothesis": "Infrequently updated dynamic road traffic speed feeds and uncalibrated multi-passenger boarding dwell time buffers.",
+      "proposedAction": "Deploy 4-stage ETA telemetry capture pipeline (Predicted ETA vs Actual Arrival); calibrate empirical boarding dwell buffers per stop; update ETAs dynamically.",
+      "validationMetric": "P90 ETA accuracy within ± 5 minutes of actual pickup arrival (Proposed validation target, subject to engineering baseline and SLA review)."
+    },
+    {
+      "findingId": "FINDING-010",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/08_driver_vehicle_prd.md"
+      ],
+      "clusterId": "cluster_driver_vehicle",
+      "clusterName": "Driver behavioral issues and vehicle maintenance deficiencies",
+      "priority": "P1",
+      "reviewFrequency": 24,
+      "severity": "Medium",
+      "journeyStage": "Trip / Ride (In-Cabin Experience)",
+      "evidenceConfidence": "Medium [OBSERVED complaints regarding non-working AC, cleanliness, and driver conduct]",
+      "verifiedReviewIds": [
+        "98db1b19-26e2-4e6d-937b-7319944a6fc0",
+        "88fa8703-20ab-4e8f-ab4d-07f59f254952",
+        "785327ff-5759-41b8-ba5f-c6eabed81c01",
+        "dba61dc5-b7e3-482a-a596-5be145a9e1e4",
+        "e6077207-c5c0-4521-8a4e-ee00d18263aa"
+      ],
+      "rootCauseHypothesis": "Lack of real-time vendor fleet defect tracking and disconnect between passenger ride feedback and vendor maintenance disincentives.",
+      "proposedAction": "Introduce structured in-app feedback tags (\"AC Not Working\", \"Cleanliness\", \"Rash Driving\") for ratings < 4 stars; automate vendor inspection triggers for repeat defects.",
+      "validationMetric": "Reduction in AC / cleanliness complaint frequency; vendor defect resolution time < 48 hours (Proposed validation target)."
+    },
+    {
+      "findingId": "FINDING-011",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/09_support_notifications_prd.md"
+      ],
+      "clusterId": "cluster_support_responsiveness",
+      "clusterName": "Customer support and transport helpdesk responsiveness",
+      "priority": "P2",
+      "reviewFrequency": 8,
+      "severity": "Medium",
+      "journeyStage": "Post-Trip & Exception Resolution",
+      "evidenceConfidence": "Medium [OBSERVED symptoms of unreachable helpdesk numbers and delayed responses]",
+      "verifiedReviewIds": [
+        "225d87f1-5d2f-4d23-ac26-ecda35211579",
+        "1d7aa4a5-419d-42f4-8be5-d9096c09746d",
+        "2964c65f-3c5f-4e55-9816-0db634fae32d",
+        "f61b87be-2625-4997-88c2-421a89dd01fe",
+        "760cc5ba-26c9-48c6-8e86-13fdb106d7e7"
+      ],
+      "rootCauseHypothesis": "Telephone infrastructure capacity saturation during peak hours; lack of structured in-app exception reporting.",
+      "proposedAction": "Deploy one-tap in-app self-service exception flows (\"Report Delay\") to automatically alert transport desk; defer broader helpdesk overhaul to Days 61-90.",
+      "validationMetric": "Shift of exception volume to in-app self-service; reduction in dropped helpdesk calls."
+    },
+    {
+      "findingId": "FINDING-012",
+      "sourceStep": "Step 7 / Step 8 Audited Prioritization",
+      "sourceFiles": [
+        "outputs/prioritization/priority_matrix.json",
+        "outputs/prioritization/priority_quality_audit.json",
+        "outputs/recommendations/09_support_notifications_prd.md"
+      ],
+      "clusterId": "cluster_notifications",
+      "clusterName": "Trip push notification delivery delays and false alerts",
+      "priority": "P2",
+      "reviewFrequency": 4,
+      "severity": "Medium",
+      "journeyStage": "Vehicle Assignment & Approach Alert",
+      "evidenceConfidence": "Medium [OBSERVED symptoms of delayed or missing alerts]",
+      "verifiedReviewIds": [
+        "bb8bc95d-2aca-4ea1-8ec2-a6f74f5de33f",
+        "cdb0fe80-5aca-4f0e-b3e6-2f5585fba265",
+        "43186954-9fdb-4b8d-99ce-490c819f59a9",
+        "01f30f3f-6bb0-4751-9bc4-013948a2e9c8"
+      ],
+      "rootCauseHypothesis": "FCM push notification gateway throttling or Android background power optimization restricting delivery.",
+      "proposedAction": "Configure Android PRIORITY_HIGH heads-up notification channels for vehicle approach alerts; instrument notification-to-event delivery latency.",
+      "validationMetric": "P95 push alert delivery latency < 5s (Proposed validation target, subject to engineering review)."
+    }
+  ],
+  "qualityChecklist": {
+    "noNewReviewsCollected": true,
+    "noSourceClassificationsChanged": true,
+    "noStep678FilesModified": true,
+    "sampleSize1000Bounded": true,
+    "averageRating3_77Reported": true,
+    "negative291Reported": true,
+    "oneStar258Reported": true,
+    "crashLoop14Reported": true,
+    "appFreezing27Reported": true,
+    "booking30Reported": true,
+    "gps26Reported": true,
+    "noDoubleCounting": true,
+    "noInventedArchitecture": true,
+    "noInventedSLA": true,
+    "noInventedCapacity": true,
+    "noFabricatedReviewIds": true,
+    "geminiApiNotFalselyClaimed": true,
+    "rootCausesRemainHypotheses": true,
+    "eta3xClaimProperlyQualified": true,
+    "googleMapsNotAssumedGroundTruth": true,
+    "ratingPromptCausalClaimQualified": true,
+    "proposedTargetsClearlyLabeled": true,
+    "prioritiesP0P1P2Preserved": true,
+    "p3TreatedAsEvidenceGap": true,
+    "majorRecommendationsHaveMetrics": true,
+    "limitationsExplicitlyDocumented": true,
+    "fdeMindsetDemonstrated": true,
+    "finalRecommendationActionable": true
+  }
+}
