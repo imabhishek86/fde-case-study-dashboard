@@ -1,0 +1,69 @@
+name: Automated Data Refresh & Redeploy
+
+# Notice:
+# This workflow runs a reproducible pipeline on a daily schedule to collect
+# Google Play Store reviews, clean data, recalculate distributions, and run
+# automated integrity tests. When changes occur, it commits updated datasets
+# and optionally triggers a production deployment build hook.
+
+on:
+  schedule:
+    # Run once daily at 03:00 UTC (08:30 AM IST)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    # Allow manual execution via GitHub Actions UI
+
+jobs:
+  refresh-and-deploy:
+    name: Refresh Data & Test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Data Refresh Pipeline
+        run: npm run refresh
+
+      - name: Run Data Integrity Tests
+        run: npm test
+
+      - name: Check for Generated Data Changes
+        id: git_status
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain public/data/ pipeline/data/)" ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and Push Changes If Any
+        if: steps.git_status.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/ pipeline/data/
+          git commit -m "chore(data): automated daily Play Store reviews refresh [skip ci]"
+          git push origin main
+
+      - name: Trigger Netlify Deployment (If Configured)
+        if: steps.git_status.outputs.has_changes == 'true' && env.NETLIFY_HOOK != ''
+        env:
+          NETLIFY_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          echo "Triggering Netlify build hook..."
+          curl -s -X POST "$NETLIFY_HOOK"
