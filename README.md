@@ -59,6 +59,22 @@ The single-page web dashboard supports full hash-based direct routing with respo
 
 ---
 
+## 📊 Dashboard Preview
+
+### Executive Decision View
+![MoveInSync FDE Dashboard - Start Here](docs/screenshots/start-here.png)
+
+### Rating & Problem Analysis
+![MoveInSync FDE Dashboard - Overview](docs/screenshots/overview.png)
+
+### Priority & Recommendations
+![MoveInSync FDE Dashboard - Priority Matrix](docs/screenshots/priority-matrix.png)
+
+### Review Evidence Explorer
+![MoveInSync FDE Dashboard - Evidence Explorer](docs/screenshots/evidence-explorer.png)
+
+---
+
 ## 4. Key Findings & Priorities
 
 Analysis of the 291 negative reviews identified acute friction clusters across the commuter journey:
