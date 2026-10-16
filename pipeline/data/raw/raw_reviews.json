@@ -1,5 +1,210 @@
 [
   {
+    "id": "bd0c14fd-a474-4017-a2c0-6e94fb182232",
+    "userName": "Udaykumar Kulkarni",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJbJt90-Ta3WVUlz-Qb4fFHnl5HEGA4nSrKz1e1NbBkfkXMbA=mo",
+    "date": "2026-10-15T07:11:15.111Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=bd0c14fd-a474-4017-a2c0-6e94fb182232",
+    "title": null,
+    "text": "Good service",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_visual_appeal",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_ads_intrusiveness",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_battery_heat",
+        "rating": 3
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "7c2e8168-8faa-4d75-aba6-b41a962896fc",
+    "userName": "Sanme Sanme",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJ5RC7w3L7XhDQcNbLQ71JcoaMSgtJvP8-_TTzT8hF131-NfQ=mo",
+    "date": "2026-10-14T23:52:48.236Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7c2e8168-8faa-4d75-aba6-b41a962896fc",
+    "title": null,
+    "text": "worst drivers",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "2bf2b880-ed04-4e34-ac2d-ef7943336140",
+    "userName": "Shreya Jaiswal",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUPk4I-nbTQ1akCRjLArMJjhATPXhWCUaQkCQnDc7tjV6Esyobd",
+    "date": "2026-10-14T23:38:10.970Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=2bf2b880-ed04-4e34-ac2d-ef7943336140",
+    "title": null,
+    "text": "good",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.19.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_ads_intrusiveness",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_battery_heat",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_usability",
+        "rating": 1
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "96da1c30-55db-4a2e-9cf4-3eef9606f693",
+    "userName": "Sonia Pandey",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUyutzEGRPBqtvxlXFy4B_FDIK-Xhf7RXG85Ywg0eHx1-Xq-O6gqw",
+    "date": "2026-10-14T23:37:09.411Z",
+    "score": 3,
+    "scoreText": "3",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=96da1c30-55db-4a2e-9cf4-3eef9606f693",
+    "title": null,
+    "text": "too many a times asks for confirmation after once form filled then too 😂",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "7c658e0b-4540-4ae2-9f61-4f94a4339f00",
+    "userName": "Rishabhh0004",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVLln6M_LZyfxcJyRoJWWFHMn9eURVOkb7uzMa3JtwpDgAUKcDzAQ",
+    "date": "2026-10-14T22:23:36.541Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7c658e0b-4540-4ae2-9f61-4f94a4339f00",
+    "title": null,
+    "text": "amazing 😍😍😍",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.19.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "ad8cef26-8c88-4ed7-a13b-951056c044b4",
+    "userName": "Shakeer Tamboli",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIE9TibqD-W8uewC2X3kpgw9vByLC525mqUmYx_OjtXGE5evg=mo",
+    "date": "2026-10-14T15:17:25.189Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=ad8cef26-8c88-4ed7-a13b-951056c044b4",
+    "title": null,
+    "text": "Excellent 👍🏻",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_performance",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_ads_intrusiveness",
+        "rating": 2
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "cdf497ea-c577-4c05-9bef-580a61172579",
+    "userName": "Vihaan",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjW1YDPzXmMTzp7LVIaDM0S1-jAH1d6i05urU7bQgeUx5zt397I",
+    "date": "2026-10-14T10:31:08.520Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=cdf497ea-c577-4c05-9bef-580a61172579",
+    "title": null,
+    "text": "Very good app",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "4d039900-1773-450d-973c-725b26443ae1",
+    "userName": "Hemant Jena",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXlvcwQhzaumx9qleni8szJQswLrIT3a_4I8W2CdWngGOSDFjyiRA",
+    "date": "2026-10-14T10:00:25.290Z",
+    "score": 4,
+    "scoreText": "4",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=4d039900-1773-450d-973c-725b26443ae1",
+    "title": null,
+    "text": "with the latest version, the destination is not being populated. Getting an error like no eligible stop found. it was working fine with the earlier version.",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "97afb3bf-a556-45db-94cc-15bee02afa1a",
+    "userName": "Gowtham Kumar Official",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUr_0CzOLjR5jKJHEd3sVhVXi2OGKqgTdpZe-jVWRleQGMfH6k",
+    "date": "2026-10-14T09:37:26.133Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=97afb3bf-a556-45db-94cc-15bee02afa1a",
+    "title": null,
+    "text": "overall nice experience and recent update is awesome",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_ads_presence",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_ads_frequency",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_battery_efficiency",
+        "rating": 2
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "f6bb3692-c171-4d0b-accd-f25977fb555a",
     "userName": "ravindran nadar",
     "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLJwmYkXbQZKp-98DyPle9qq6L3N1LQ5MPqLhrOAARZgsLqKts=mo",
@@ -2022,7 +2227,7 @@
   {
     "id": "ddaff05c-fb9c-4971-b8c7-783330d87658",
     "userName": "Grace S",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIrw5VXYZzMSdTpYfTUJqhrWRS5g5TM0WZxvbPE5tiweJYQgA=mo",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVK8h8l5E7clx4Yb9DAAA0v5v32kktq_LeC3MfELc-wEZgCpmQ",
     "date": "2026-10-01T03:13:22.750Z",
     "score": 5,
     "scoreText": "5",
@@ -4609,36 +4814,6 @@
     "version": "12.18.1",
     "thumbsUp": 0,
     "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "bf123174-44a9-431d-b335-018cd2a28749",
-    "userName": "Muzamil Muhammad",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLlwGCP41rVoQrTklcTH75K-u3j5EhoIRz8MIjc3RmFT61fHw=mo",
-    "date": "2026-09-15T14:59:57.527Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=bf123174-44a9-431d-b335-018cd2a28749",
-    "title": null,
-    "text": "good good very good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.18.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_performance",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_stability",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_ads_intrusiveness",
-        "rating": 3
-      }
-    ],
     "collectedSort": "NEWEST"
   },
   {
@@ -19405,155 +19580,6 @@
     "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=665cc336-c4e6-43aa-a19d-502b32275bbb",
     "title": null,
     "text": "awesome",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "ad4d0479-e453-45fd-a5fc-9aed99bc2b46",
-    "userName": "Mayank Karakoti",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJZa0xM0VEQZ2oRsxh8Fx28PqwNTLo_2LNKoH-MC2FZWQ0nnpxt=mo",
-    "date": "2026-06-17T17:31:58.216Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=ad4d0479-e453-45fd-a5fc-9aed99bc2b46",
-    "title": null,
-    "text": "what type of app is this... I'm not getting otp for log in whether it's Mail or phone.",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "dcccf0ff-b530-4e8e-b12a-bcfad7365474",
-    "userName": "Sumudu Madushanka",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUjJnXQnCrS_PVQn1anh4RpN3lCsFyRJT3m9CHsCS7uFT-fIsAE",
-    "date": "2026-06-17T17:30:19.528Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=dcccf0ff-b530-4e8e-b12a-bcfad7365474",
-    "title": null,
-    "text": "A best app for office transport service. Can see the shuttle location in real time. There is an option to trigger SOS within a few seconds. Security is good. Easy to set up initially.",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 1,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_stability",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_ads_presence",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_battery_heat",
-        "rating": 2
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "0ca3d38b-265b-4248-9616-784a8d308d05",
-    "userName": "Sangeeta Thakur",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLS_lAztw3pyrRMvXS3JrNFFUealz03Y0AyLWduUwj1X4ZD5g=mo",
-    "date": "2026-06-17T17:07:16.761Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=0ca3d38b-265b-4248-9616-784a8d308d05",
-    "title": null,
-    "text": "good & supportive",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.9.4",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "b394bdf3-d4a1-4b35-8315-f12ee3ba1e55",
-    "userName": "Prajal Pradhan",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWS7hMNtKAwLuCI0NLNwe1KYypwf5Aat8z_cPjulfj4eS4oGb5OOw",
-    "date": "2026-06-17T14:52:46.401Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=b394bdf3-d4a1-4b35-8315-f12ee3ba1e55",
-    "title": null,
-    "text": "nice",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "f96d8859-6e44-4dc2-a415-3b979754eb89",
-    "userName": "Jitesh Singh",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVa5zpu9TcRQmNyjjZugZF7Jx2m4ccpQIup0BBmBIx1wpm2rQY",
-    "date": "2026-06-17T12:37:25.564Z",
-    "score": 3,
-    "scoreText": "3",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=f96d8859-6e44-4dc2-a415-3b979754eb89",
-    "title": null,
-    "text": "worst ever",
-    "replyDate": null,
-    "replyText": null,
-    "version": null,
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "07756e9a-741e-415e-adc9-fa85dc88575e",
-    "userName": "Iron Army",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWkuZ7dzEvn1yAF97wv3ptFOx6FQhkrKT_YVcgQjJj_ZfML8sUm",
-    "date": "2026-06-17T11:15:16.251Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=07756e9a-741e-415e-adc9-fa85dc88575e",
-    "title": null,
-    "text": "it was great experience",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "00243521-f795-4f0b-9f57-a0908d43c51c",
-    "userName": "Swapnil Jare",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIAEXQpM3uBPpNUxCfnHMjEmJQU1ZtqnRxY9Vj3Cb8EjTf53iI=mo",
-    "date": "2026-06-17T05:06:42.888Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=00243521-f795-4f0b-9f57-a0908d43c51c",
-    "title": null,
-    "text": "worst app ever",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "65cb8bc1-2462-4fb8-ad85-50cd551f73e4",
-    "userName": "Satyendra Singh",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVmm4duQkJH75CL7Pm-NSOlUtdsry8Lpx_XsCGO0DAZ-UFe-BVM",
-    "date": "2026-06-17T04:51:42.189Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=65cb8bc1-2462-4fb8-ad85-50cd551f73e4",
-    "title": null,
-    "text": "The app is working fine and shows the correct route and tracking. Other modules and features are also working properly.",
     "replyDate": null,
     "replyText": null,
     "version": "12.13.1",
