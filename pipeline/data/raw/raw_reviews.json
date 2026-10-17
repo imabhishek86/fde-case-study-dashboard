@@ -1,5 +1,168 @@
 [
   {
+    "id": "7280515e-7d9d-4ab5-a965-c9506f9be1b6",
+    "userName": "Sandeep Gaur",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXZDr9S_Wasg04dNLBlcGl9eYYUz5uXJ90eyVV3tAuaE_VwVMrOGg",
+    "date": "2026-10-15T23:11:38.187Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7280515e-7d9d-4ab5-a965-c9506f9be1b6",
+    "title": null,
+    "text": "outstanding service. keep it up.",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "bf123174-44a9-431d-b335-018cd2a28749",
+    "userName": "Muzamil Muhammad",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLlwGCP41rVoQrTklcTH75K-u3j5EhoIRz8MIjc3RmFT61fHw=mo",
+    "date": "2026-10-15T22:52:42.849Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=bf123174-44a9-431d-b335-018cd2a28749",
+    "title": null,
+    "text": "The overall experience is good. sometimes the app lags however after updating it works smooth",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_performance",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_ads_intrusiveness",
+        "rating": 3
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "6c9840ce-ea25-4287-9de0-5fff9e4f59dd",
+    "userName": "Raju R",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLKYmVcDdpRsGgBY2i2nW4B1h72NSlU9lzYljrWQPOMnHiqtg=mo",
+    "date": "2026-10-15T22:00:24.249Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=6c9840ce-ea25-4287-9de0-5fff9e4f59dd",
+    "title": null,
+    "text": "good",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "98e23f68-0bc5-4f66-a488-bfbade071ffa",
+    "userName": "Edith Kuwanda",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJzI7n5naOs-JDee0ydH2ri6MhWjl_v_OfDwNIUaWGmzO3cWg=mo",
+    "date": "2026-10-15T19:37:46.942Z",
+    "score": 3,
+    "scoreText": "3",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=98e23f68-0bc5-4f66-a488-bfbade071ffa",
+    "title": null,
+    "text": "app needs to allow option to change office sites",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_performance",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_ads_intrusiveness",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_battery_efficiency",
+        "rating": 2
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "1b66b570-b9c5-4255-ab0d-4a990166868c",
+    "userName": "jollie anne",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUu9wl0u1mbitF_-NqYZD3eX4HIq4MYseytsc_BL5YrkJeN5k0U",
+    "date": "2026-10-15T12:57:32.204Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=1b66b570-b9c5-4255-ab0d-4a990166868c",
+    "title": null,
+    "text": "terrible app!!! asking me to rate my ride experience a week ago and can't cancel it. I don't want to rate the driver or my ride experience. If I wanted to I already rated the driver as soon as I get of the van. Now it wont let me navigate to other page to check my booking.",
+    "replyDate": "2022-09-15T09:41:43.605Z",
+    "replyText": "This doesn't seem right. We want to take a closer look at this for you. Please send a note to app@moveinsync.com so we can connect.",
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_usability",
+        "rating": 2
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "7a38f29a-9c71-42bd-b607-332450fd253c",
+    "userName": "Adheera",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjV9LWN2qgZPO2HuZEPVpgDUrsjzPPglS2QbfPoI90ASO8wZxwc",
+    "date": "2026-10-15T11:47:01.137Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7a38f29a-9c71-42bd-b607-332450fd253c",
+    "title": null,
+    "text": "WORST WORST WORST SERVICE",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_battery_heat",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_ads_frequency",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_ads_presence",
+        "rating": 2
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "dc871c88-187f-4814-8767-e0511d7ae177",
+    "userName": "A M",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjV2Guks24FlNHzZOJ3K-rWjGDuWcCXGsFSONkqPNKK4pzv-G_cNew",
+    "date": "2026-10-15T11:34:47.600Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=dc871c88-187f-4814-8767-e0511d7ae177",
+    "title": null,
+    "text": "sometimes I'm not able to confirm safe reach, if I don't click on notification, it won't pop up again. but very thankful to app and it's notification. tells me to check my cab details and reminds me a cab is scheduled. forgot to cancel cab and the notification reminded me thanks devs",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "bd0c14fd-a474-4017-a2c0-6e94fb182232",
     "userName": "Udaykumar Kulkarni",
     "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJbJt90-Ta3WVUlz-Qb4fFHnl5HEGA4nSrKz1e1NbBkfkXMbA=mo",
@@ -4927,7 +5090,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.18.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -5144,23 +5307,6 @@
     "replyDate": null,
     "replyText": null,
     "version": null,
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "7a6441a0-2383-4dd7-83f7-8d54c4af8111",
-    "userName": "Lettinthang Haokip",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjX180Wx8qdTTu1TnOFCbuEoNDJ_AOhJkhuwEXXlNj2Km0Ga2Ak1",
-    "date": "2026-09-14T04:10:17.819Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7a6441a0-2383-4dd7-83f7-8d54c4af8111",
-    "title": null,
-    "text": "damned!! worst app. Can't do live tracking or live boarding activities. suddenly it shows up at your location. You guys loved surprises huh??!!! Ridiculous",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.18.1",
     "thumbsUp": 0,
     "criterias": [],
     "collectedSort": "NEWEST"
@@ -19461,130 +19607,6 @@
         "rating": 2
       }
     ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "ad65d923-eff8-40fe-9cc1-60c375997e68",
-    "userName": "zaid ahmed",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjV8kFW9SI7CSeTVZhAT3h7S9UdVBnKtU-06L9E_tUh17pC60aT5",
-    "date": "2026-06-18T04:22:50.102Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=ad65d923-eff8-40fe-9cc1-60c375997e68",
-    "title": null,
-    "text": "good service",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.2",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "30cb30ff-5fcd-431f-a073-31131a07f9fd",
-    "userName": "suresh srivastava",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWjItKZgKFBMYYbOHOeRHGnugXsZtjGrkdA17oed0_YLP8b-ird",
-    "date": "2026-06-18T03:48:06.825Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=30cb30ff-5fcd-431f-a073-31131a07f9fd",
-    "title": null,
-    "text": "very promp and nice services",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_visual_appeal",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_ads_frequency",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_performance",
-        "rating": 1
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "75847d27-f924-44fd-bbc7-015266b0640a",
-    "userName": "Md Amir Khan",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKUyST3W_PhrL72vE9isdVH6LsvSIW6tdcgN_dvm283gnARTQ=mo",
-    "date": "2026-06-18T02:53:28.247Z",
-    "score": 3,
-    "scoreText": "3",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=75847d27-f924-44fd-bbc7-015266b0640a",
-    "title": null,
-    "text": "along with calling features there should be feature to message driver and driver can also message to employee.",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "c025c564-55e4-4c74-9741-f3577da10e2a",
-    "userName": "SAYAN BOSE",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXW8nwGlNYe208cZH2KwWkVNerCCPdK6CkPcFkGlqtiEe8Ub6h7vw",
-    "date": "2026-06-18T02:06:40.580Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=c025c564-55e4-4c74-9741-f3577da10e2a",
-    "title": null,
-    "text": "SAP employee, got logged out and now shows web login error, not able to book vehicle since one week",
-    "replyDate": null,
-    "replyText": null,
-    "version": null,
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_stability",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_visual_appeal",
-        "rating": 1
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "e2d901f5-c879-4721-b494-9007b6a60e34",
-    "userName": "Ball by Ball",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUN66UcrPyQEwVn8WuzkEuySkqGE3e6xi2DAZF1zHwGUMlwQ2r3",
-    "date": "2026-06-18T00:38:20.311Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=e2d901f5-c879-4721-b494-9007b6a60e34",
-    "title": null,
-    "text": "nice",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "665cc336-c4e6-43aa-a19d-502b32275bbb",
-    "userName": "Biswajit Patra",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjW4ns15fDn62Tmqn_bTGerYQdioeEHhr5sN_rIAfdLJ8U9dDJPC",
-    "date": "2026-06-17T18:21:18.704Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=665cc336-c4e6-43aa-a19d-502b32275bbb",
-    "title": null,
-    "text": "awesome",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
     "collectedSort": "NEWEST"
   }
 ]

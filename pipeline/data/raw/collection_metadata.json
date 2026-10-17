@@ -4,9 +4,9 @@
   "language": "en",
   "requestedReviewCount": 1000,
   "retrievedReviewCount": 1000,
-  "collectionTimestamp": "2026-10-16T07:51:37.756Z",
-  "earliestReviewDate": "2026-06-17T18:21:18.704Z",
-  "latestReviewDate": "2026-10-15T07:11:15.111Z",
+  "collectionTimestamp": "2026-10-17T07:28:39.922Z",
+  "earliestReviewDate": "2026-06-18T05:23:09.654Z",
+  "latestReviewDate": "2026-10-15T23:11:38.187Z",
   "sortingMethod": "NEWEST with HELPFULNESS supplement for bounded sample",
   "ratingBreakdown": {
     "5_star": 642,
