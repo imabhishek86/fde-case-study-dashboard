@@ -1,5 +1,39 @@
 [
   {
+    "id": "3fb40eb1-560d-46c6-837f-18d9e42b4072",
+    "userName": "Prarthna Singh",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocINnG3zt6oC8p1miWExv8phiCrT659KyGv9q7lwQZTfHPCR1Q=mo",
+    "date": "2026-10-17T23:56:07.788Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=3fb40eb1-560d-46c6-837f-18d9e42b4072",
+    "title": null,
+    "text": "okay 👍",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "a4234dec-2e23-47d9-a652-e27d20219f9a",
+    "userName": "Adesh Sengar",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVoPEHToRCe0RHrDRmrIYlVvk6UIJPHWc9OnfVDFvHMWT1tZbY",
+    "date": "2026-10-17T12:48:19.658Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=a4234dec-2e23-47d9-a652-e27d20219f9a",
+    "title": null,
+    "text": "it is very good app for corporate cab services",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "2d34d17f-e87d-41b6-b035-d062b6843501",
     "userName": "ayan pasha",
     "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVjCutmOid2uDqkVWI4JjEZ3ePt5vBbQAYQXC_GV1WgYUuta00Jqw",
@@ -7837,7 +7871,7 @@
   {
     "id": "397df87d-f01f-4486-8218-064d93f1679f",
     "userName": "Diwesh Sharma",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUnAyhIiLTkLo5px6LMjVN5UJP-8T-wA7v1k1Fw3Lv7W_8_6ciHEg",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKGJdgrHl_FUFB7en5HPKX6-23SBy9julTwB15BI6BwNIeSUKTe=mo",
     "date": "2026-08-26T20:06:28.860Z",
     "score": 1,
     "scoreText": "1",
@@ -9780,7 +9814,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.17.0",
-    "thumbsUp": 4,
+    "thumbsUp": 5,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -13441,7 +13475,7 @@
   {
     "id": "c6d30800-250c-4541-9335-7e6114e0474b",
     "userName": "Thippesh Km",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVuK31-tyZASgnZ8vYiTDieAK0_JIs8e8eTLlsyNQHOg38Kh8M",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVXCo9cv6SDpeHCZAlO2f8IDuqx5JXca053SoMzY11qa4IBUpI-",
     "date": "2026-07-21T22:13:33.157Z",
     "score": 2,
     "scoreText": "2",
@@ -19550,53 +19584,6 @@
       {
         "criteria": "vaf_app_quality_visual_appeal",
         "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_usability",
-        "rating": 1
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "00cb066f-7647-4072-94ce-d564d03cf71e",
-    "userName": "Sadique Ahmad",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWaXzsbKN5U54DNxZmnMV7Uv7YE2AaaU8ja9m-u0pmgc05-4dolcg",
-    "date": "2026-06-19T00:17:38.128Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=00cb066f-7647-4072-94ce-d564d03cf71e",
-    "title": null,
-    "text": "overall good",
-    "replyDate": null,
-    "replyText": null,
-    "version": null,
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "92ce3389-fb12-47af-a285-1f4d2bf5d9cd",
-    "userName": "Ashok Kumar",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLSRkokWHajg9cri7XQSr-bYTiFcdLZpu72pnxU3TqPk_qbMl0=mo",
-    "date": "2026-06-18T22:39:07.728Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=92ce3389-fb12-47af-a285-1f4d2bf5d9cd",
-    "title": null,
-    "text": "easy to use",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.12.3",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_ads_frequency",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_visual_appeal",
-        "rating": 2
       },
       {
         "criteria": "vaf_app_quality_usability",
