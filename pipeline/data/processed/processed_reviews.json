@@ -1,5 +1,20 @@
 [
   {
+    "id": "8f93a060-37bd-41d9-8e1c-2f344294ab87",
+    "userName": "Akash Barua",
+    "rating": 5,
+    "text": "app is good very easy and clean",
+    "cleanedText": "app is good very easy and clean",
+    "textLength": 31,
+    "ratingCategory": "positive",
+    "date": "2026-10-18T13:02:56.442Z",
+    "reviewDate": "2026-10-18",
+    "reviewMonth": "2026-10",
+    "thumbsUpCount": 0,
+    "version": "12.19.0",
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "3fb40eb1-560d-46c6-837f-18d9e42b4072",
     "userName": "Prarthna Singh",
     "rating": 5,
@@ -25,7 +40,7 @@
     "date": "2026-10-17T12:48:19.658Z",
     "reviewDate": "2026-10-17",
     "reviewMonth": "2026-10",
-    "thumbsUpCount": 0,
+    "thumbsUpCount": 1,
     "version": "12.20.0",
     "collectedSort": "NEWEST"
   },
@@ -175,7 +190,7 @@
     "date": "2026-10-15T23:11:38.187Z",
     "reviewDate": "2026-10-15",
     "reviewMonth": "2026-10",
-    "thumbsUpCount": 0,
+    "thumbsUpCount": 1,
     "version": "12.20.0",
     "collectedSort": "NEWEST"
   },
@@ -430,7 +445,7 @@
     "date": "2026-10-14T04:50:15.404Z",
     "reviewDate": "2026-10-14",
     "reviewMonth": "2026-10",
-    "thumbsUpCount": 0,
+    "thumbsUpCount": 1,
     "version": "12.20.0",
     "collectedSort": "NEWEST"
   },
@@ -12370,7 +12385,7 @@
     "date": "2026-07-07T11:16:41.114Z",
     "reviewDate": "2026-07-07",
     "reviewMonth": "2026-07",
-    "thumbsUpCount": 3,
+    "thumbsUpCount": 4,
     "version": "12.14.1",
     "collectedSort": "NEWEST"
   },
@@ -14982,21 +14997,6 @@
     "reviewMonth": "2026-06",
     "thumbsUpCount": 0,
     "version": "12.13.1",
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "ae1d900b-d788-4009-b2d5-69ec19a76b1b",
-    "userName": "Rudhra Moorthy Dmodharan",
-    "rating": 5,
-    "text": "good",
-    "cleanedText": "good",
-    "textLength": 4,
-    "ratingCategory": "positive",
-    "date": "2026-06-19T04:52:50.965Z",
-    "reviewDate": "2026-06-19",
-    "reviewMonth": "2026-06",
-    "thumbsUpCount": 0,
-    "version": "12.13.2",
     "collectedSort": "NEWEST"
   }
 ]

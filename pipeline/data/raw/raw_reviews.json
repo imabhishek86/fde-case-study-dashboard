@@ -1,5 +1,22 @@
 [
   {
+    "id": "8f93a060-37bd-41d9-8e1c-2f344294ab87",
+    "userName": "Akash Barua",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjX8kZcuQGPgDq4g2JDfBPehs7FvxSv-rJbWLau-QoUZvHhEJF8t",
+    "date": "2026-10-18T13:02:56.442Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=8f93a060-37bd-41d9-8e1c-2f344294ab87",
+    "title": null,
+    "text": "app is good very easy and clean",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.19.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "3fb40eb1-560d-46c6-837f-18d9e42b4072",
     "userName": "Prarthna Singh",
     "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocINnG3zt6oC8p1miWExv8phiCrT659KyGv9q7lwQZTfHPCR1Q=mo",
@@ -29,7 +46,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -221,7 +238,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -606,7 +623,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -16160,7 +16177,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.14.1",
-    "thumbsUp": 3,
+    "thumbsUp": 4,
     "criterias": [
       {
         "criteria": "vaf_app_quality_ads_frequency",
@@ -19564,32 +19581,6 @@
     "version": "12.13.1",
     "thumbsUp": 0,
     "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "ae1d900b-d788-4009-b2d5-69ec19a76b1b",
-    "userName": "Rudhra Moorthy Dmodharan",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVQULjEUPDMY6tDlWkE8-VHTV_XEglhU1XLwy0jpumtQQ_LAI839A",
-    "date": "2026-06-19T04:52:50.965Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=ae1d900b-d788-4009-b2d5-69ec19a76b1b",
-    "title": null,
-    "text": "good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.2",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_visual_appeal",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_usability",
-        "rating": 1
-      }
-    ],
     "collectedSort": "NEWEST"
   }
 ]
