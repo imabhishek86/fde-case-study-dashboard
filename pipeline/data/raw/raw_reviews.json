@@ -1,5 +1,231 @@
 [
   {
+    "id": "e7f99205-1533-4f53-b1e5-7ff4af9ea923",
+    "userName": "Jagadeesh kushalappa",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUIjyX4iMnnc43kp-RWR-0Ozc6rJMnyFzJw0kUu-dB9Ru_Js-0vxg",
+    "date": "2026-10-20T06:23:28.610Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=e7f99205-1533-4f53-b1e5-7ff4af9ea923",
+    "title": null,
+    "text": "it's good",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_visual_appeal",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_ads_intrusiveness",
+        "rating": 2
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "6f2a059f-92f7-4be8-98ec-ae67ff613481",
+    "userName": "Latgeirio G.",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocK7xFTBE-Iv6P97iA95dN72nY4WU5wpL3md_AXOGgjp-emhBQ=mo",
+    "date": "2026-10-20T05:34:28.996Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=6f2a059f-92f7-4be8-98ec-ae67ff613481",
+    "title": null,
+    "text": "coolest app",
+    "replyDate": null,
+    "replyText": null,
+    "version": "11.5.20",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "748751fd-b861-4c5a-b525-2472321a5930",
+    "userName": "Vivek Chandak",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjU5bYZMusBe5i9e2HyKH6OeN6jAPbVoinx0JDhfKGyLVkplqTo",
+    "date": "2026-10-20T04:54:01.431Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=748751fd-b861-4c5a-b525-2472321a5930",
+    "title": null,
+    "text": "lawde ka app aur lawde ki company",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "cfe32bb4-eeab-44f1-bcf4-973fce4bc11c",
+    "userName": "Janesu Mantena",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXXx0YCfbztt-rCqHJKjF0XUrb1jRdOtALl7FjWzTjtuprKKIdp",
+    "date": "2026-10-20T04:02:58.500Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=cfe32bb4-eeab-44f1-bcf4-973fce4bc11c",
+    "title": null,
+    "text": "easy to use",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_ads_presence",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_visual_appeal",
+        "rating": 1
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "00ac7c52-7fee-4765-a182-35c7acc6beab",
+    "userName": "Chaitanya Chavan",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWKZAiBd4ZW8MIIRIDGTBdyo-uQ7Nu-tZpN11iYewvtr2pFAh0",
+    "date": "2026-10-19T21:21:36.336Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=00ac7c52-7fee-4765-a182-35c7acc6beab",
+    "title": null,
+    "text": "Nice Experience",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "322185ad-16be-4659-b653-94f6a1d60873",
+    "userName": "Mimin changsan",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWe5u56tzeD8NltSpXV-EJb-uFg0sW6F-MhMogjITsijQAwhqs",
+    "date": "2026-10-19T20:23:12.180Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=322185ad-16be-4659-b653-94f6a1d60873",
+    "title": null,
+    "text": "Easy and convenient to use",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_ads_presence",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_performance",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_ads_frequency",
+        "rating": 2
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "9ec6fb34-c820-447c-bf12-cf232f2c3cae",
+    "userName": "Md Moinuddin",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWwsJLrs_3PEoGmsapug7XEumkeD3CfOx2ikqgtz2UO8_Ouj_2TAw",
+    "date": "2026-10-19T18:47:46.611Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=9ec6fb34-c820-447c-bf12-cf232f2c3cae",
+    "title": null,
+    "text": "best till date",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "3a794faf-0609-4114-b530-f4e5cd822ba3",
+    "userName": "Priti Bala",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKs2sJk3OitQFi9zJD2wxpB2QoZliJ54jjBeUwh0pDOJNrx9w=mo",
+    "date": "2026-10-19T15:08:51.271Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=3a794faf-0609-4114-b530-f4e5cd822ba3",
+    "title": null,
+    "text": "good",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "9c25ece7-8f97-48d0-8283-51e2185ad229",
+    "userName": "Trisha Chandra",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIv_JqzOCUd74frJDALyiWYjq_AdX8yy6mMBCOXcXXFj43C5Q=mo",
+    "date": "2026-10-19T12:44:27.200Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=9c25ece7-8f97-48d0-8283-51e2185ad229",
+    "title": null,
+    "text": "good",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "7490bd42-d3c1-4930-bc67-acead5f7ab5b",
+    "userName": "rohith r",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWU87UF_XHhCSIY1oEtRUvjY2dYFcs1krY8NOX_uDd3nfG1ZV-I",
+    "date": "2026-10-19T09:35:14.295Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7490bd42-d3c1-4930-bc67-acead5f7ab5b",
+    "title": null,
+    "text": "can you please look after the bug because I am unable to open this application",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "4401a7b0-eeaa-49df-90b1-27834d95b539",
+    "userName": "Sonu Sina",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUnEoKX7ey30Jau8FKBDFvxIMC366iKmobXFiM2WvAsqL127xQ",
+    "date": "2026-10-19T09:25:54.165Z",
+    "score": 2,
+    "scoreText": "2",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=4401a7b0-eeaa-49df-90b1-27834d95b539",
+    "title": null,
+    "text": "Unable to Schedule Manual Pickup and drop",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "8f93a060-37bd-41d9-8e1c-2f344294ab87",
     "userName": "Akash Barua",
     "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjX8kZcuQGPgDq4g2JDfBPehs7FvxSv-rJbWLau-QoUZvHhEJF8t",
@@ -19367,219 +19593,6 @@
     "replyText": null,
     "version": "12.13.1",
     "thumbsUp": 7,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "f5347b3d-f7ab-405d-a482-bae26ecd5368",
-    "userName": "Neha",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVeDTFA0Q-SFtHPLycHz11IXSUQinHL0SM6XPPqlC4rlEL9y5g",
-    "date": "2026-06-20T21:42:32.602Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=f5347b3d-f7ab-405d-a482-bae26ecd5368",
-    "title": null,
-    "text": "Total waste of time. Support is useless and the staff is incredibly rude. To make matters worse, the app is a mess—pickup times change constantly, so you never actually know when your ride is coming. Don't believe the high ratings; this service is untrustworthy and frustrating to use.",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_usability",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_stability",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_visual_appeal",
-        "rating": 3
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "a290e189-c7ba-4997-ac44-90de447a7448",
-    "userName": "Kunal Dhavale",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKK-0Eq6Nna3sxBws4JW7SHwJBliFXxtJfSIbLsz999idTJJw=mo",
-    "date": "2026-06-20T17:49:51.151Z",
-    "score": 2,
-    "scoreText": "2",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=a290e189-c7ba-4997-ac44-90de447a7448",
-    "title": null,
-    "text": "Can not see booked cab schedule. Too much conservative and limited.",
-    "replyDate": null,
-    "replyText": null,
-    "version": null,
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "32b8b1f5-83f8-4603-a599-89108ead489c",
-    "userName": "Rohit Singh",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUwjlmOmIOATiuiLMQ-LFTy5t-coydvr6eZx0rotBGHrcLOLjP4kg",
-    "date": "2026-06-20T13:01:29.198Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=32b8b1f5-83f8-4603-a599-89108ead489c",
-    "title": null,
-    "text": "Multiple issues have been observed following the recent updates. The matter has already been reported to our office support team, and they are currently reviewing it.",
-    "replyDate": null,
-    "replyText": null,
-    "version": null,
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "2a42eb99-eb5e-4077-91ff-297cc7c99303",
-    "userName": "Jemima Gain",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUkCmeVwJ_MjoOJ0FdpH7ZgpOtSp_1MaFgB9bk6lUthrVeVBJv7",
-    "date": "2026-06-19T23:59:27.868Z",
-    "score": 2,
-    "scoreText": "2",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=2a42eb99-eb5e-4077-91ff-297cc7c99303",
-    "title": null,
-    "text": "Does not allow me to make amendments even though it is made immediately after incorrect booking",
-    "replyDate": null,
-    "replyText": null,
-    "version": null,
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_ads_presence",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_visual_appeal",
-        "rating": null
-      },
-      {
-        "criteria": "vaf_app_quality_stability",
-        "rating": null
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "c74d83c4-c4eb-4ba6-97d5-27aae6c6d66e",
-    "userName": "Shubham Kumar Dubey (Crispy Boy)",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXD2rq-5CYTZDesZoJTof5vJPb-y4NdUbf4tPw5rEXVnn1wibRA",
-    "date": "2026-06-19T23:29:49.345Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=c74d83c4-c4eb-4ba6-97d5-27aae6c6d66e",
-    "title": null,
-    "text": "Very good experience",
-    "replyDate": null,
-    "replyText": null,
-    "version": null,
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "ff018123-1e0d-4a53-9960-98eddead4b91",
-    "userName": "Sohail Shikalgar",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIgo9WAMsrKi0j2OsmPNyKo2ZoW38n-L6wSyXaMhg0UJcjwoQ=mo",
-    "date": "2026-06-19T20:04:46.777Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=ff018123-1e0d-4a53-9960-98eddead4b91",
-    "title": null,
-    "text": "very good feel and user interface",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "797f9994-1260-4597-92a3-e365bbbfd08f",
-    "userName": "Raj Kumar",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocI2fRDY92RwS7RV_PKFBUubPzyjHicbK__-YkvbwNPit-xI3p-2=mo",
-    "date": "2026-06-19T19:47:12.664Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=797f9994-1260-4597-92a3-e365bbbfd08f",
-    "title": null,
-    "text": "nice app",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.2",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "abf7eb36-2425-49f0-80a0-a04b5aa26f2a",
-    "userName": "Nilesh Thakur",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVoGitbN1rNMWhArsh9-nMAIP9OtannZLQHKuIwLZABBadlCOWfuA",
-    "date": "2026-06-19T14:57:20.962Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=abf7eb36-2425-49f0-80a0-a04b5aa26f2a",
-    "title": null,
-    "text": "It is very easy for every employee to book a cab through the Moving Singh app, so Google is very happy to provide such an app, thank you.",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.2",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "d4e87ea5-b356-4cc5-a84b-7fe68e4bbd65",
-    "userName": "Yaseen Ahmed",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJB4bkiHrw7zKXYZ6v0TLeWEx8331D1leKZBR41YV9MR5eyUw=mo",
-    "date": "2026-06-19T10:48:17.443Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=d4e87ea5-b356-4cc5-a84b-7fe68e4bbd65",
-    "title": null,
-    "text": "unable to login",
-    "replyDate": null,
-    "replyText": null,
-    "version": null,
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "ea4215e1-ac19-4479-90a4-5ed7bde53dde",
-    "userName": "dilip kumar",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXvgTImA4H5bLyUgkGk6oJHv59MtB3WSph2GHqGcabU5THBvvs",
-    "date": "2026-06-19T10:13:56.222Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=ea4215e1-ac19-4479-90a4-5ed7bde53dde",
-    "title": null,
-    "text": "satisfied services",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "2acf0f4f-1181-4fcf-bd4b-dfef1c25a4b3",
-    "userName": "Rajesh Raj",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXj-yjuX2X_TgYPS6A6NNh9QHOJai5LKXUPbFo6xzhh_10sYiw",
-    "date": "2026-06-19T07:12:47.763Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=2acf0f4f-1181-4fcf-bd4b-dfef1c25a4b3",
-    "title": null,
-    "text": "it's good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
     "criterias": [],
     "collectedSort": "NEWEST"
   }
