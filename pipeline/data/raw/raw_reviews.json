@@ -1,5 +1,150 @@
 [
   {
+    "id": "701fd120-862e-4827-b8e4-b068d0cdad32",
+    "userName": "Priyanka Garsole",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLG0cqu3VTBrCi4CzsCg0XtUkIEhzWHNrPKevQQLcM3GmkY1w=mo",
+    "date": "2026-10-21T03:56:28.924Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=701fd120-862e-4827-b8e4-b068d0cdad32",
+    "title": null,
+    "text": "Good app for overall coordination",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_usability",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_performance",
+        "rating": 1
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "6f3fff8c-ca9e-4c3a-9d91-e4940d0dd59d",
+    "userName": "Swapnil Deshmukh",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWIsekd4uBGjH_3jTLyqQyr1IlI_8KkK7GpOwjaqxYwMwaMNzmz",
+    "date": "2026-10-21T01:08:46.105Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=6f3fff8c-ca9e-4c3a-9d91-e4940d0dd59d",
+    "title": null,
+    "text": "Good",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "17d8c9b9-0bd1-434e-ab06-29559cb45d5d",
+    "userName": "Sajeed Syed",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUfvhkNRO7_ozqzPjb5P-Ryzf-hUYccn4UcOzwIdMUwKgA3SzuD",
+    "date": "2026-10-20T23:50:34.386Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=17d8c9b9-0bd1-434e-ab06-29559cb45d5d",
+    "title": null,
+    "text": "waste app, pathetic service, no two way communication available, Drivers do not take the responsibility to reach the passenger, they stand at one random place which is no way related to the passenger location. They don't have the knowledge of reading google maps. Pathetic Response from Admin team as they keep phone switched off. This is really ridiculous and keep the blame on passenger. Hopeless Service. They do not deserve even that one star.",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_ads_intrusiveness",
+        "rating": 3
+      },
+      {
+        "criteria": "vaf_app_quality_usability",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 3
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "a983c088-a459-4555-8ba2-45d2811f1aab",
+    "userName": "Pathan Shahid Khan",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocI6TnP_6sBOLTUysqT7EsuQlcyH7E1LqAFBGzsqKByBkxalnQ=mo",
+    "date": "2026-10-20T22:04:45.859Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=a983c088-a459-4555-8ba2-45d2811f1aab",
+    "title": null,
+    "text": "good aap",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.13.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "e955a329-d1a9-4143-926a-b2a25112e885",
+    "userName": "Rahul Kumar",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWC9ejxggc0t3678CDV8HqNYwdOqpQd2mBzZ3biu3iE5MbbwlpR",
+    "date": "2026-10-20T21:25:38.270Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=e955a329-d1a9-4143-926a-b2a25112e885",
+    "title": null,
+    "text": "amazing",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "3e8b13a9-f3b5-40e4-ac18-4c0055f3ad06",
+    "userName": "Romina De Guia",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWR9yybo6_BMyPFvx7JmHqbjJoiATvZdP5oyxbUWTmfw1hCKy8",
+    "date": "2026-10-20T21:13:35.898Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=3e8b13a9-f3b5-40e4-ac18-4c0055f3ad06",
+    "title": null,
+    "text": "user friendly app and reliable",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "f9556b52-cb5b-4c5b-a4ff-48268933c426",
+    "userName": "to purchase",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIihSD5WGneya4MNzFveQ_vN1Fp3EVPLqAQ3bMylUMMnLNmpQ=mo",
+    "date": "2026-10-20T15:41:29.746Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=f9556b52-cb5b-4c5b-a4ff-48268933c426",
+    "title": null,
+    "text": "worst service ever in cab services and amit is way to much uncooperative person ,",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "e7f99205-1533-4f53-b1e5-7ff4af9ea923",
     "userName": "Jagadeesh kushalappa",
     "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUIjyX4iMnnc43kp-RWR-0Ozc6rJMnyFzJw0kUu-dB9Ru_Js-0vxg",
@@ -59,7 +204,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -106,7 +251,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -153,7 +298,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -306,7 +451,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [
       {
         "criteria": "vaf_app_quality_performance",
@@ -580,7 +725,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [
       {
         "criteria": "vaf_app_quality_battery_heat",
@@ -610,7 +755,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -738,7 +883,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [
       {
         "criteria": "vaf_app_quality_stability",
@@ -951,7 +1096,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.20.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -18313,7 +18458,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.14.1",
-    "thumbsUp": 6,
+    "thumbsUp": 7,
     "criterias": [],
     "collectedSort": "NEWEST"
   },
@@ -19461,138 +19606,6 @@
     "replyText": null,
     "version": "12.13.1",
     "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "50d2a069-4bdc-4f56-80a0-8140c2149a22",
-    "userName": "Abhinav Jain",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVBsDSq5hscC6oA-lm-yWfnDt-6ugEdtMy0xUgKBTTWRXMz8bVA",
-    "date": "2026-06-22T03:46:25.680Z",
-    "score": 3,
-    "scoreText": "3",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=50d2a069-4bdc-4f56-80a0-8140c2149a22",
-    "title": null,
-    "text": "Tne updated UI is modern but not simple and difficult to use.",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.0",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "90bf938f-0b0e-4116-a5e7-07956b733b9d",
-    "userName": "atul nath",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVuiYEwZBSPwd0hNPEHTU5VYlzkGrQMBD23r0rO24RzS6LsKh8",
-    "date": "2026-06-22T01:55:13.868Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=90bf938f-0b0e-4116-a5e7-07956b733b9d",
-    "title": null,
-    "text": "the UX and UI of the app is poor...and why a fresh disclaimer statement every time when you minimize the app even for a second?",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "3668eb36-579b-4fbf-ad0e-14f9ddc75a97",
-    "userName": "Rishab Verma",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVVT3tDa1Oe2nx6wfJ6ByHlwAI7sIvex_FKJR8HWulRYrOimyCO",
-    "date": "2026-06-22T00:33:21.728Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=3668eb36-579b-4fbf-ad0e-14f9ddc75a97",
-    "title": null,
-    "text": "What's the use of help desk when it's always busy",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 1,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "a0d5f9d7-3b5f-4f3d-ab85-f8d3efbd4fd7",
-    "userName": "Kuraganti Satish",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVJKtnavEa1kvMJPOY8SWb8Yeds5D5jj26bat1KU0_CxYZx5h4K",
-    "date": "2026-06-21T23:34:47.801Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=a0d5f9d7-3b5f-4f3d-ab85-f8d3efbd4fd7",
-    "title": null,
-    "text": "good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "5abe2cac-b91b-4df6-902d-a4c36d5d84fd",
-    "userName": "JAI HIND",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWWJstfphWyKxoUEmh5w5eLjwVDMJyyzRd0Yfe5N64JUihJTY7G",
-    "date": "2026-06-21T20:26:46.502Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=5abe2cac-b91b-4df6-902d-a4c36d5d84fd",
-    "title": null,
-    "text": "cab is never assigned on time...always late ..no value of others time...after logout every day we have to wait for 40+ mins for cab the 20 mins distance route...which is totally waste of time...third class",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 1,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_stability",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_ads_intrusiveness",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_battery_heat",
-        "rating": 1
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "5f820249-7029-4cd6-aa25-d7f6b71e77d7",
-    "userName": "SUNIL KUMAR K N",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXalFzq7CWPLXgyuzx3h_YeFtVuCWjznnw9sGRUALysGqE1yq2b1g",
-    "date": "2026-06-21T19:34:31.436Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=5f820249-7029-4cd6-aa25-d7f6b71e77d7",
-    "title": null,
-    "text": "good experience",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.2",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "28a80f92-cf99-410d-97da-8bcb567fa87d",
-    "userName": "Dastagir Mohd",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjX3Kd9SasZ9W2w-3sUPL30xrnLUoYOdpncsUGNKJ9--F9pbHrhG",
-    "date": "2026-06-21T01:20:53.989Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=28a80f92-cf99-410d-97da-8bcb567fa87d",
-    "title": null,
-    "text": "everything is very good. but while coming to the timing page the details. of the time font should be larger. apart from that. the design is very good. please work on it",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.13.1",
-    "thumbsUp": 7,
     "criterias": [],
     "collectedSort": "NEWEST"
   }
