@@ -1,5 +1,69 @@
 [
   {
+    "id": "8603b38c-ead5-4531-9dc4-32005c9d345f",
+    "userName": "Kushal",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIF0Vnp4cc6NC1-1jMpiypXXy2dQfCkWO7jcxS6ayLMh5Ew4A=mo",
+    "date": "2026-10-24T20:57:36.515Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=8603b38c-ead5-4531-9dc4-32005c9d345f",
+    "title": null,
+    "text": "The app is too slow and is very slow to show the correct location and also the map face is really not good .. worst app to use",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "43d90b3c-0443-4073-8647-6aee98c78bd4",
+    "userName": "Benit Raja",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjX-ztJ6F8i5nx-JeCAjUJ_nlrmcMYMjVGOV4O5DdB3iFTEb7GYqOA",
+    "date": "2026-10-24T11:03:16.176Z",
+    "score": 2,
+    "scoreText": "2",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=43d90b3c-0443-4073-8647-6aee98c78bd4",
+    "title": null,
+    "text": "still irritating push message of trip is not booked despite having valid trip booked. 06-10-2026 even after booked the trip it keep sends the push notification that trip is not booked. old: Bring monthly view ,not just day view...",
+    "replyDate": "2023-10-29T14:08:08.459Z",
+    "replyText": "Hi,\nWe've forwarded your feedback to our developers. Thank you for taking out the time to send us your suggestions!",
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_usability",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_performance",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_ads_frequency",
+        "rating": 2
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "c358aa46-127e-46a9-b6b7-5687a69ca987",
+    "userName": "Sushma Dammur",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWzBUccZ7g2pTpYyDJ9FdGK-4qYhfqBYpcSGHXz0HdNXJndn6Ew",
+    "date": "2026-10-24T10:41:50.404Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=c358aa46-127e-46a9-b6b7-5687a69ca987",
+    "title": null,
+    "text": "nice app for transport",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.20.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "95946292-65c7-430d-b676-38fbddbd1046",
     "userName": "vinit magade",
     "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWu89kQ5cbZt6V6EJ33TQNHUKZ7ujjn1eDeMBus3QGSd3ZR9Vzr",
@@ -19548,83 +19612,6 @@
     "version": "12.14.0",
     "thumbsUp": 0,
     "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "eca3c8b0-9d11-40fe-877d-1b1ce7d029ad",
-    "userName": "Sid",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXFzg8pOPfqmHB17YN59VMeeV7l9YH6dMid_86h_Y-p-_kOcTGx",
-    "date": "2026-06-24T14:17:25.961Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=eca3c8b0-9d11-40fe-877d-1b1ce7d029ad",
-    "title": null,
-    "text": "never works slow app",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.0",
-    "thumbsUp": 1,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_ads_presence",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_ads_frequency",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_performance",
-        "rating": 2
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "f7df20ab-fe77-4454-9a07-55438ce28c6e",
-    "userName": "Amit R",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIIVLhAIdIUPq1-U6U76swFbN5zOAqM2F8uuROZ4y-QLw27gQ=mo",
-    "date": "2026-06-24T08:22:40.941Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=f7df20ab-fe77-4454-9a07-55438ce28c6e",
-    "title": null,
-    "text": "terrible phone app... keeps hanging",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.0",
-    "thumbsUp": 1,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "0053a636-43c5-4bb2-a3d0-ece14264aa09",
-    "userName": "Vaishnavi LB",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKTCZnOoq6_acIS881sAOFRJJo67mxjAcspo8a1i5tAmbaYtYno=mo",
-    "date": "2026-06-24T05:08:46.330Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=0053a636-43c5-4bb2-a3d0-ece14264aa09",
-    "title": null,
-    "text": "comfortable ride",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.0",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_ads_presence",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_performance",
-        "rating": 3
-      },
-      {
-        "criteria": "vaf_app_quality_battery_heat",
-        "rating": 2
-      }
-    ],
     "collectedSort": "NEWEST"
   }
 ]

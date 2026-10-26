@@ -8,14 +8,14 @@
   "missingDateCount": 0,
   "invalidRatingCount": 0,
   "emptyTextCount": 0,
-  "earliestDate": "2026-06-24T05:08:46.330Z",
-  "latestDate": "2026-10-24T02:03:44.275Z",
+  "earliestDate": "2026-06-24T15:50:37.991Z",
+  "latestDate": "2026-10-24T20:57:36.515Z",
   "ratingDistribution": {
     "5_star": 652,
     "4_star": 41,
     "3_star": 23,
-    "2_star": 31,
-    "1_star": 253
+    "2_star": 32,
+    "1_star": 252
   },
   "ratingCategoryDistribution": {
     "positive": 693,
