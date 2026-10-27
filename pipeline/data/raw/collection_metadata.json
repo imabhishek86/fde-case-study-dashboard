@@ -4,13 +4,13 @@
   "language": "en",
   "requestedReviewCount": 1000,
   "retrievedReviewCount": 1000,
-  "collectionTimestamp": "2026-10-26T08:27:40.459Z",
-  "earliestReviewDate": "2026-06-24T15:50:37.991Z",
-  "latestReviewDate": "2026-10-24T20:57:36.515Z",
+  "collectionTimestamp": "2026-10-27T08:36:01.161Z",
+  "earliestReviewDate": "2026-06-25T00:10:27.136Z",
+  "latestReviewDate": "2026-10-26T07:48:32.125Z",
   "sortingMethod": "NEWEST with HELPFULNESS supplement for bounded sample",
   "ratingBreakdown": {
-    "5_star": 652,
-    "4_star": 41,
+    "5_star": 653,
+    "4_star": 40,
     "3_star": 23,
     "2_star": 32,
     "1_star": 252
