@@ -4,16 +4,16 @@
   "language": "en",
   "requestedReviewCount": 1000,
   "retrievedReviewCount": 1000,
-  "collectionTimestamp": "2026-11-03T10:25:27.897Z",
-  "earliestReviewDate": "2026-07-01T05:56:23.912Z",
-  "latestReviewDate": "2026-11-02T07:57:12.508Z",
+  "collectionTimestamp": "2026-11-04T10:22:04.554Z",
+  "earliestReviewDate": "2026-07-01T11:31:15.276Z",
+  "latestReviewDate": "2026-11-03T07:54:47.152Z",
   "sortingMethod": "NEWEST with HELPFULNESS supplement for bounded sample",
   "ratingBreakdown": {
-    "5_star": 660,
+    "5_star": 664,
     "4_star": 44,
-    "3_star": 23,
-    "2_star": 34,
-    "1_star": 239
+    "3_star": 24,
+    "2_star": 33,
+    "1_star": 235
   },
   "errors": [],
   "note": "This pipeline uses a bounded public sample of Google Play reviews and is subject to public-source availability, pagination limits, rate limits and sampling bias."
