@@ -1,5 +1,163 @@
 [
   {
+    "id": "67978b48-35f0-47a1-bfc6-6b613e3b5794",
+    "userName": "Ma. Jiezel Egar",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjW5cpzyNR1NjJtvzGBl8VsRK24get9Z1Hcm-Utv8usvQoP_4Qtg",
+    "date": "2026-11-06T06:24:34.481Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=67978b48-35f0-47a1-bfc6-6b613e3b5794",
+    "title": null,
+    "text": "Always good.",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.21.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "1278261d-b9f5-4413-933e-13eeb6548bce",
+    "userName": "Mohammad Ameerulla",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXlvdjrSnGVeVYhtN4VhGxp51ly7t8wPNanctww7rqHe0TbW2rQvQ",
+    "date": "2026-11-06T05:12:35.922Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=1278261d-b9f5-4413-933e-13eeb6548bce",
+    "title": null,
+    "text": "good",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.21.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "0b307dce-7b66-4e35-8f61-8516b4dee952",
+    "userName": "proven_bit",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWLEWahJFd-_DLrfz23kZd0fz8nfLMJXQfpYudVCDcL8HjS_DCZ7Q",
+    "date": "2026-11-05T19:41:42.301Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=0b307dce-7b66-4e35-8f61-8516b4dee952",
+    "title": null,
+    "text": "Good",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.21.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_ads_presence",
+        "rating": 3
+      },
+      {
+        "criteria": "vaf_app_quality_battery_heat",
+        "rating": 3
+      },
+      {
+        "criteria": "vaf_app_quality_battery_efficiency",
+        "rating": 3
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "cc403ca3-0542-4e0c-908d-a661b74e869c",
+    "userName": "Tisha Kunware",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJ1MPXDoIgKpgdPCn4B5EXilgkpF86kAnrQne71iUFrvm6vNA=mo",
+    "date": "2026-11-05T17:53:03.993Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=cc403ca3-0542-4e0c-908d-a661b74e869c",
+    "title": null,
+    "text": "safe and comfortable",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.21.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "28133357-7a51-4455-8898-4821033c9d8b",
+    "userName": "Divya Kotiyana",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIqp6imLsa4wfN1wDdyeCYQxtASzwUikfRpa8yCJoYO6j9VUQY=mo",
+    "date": "2026-11-05T17:49:05.617Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=28133357-7a51-4455-8898-4821033c9d8b",
+    "title": null,
+    "text": "After every 3-5 days the app gives error saying was not installed from playstore or does not exist even though it is installed from playstore, everytime I have to uninstall it and install it again it's very irritating",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.21.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "36ab6042-df1b-4825-acfe-4d800e37aeeb",
+    "userName": "Soni Singh",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjV3siAfOseRM2hoKxcSVNSLKlThRrlr3kADf5LJl9nyXwk2d5Y",
+    "date": "2026-11-05T15:17:34.930Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=36ab6042-df1b-4825-acfe-4d800e37aeeb",
+    "title": null,
+    "text": "worst corprate cab service app cab drivers marked you as no show without reaching to location and there help desk use less they only support them self",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_usability",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_battery_efficiency",
+        "rating": 3
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "7dd6cbfd-45ae-42ce-8e58-9e1d445b3304",
+    "userName": "Abhishek Simon",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVhil2K-set-KLx8YOWeva2oLaaerpig9i2afy_2SFyJtbL8_cG",
+    "date": "2026-11-05T13:21:05.755Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7dd6cbfd-45ae-42ce-8e58-9e1d445b3304",
+    "title": null,
+    "text": "Good",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.21.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_battery_efficiency",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_usability",
+        "rating": 1
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "e5bff41c-cd45-456f-8bc2-70f7d758efb6",
     "userName": "ANJALI S",
     "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLvi9iMgbiqQ9W1LhwFckbUASnh3Ij9TxAyXr8AtL5zBa9fRg=mo",
@@ -1163,7 +1321,7 @@
   {
     "id": "4c996753-fdd9-4f83-9e4c-85edc903082b",
     "userName": "zabi ahmed",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjX-_bBEGpTyM9QaHDnhf6roXBO2ZBZN_mRMtV2BZcvLpEGdFydQ",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocI3ShI9lwV1K5XIUTxMU_t7EHv7Spf_5l8t4lgSrwvd6ivlun8=mo",
     "date": "2026-10-28T22:07:52.690Z",
     "score": 5,
     "scoreText": "5",
@@ -19566,143 +19724,6 @@
     "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7d780746-fd2d-4a01-a6d1-0df2ed78b8f8",
     "title": null,
     "text": "good work",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "c9547d4d-a322-4e54-831d-92b34c46d913",
-    "userName": "Rama Seshadri",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocK_ieYZ9BTwB-NcOPizb2EyULJ26nbymaX_RCRIhinBVmVWcw=mo",
-    "date": "2026-07-02T23:48:51.857Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=c9547d4d-a322-4e54-831d-92b34c46d913",
-    "title": null,
-    "text": "highly satisfied",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "e5724993-3729-477a-99f7-8b6e32c42fde",
-    "userName": "Apoorva Sharma",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJGnTkFZtqJKgkfBrVSv4CBlofb0HWWYXH5zHQMc1fG8QfAdA=mo",
-    "date": "2026-07-02T22:52:08.766Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=e5724993-3729-477a-99f7-8b6e32c42fde",
-    "title": null,
-    "text": "good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_battery_heat",
-        "rating": 3
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "f68b6445-3d51-472c-a95b-4cdc61d2cfc7",
-    "userName": "Nancy Rawat",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVCrDV0AdfqLBe2O-7TAMN72QKyvR6WijDYunQQJzG9peDIFuiJ",
-    "date": "2026-07-02T22:13:56.330Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=f68b6445-3d51-472c-a95b-4cdc61d2cfc7",
-    "title": null,
-    "text": "it is best app for corporate employees",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_battery_efficiency",
-        "rating": 3
-      },
-      {
-        "criteria": "vaf_app_quality_ads_intrusiveness",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_usability",
-        "rating": 1
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "e89e2001-f630-4c7d-bb57-829875350ac0",
-    "userName": "Vikas Maheshwari",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXjuCXVdbUNyvRv_GC-bI6iN2B-l7_LWhHSXWoDjH4pgwob7Nk5IA",
-    "date": "2026-07-02T19:53:04.903Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=e89e2001-f630-4c7d-bb57-829875350ac0",
-    "title": null,
-    "text": "love the user interface",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "693c3633-e108-4add-86e5-7b4d3ffc40d6",
-    "userName": "Auguru Pratap kumar",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjW6KqAjz-dE2QIMPoPfEwBcpF6E1p9sR0vKtdMvNWm6R290vFiSYA",
-    "date": "2026-07-02T11:30:11.955Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=693c3633-e108-4add-86e5-7b4d3ffc40d6",
-    "title": null,
-    "text": "good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "245b9f17-639d-4277-989d-89d26c79162b",
-    "userName": "ranga nath",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXOi0dKHnvGx_RLz_KCrIruJtQi75LagiumwpXHO2-4kj3izR8",
-    "date": "2026-07-02T07:55:24.514Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=245b9f17-639d-4277-989d-89d26c79162b",
-    "title": null,
-    "text": "user friendly",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "60da9f78-3da5-4efb-aa2c-8c8a8e0e8be2",
-    "userName": "Bharti Thethi",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIqvue24waD8pVaZV8uC2ZgsXeX6qngt5Eh1P4Jpvqgtj1jUA=mo",
-    "date": "2026-07-02T07:45:06.800Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=60da9f78-3da5-4efb-aa2c-8c8a8e0e8be2",
-    "title": null,
-    "text": "Amazing",
     "replyDate": null,
     "replyText": null,
     "version": "12.14.1",
