@@ -435,21 +435,6 @@
     "collectedSort": "NEWEST"
   },
   {
-    "id": "7099b2d7-9dcb-45cb-a769-a4836388b431",
-    "userName": "ANBUSEKARAN APPANDAI",
-    "rating": 1,
-    "text": "App does not open. Keeps crashing after the new update.",
-    "cleanedText": "App does not open. Keeps crashing after the new update.",
-    "textLength": 55,
-    "ratingCategory": "negative",
-    "date": "2026-11-03T19:43:52.223Z",
-    "reviewDate": "2026-11-03",
-    "reviewMonth": "2026-11",
-    "thumbsUpCount": 0,
-    "version": "Unspecified",
-    "collectedSort": "NEWEST"
-  },
-  {
     "id": "fa7faeb4-2db4-4b9b-82cf-7dc0d87114f9",
     "userName": "Hangsing Boiz",
     "rating": 5,
@@ -14997,6 +14982,21 @@
     "reviewMonth": "2026-07",
     "thumbsUpCount": 0,
     "version": "12.14.0",
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "8c6944b3-8fb2-4702-a553-9aea8a0732c1",
+    "userName": "sarthak gangwal",
+    "rating": 5,
+    "text": "great service. Moveinsync is the used as gcab service by google and is amazing. very convenient to use in a place like bangalore",
+    "cleanedText": "great service. Moveinsync is the used as gcab service by google and is amazing. very convenient to use in a place like bangalore",
+    "textLength": 128,
+    "ratingCategory": "positive",
+    "date": "2026-07-03T03:55:42.397Z",
+    "reviewDate": "2026-07-03",
+    "reviewMonth": "2026-07",
+    "thumbsUpCount": 0,
+    "version": "12.14.1",
     "collectedSort": "NEWEST"
   }
 ]

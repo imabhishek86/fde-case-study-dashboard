@@ -628,36 +628,6 @@
     "collectedSort": "NEWEST"
   },
   {
-    "id": "7099b2d7-9dcb-45cb-a769-a4836388b431",
-    "userName": "ANBUSEKARAN APPANDAI",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocK-vut-iMfsQnUi4sqwndXrv6is7Y2gmmxy_O6SBHrn3Zmfsw=mo",
-    "date": "2026-11-03T19:43:52.223Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7099b2d7-9dcb-45cb-a769-a4836388b431",
-    "title": null,
-    "text": "App does not open. Keeps crashing after the new update.",
-    "replyDate": null,
-    "replyText": null,
-    "version": null,
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_stability",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_performance",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_ads_presence",
-        "rating": 3
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
     "id": "fa7faeb4-2db4-4b9b-82cf-7dc0d87114f9",
     "userName": "Hangsing Boiz",
     "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIm54uUkoVeS7Uy1nk5hsJYv4HWp13sg_3GCAqPyeRv9T8K9cM=mo",
@@ -2903,7 +2873,7 @@
   {
     "id": "8f93a060-37bd-41d9-8e1c-2f344294ab87",
     "userName": "Akash Barua",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXA6T_D6pvgRPx-I8nY_Cw7LymxYj1QOsYdVNdMTAa5BMFmRGRD",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjW8JopZLVgIfuEd3vnQR3Me1j6eIjeyoJPDdRQZCMu0AZZY4oSX",
     "date": "2026-10-18T13:02:56.442Z",
     "score": 5,
     "scoreText": "5",
@@ -19727,6 +19697,23 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.14.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "8c6944b3-8fb2-4702-a553-9aea8a0732c1",
+    "userName": "sarthak gangwal",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJJIwj1vovmXuQWUmddHJG1Zbk18F6sshMVvnRKh_n0gY01kQ=mo",
+    "date": "2026-07-03T03:55:42.397Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=8c6944b3-8fb2-4702-a553-9aea8a0732c1",
+    "title": null,
+    "text": "great service. Moveinsync is the used as gcab service by google and is amazing. very convenient to use in a place like bangalore",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.14.1",
     "thumbsUp": 0,
     "criterias": [],
     "collectedSort": "NEWEST"
