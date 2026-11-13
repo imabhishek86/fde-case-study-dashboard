@@ -8,18 +8,18 @@
   "missingDateCount": 0,
   "invalidRatingCount": 0,
   "emptyTextCount": 0,
-  "earliestDate": "2026-07-06T07:24:22.690Z",
-  "latestDate": "2026-11-11T10:32:25.940Z",
+  "earliestDate": "2026-07-06T16:06:12.471Z",
+  "latestDate": "2026-11-12T02:38:28.955Z",
   "ratingDistribution": {
-    "5_star": 660,
+    "5_star": 658,
     "4_star": 41,
     "3_star": 24,
     "2_star": 35,
-    "1_star": 240
+    "1_star": 242
   },
   "ratingCategoryDistribution": {
-    "positive": 701,
+    "positive": 699,
     "neutral": 24,
-    "negative": 275
+    "negative": 277
   }
 }
