@@ -1,5 +1,22 @@
 [
   {
+    "id": "d5f68fe1-2de3-40b5-bfb7-c58642fc8ed4",
+    "userName": "Nikhil Sharma",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIUjKiqSdFNI4D7yQKK1bqGUySP535yufVBnTeXBcGtqXPvc7k=mo",
+    "date": "2026-11-14T12:33:04.671Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=d5f68fe1-2de3-40b5-bfb7-c58642fc8ed4",
+    "title": null,
+    "text": "No way to see ETA",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "725dfe74-8ec4-4684-9e95-458e10d216a9",
     "userName": "Jyoti Baghel",
     "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVe71t0eZkDvHtl5ZCP3kKamd72_hR3J_vzNh21ALXNv54L0mHw7A",
@@ -3539,7 +3556,7 @@
   {
     "id": "8f93a060-37bd-41d9-8e1c-2f344294ab87",
     "userName": "Akash Barua",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjW8JopZLVgIfuEd3vnQR3Me1j6eIjeyoJPDdRQZCMu0AZZY4oSX",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVmd2ozA6FgocVsEoF_yRFilpPmnbplqs08NO1tViZUvppdPfOj",
     "date": "2026-10-18T13:02:56.442Z",
     "score": 5,
     "scoreText": "5",
@@ -19712,23 +19729,6 @@
         "rating": 2
       }
     ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "05e95f84-ffee-4f64-9f57-ebe32b1d7d1b",
-    "userName": "Navneet Shrivastava",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUUqGD53a4Cm91mOeeHCNSeeTFkxWQs3LZGG-oS_ghG3xNjOBZ5Kw",
-    "date": "2026-07-07T10:52:42.865Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=05e95f84-ffee-4f64-9f57-ebe32b1d7d1b",
-    "title": null,
-    "text": "good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
     "collectedSort": "NEWEST"
   }
 ]
