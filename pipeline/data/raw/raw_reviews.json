@@ -1,5 +1,69 @@
 [
   {
+    "id": "32d37611-a940-4a57-9a74-9e639676234b",
+    "userName": "Raj",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUnHsdqBWmcx3BfluJT3W3WxKiiAKPL5sSmtflDMi6EFCtHeNCieQ",
+    "date": "2026-11-16T11:05:13.793Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=32d37611-a940-4a57-9a74-9e639676234b",
+    "title": null,
+    "text": "Easy to run & good app",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "6eb757e7-a385-4e36-b04c-e5a8dec7519b",
+    "userName": "Soureek Dey",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWAYLVHZQTpAClQAfG_bgY4CJtGAQIRyHPevMqZ2xe07IPbm5A5",
+    "date": "2026-11-16T09:50:29.653Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=6eb757e7-a385-4e36-b04c-e5a8dec7519b",
+    "title": null,
+    "text": "Good App",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_battery_heat",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_ads_intrusiveness",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_ads_frequency",
+        "rating": 2
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "7cbdf1b6-39da-4b7e-8135-5d3340910b95",
+    "userName": "Mohnish Shete",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocL-v_Chz8bihNpD-jy0WTwOUH5nVWRRlSIGnY3Wj62aDarJ0A=mo",
+    "date": "2026-11-16T02:02:46.501Z",
+    "score": 2,
+    "scoreText": "2",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=7cbdf1b6-39da-4b7e-8135-5d3340910b95",
+    "title": null,
+    "text": "bookings done via app are lost. u realize this very late as there is no notification",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.21.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "d5f68fe1-2de3-40b5-bfb7-c58642fc8ed4",
     "userName": "Nikhil Sharma",
     "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIUjKiqSdFNI4D7yQKK1bqGUySP535yufVBnTeXBcGtqXPvc7k=mo",
@@ -153,7 +217,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.21.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [
       {
         "criteria": "vaf_app_quality_visual_appeal",
@@ -377,23 +441,6 @@
         "rating": 2
       }
     ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "265aeb05-49c3-4b14-8c34-8bb5afa0730d",
-    "userName": "Madhuri Kumari",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJmQNtah6x6LR8s6XOIzaekow2Ag5V4bCAk-HS_X9JofoeY5oU=mo",
-    "date": "2026-11-11T20:46:24.699Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=265aeb05-49c3-4b14-8c34-8bb5afa0730d",
-    "title": null,
-    "text": "I don't want to describe",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.21.0",
-    "thumbsUp": 0,
-    "criterias": [],
     "collectedSort": "NEWEST"
   },
   {
@@ -11639,7 +11686,7 @@
   {
     "id": "6bea6150-7587-4802-bc28-8acc7c22dd0b",
     "userName": "Sakip Miah",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWUVkEFfISY5fXZjlGBiFXMtvbLWhtJiaCzIuOhns3q_4Qvys6p",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWJKb7b8IHx-k-STeiUeqiJbZe-0ObnnT6TmX2vfisuysY3r0Pp",
     "date": "2026-08-25T20:13:34.903Z",
     "score": 5,
     "scoreText": "5",
@@ -14018,23 +14065,6 @@
         "rating": 3
       }
     ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "32d37611-a940-4a57-9a74-9e639676234b",
-    "userName": "Raj",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUnHsdqBWmcx3BfluJT3W3WxKiiAKPL5sSmtflDMi6EFCtHeNCieQ",
-    "date": "2026-08-10T19:59:38.880Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=32d37611-a940-4a57-9a74-9e639676234b",
-    "title": null,
-    "text": "Easy to run & see the details",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.16.0",
-    "thumbsUp": 0,
-    "criterias": [],
     "collectedSort": "NEWEST"
   },
   {
@@ -19699,36 +19729,6 @@
     "version": "12.14.1",
     "thumbsUp": 0,
     "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "5858be08-82d5-4ca5-b23f-c92154a11e58",
-    "userName": "Akshit Ghosh “Comrade”",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVPBMiLkXVzKp9PTsbY6Ts8DcF5A_jI-Qw3YnEpde11Jk8t1Igc",
-    "date": "2026-07-07T11:16:41.114Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=5858be08-82d5-4ca5-b23f-c92154a11e58",
-    "title": null,
-    "text": "Good app all the information for cab in one place and also they call and ask if we are facing any issue if the cab gets delayed on the road for a few mins.",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 6,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_ads_frequency",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_battery_heat",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_ads_intrusiveness",
-        "rating": 2
-      }
-    ],
     "collectedSort": "NEWEST"
   }
 ]
