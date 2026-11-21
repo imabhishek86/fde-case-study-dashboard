@@ -1,5 +1,99 @@
 [
   {
+    "id": "9abbda1b-6fa1-47e0-b7fe-b14de991bcf8",
+    "userName": "Satish K. Singh",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVzZVZagTPpPwCjGPvhiQNa__5u5jDH3o2_QOifkfJws-gTxXTB",
+    "date": "2026-11-20T06:17:54.734Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=9abbda1b-6fa1-47e0-b7fe-b14de991bcf8",
+    "title": null,
+    "text": "An awesome app to have....😊😊",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_never_display_easy_to_use",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_never_display_deceptive_ads",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_never_display_meet_expectations",
+        "rating": 1
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "658b61e5-c584-4e01-b6e5-d1b38c13bbe9",
+    "userName": "shubham Poojari",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocISsTbYlOlKWbAI5gKfb-kl0UsBtQgln498D8GbnnZhrSLbqg=mo",
+    "date": "2026-11-20T03:19:48.700Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=658b61e5-c584-4e01-b6e5-d1b38c13bbe9",
+    "title": null,
+    "text": "I have been trying to receive the OTP via email or phone number for the past 3 days, but I haven't received it.",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "1fb0649f-7a65-42d6-a7cd-6904b4413dd4",
+    "userName": "Amarendra Nayak",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXnLEtuDlHpYSYFWadYDMhqoPxpNjMf7c9OjNPtK8UPcK87fPBs0g",
+    "date": "2026-11-20T03:06:47.940Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=1fb0649f-7a65-42d6-a7cd-6904b4413dd4",
+    "title": null,
+    "text": "lovely",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 1
+      },
+      {
+        "criteria": "vaf_app_quality_ads_frequency",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_battery_efficiency",
+        "rating": 3
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "3d1839ff-82aa-4ea7-8a67-1d5d3a65091f",
+    "userName": "Saniya Shaikh",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLbxjwzg4ANbKdcWp6kVpdvPxeQHMTNz-qnWKjQ_UMZPDes1w=mo",
+    "date": "2026-11-19T18:09:02.505Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=3d1839ff-82aa-4ea7-8a67-1d5d3a65091f",
+    "title": null,
+    "text": "very helpful and useful app 👍",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "573c361f-d5ef-47bf-9469-249f966cb4c1",
     "userName": "I M SRD",
     "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUSQZ2tFdRtBCz16gh_gi3lTOzVyKFwBGkOmJUWLDrHXjUGc9oi",
@@ -3935,7 +4029,7 @@
   {
     "id": "8f93a060-37bd-41d9-8e1c-2f344294ab87",
     "userName": "Akash Barua",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjU46tZ93hTMwJQMLsJW8wmgPIj1d76XJOeRCBdLEf0U48R9LjX4",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjU3nualq8ZHBnLo04RBqBRLPGJwgud9uV_TRkQnwnQ7JRzrmRj4",
     "date": "2026-10-18T13:02:56.442Z",
     "score": 5,
     "scoreText": "5",
@@ -19586,87 +19680,6 @@
     "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=39460e88-a834-4afb-99b6-2c9694b3590a",
     "title": null,
     "text": "quick and real time update",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "abe048d5-7b6f-4bb7-9c68-6f608dea1862",
-    "userName": "Ambarish Gore",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocInqQAqaPYzgHZZfqS9ZwHR2FtzM94vBEvfEbYnHkDVwG5eOg=mo",
-    "date": "2026-07-08T17:26:18.120Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=abe048d5-7b6f-4bb7-9c68-6f608dea1862",
-    "title": null,
-    "text": "very nice",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_stability",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_ads_presence",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_ads_intrusiveness",
-        "rating": 2
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "72ec2a03-0a3d-41c6-a65c-35e333fede58",
-    "userName": "nikhil agarwal",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocInqMHJp47B4bK1EQNjCGhBJDmpYg8-Gx1dhbf3DZJQnrFgZK_5=mo",
-    "date": "2026-07-08T17:20:41.255Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=72ec2a03-0a3d-41c6-a65c-35e333fede58",
-    "title": null,
-    "text": "great app... easy to use. fast and comfortable",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "b060f867-4a19-49ae-8b7c-1a98532c5bbb",
-    "userName": "Kanhaiya Soni",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUYVrsjy9gGQAIzb3nXjPtpWrRh9R-05MqjGvup0PX3A7INk1BBVg",
-    "date": "2026-07-08T15:45:48.195Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=b060f867-4a19-49ae-8b7c-1a98532c5bbb",
-    "title": null,
-    "text": "so easy to manage and access and all",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "c54819fe-e6f1-400f-81e4-d739ead14d7c",
-    "userName": "Anusha Jyothi",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLRC1Cb9wH5DQOlfgXG3nmQ3NM79_uYgqWkC4cOECyNmiflwQ=mo",
-    "date": "2026-07-08T15:04:36.491Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=c54819fe-e6f1-400f-81e4-d739ead14d7c",
-    "title": null,
-    "text": "app not working",
     "replyDate": null,
     "replyText": null,
     "version": "12.14.1",
