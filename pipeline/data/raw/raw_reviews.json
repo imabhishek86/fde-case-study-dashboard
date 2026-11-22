@@ -1,5 +1,154 @@
 [
   {
+    "id": "5e40d2e0-9f25-4225-8e0f-f49f46ee0616",
+    "userName": "Vivek Kumar",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXC3AeVl1k0iwIWg9zpTpQ-Gd32Dcrn8Tpmwb_JnHcLi-BNrfev",
+    "date": "2026-11-21T09:56:37.707Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=5e40d2e0-9f25-4225-8e0f-f49f46ee0616",
+    "title": null,
+    "text": "For about 1-2 weeks, the app is not showing ETA for my pickup. It just says ETA updated at hh:mm am/pm. Otherwise the app is good.",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "c9227339-803b-4680-9a1c-ee047cec5829",
+    "userName": "Harbir Singh",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjV9T3dDukMNsqQsdqaD0UcBKqXqL07Ifhsa1ZVquP1HMJQ0dAto8w",
+    "date": "2026-11-21T08:16:52.363Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=c9227339-803b-4680-9a1c-ee047cec5829",
+    "title": null,
+    "text": "Nice app which helps us to commute easily and safely at our destination, I really appreciate this app very much",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.21.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "d08f683a-4aa2-4ecf-b46e-dbed126d67d6",
+    "userName": "Shaik Shaheensha",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKhfhvOK1cFcSpePFo_vCASnL2_DITY-vsHbym3z8rW5ls_1w=mo",
+    "date": "2026-11-20T23:06:37.463Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=d08f683a-4aa2-4ecf-b46e-dbed126d67d6",
+    "title": null,
+    "text": "good and best app live location overall best app for transportation",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "e7cab7be-9799-45c6-8cc1-fc99e44a18e9",
+    "userName": "anupam tiwari",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjV0R53JHPYqN30T1E5vubv457J9DNLRqeLEtSXDhaKi3Y7bPLBP-g",
+    "date": "2026-11-20T19:16:31.917Z",
+    "score": 4,
+    "scoreText": "4",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=e7cab7be-9799-45c6-8cc1-fc99e44a18e9",
+    "title": null,
+    "text": "I have used this app.. it's great",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_visual_appeal",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_ads_presence",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_performance",
+        "rating": 1
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "15e2b4aa-b2d8-4534-808a-6c826f93f490",
+    "userName": "Aswini Anand",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocLsOVWocGCvQCUezI0SYqI-uoiypBKtWaWpqdtGISWrOSrQ5A=mo",
+    "date": "2026-11-20T18:47:59.560Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=15e2b4aa-b2d8-4534-808a-6c826f93f490",
+    "title": null,
+    "text": "Awesome 👍",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.21.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "a37f5487-00fb-4a70-9143-fdc0c7cfd1b8",
+    "userName": "loke lokesh007",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKGgFwnUSxtKOEkYR_1bNTfwdxkKELwWDACLfUN8bHZkzihig=mo",
+    "date": "2026-11-20T17:54:42.745Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=a37f5487-00fb-4a70-9143-fdc0c7cfd1b8",
+    "title": null,
+    "text": "overall good",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "410e12bf-c0e1-4a5d-9b9e-29e390258fa5",
+    "userName": "M Santhoshkumar",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXJC0aOGV56AUXRGkAuu80K8VnNNyj3d0nepUdxgdSNe1Rhab_M",
+    "date": "2026-11-20T14:48:20.960Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=410e12bf-c0e1-4a5d-9b9e-29e390258fa5",
+    "title": null,
+    "text": "good",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "55c272c2-dfdd-4c69-abf6-73003b9ba66a",
+    "userName": "Aditi Dey",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVN8JcYG-ZiqCVBE3GMME5110dxODWMW4lFGqES4tXr31yAN4jSuA",
+    "date": "2026-11-20T11:00:33.672Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=55c272c2-dfdd-4c69-abf6-73003b9ba66a",
+    "title": null,
+    "text": "specially best fir women",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "9abbda1b-6fa1-47e0-b7fe-b14de991bcf8",
     "userName": "Satish K. Singh",
     "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVzZVZagTPpPwCjGPvhiQNa__5u5jDH3o2_QOifkfJws-gTxXTB",
@@ -140,7 +289,7 @@
     "replyDate": null,
     "replyText": null,
     "version": "12.22.0",
-    "thumbsUp": 0,
+    "thumbsUp": 1,
     "criterias": [
       {
         "criteria": "vaf_app_quality_usability",
@@ -11898,7 +12047,7 @@
   {
     "id": "397df87d-f01f-4486-8218-064d93f1679f",
     "userName": "Diwesh Sharma",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKGJdgrHl_FUFB7en5HPKX6-23SBy9julTwB15BI6BwNIeSUKTe=mo",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJbCC8MlBhGyWzfTOjC-rZDtyb1s6h9ABb2YwzghNcQ1TPof8qK=mo",
     "date": "2026-08-26T20:06:28.860Z",
     "score": 1,
     "scoreText": "1",
@@ -19513,173 +19662,6 @@
     "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=396d9664-99ea-42a3-900e-fbf2f0c44eeb",
     "title": null,
     "text": "good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "3e0e341b-a6ba-4acf-b816-b715a08ff201",
-    "userName": "Ganesh thangamani",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIl7wJ18WBZd5RqpM5-xR1lbZeFSmBMoi-lWXkwh7QLt2BbVA=mo",
-    "date": "2026-07-09T03:14:53.638Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=3e0e341b-a6ba-4acf-b816-b715a08ff201",
-    "title": null,
-    "text": "User friendly",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "5de1b87e-0ae9-4b7c-9906-8469e171a1a4",
-    "userName": "Mohammed Farooq Ansari",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWB3ZFpJgTuXJN8rDxbYQZLvvdB45MOmiEX-XWiDCAX9jYsC504eQ",
-    "date": "2026-07-09T01:07:58.587Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=5de1b87e-0ae9-4b7c-9906-8469e171a1a4",
-    "title": null,
-    "text": "easy to use",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_battery_efficiency",
-        "rating": 3
-      },
-      {
-        "criteria": "vaf_app_quality_ads_frequency",
-        "rating": 3
-      },
-      {
-        "criteria": "vaf_app_quality_usability",
-        "rating": 1
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "3b67497c-883a-47d3-bc1b-f3a7488fbb38",
-    "userName": "shailender kumar",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXnlkCE9EHjuthG3ZhFvPxjA3dEPgkCaxqBIqJlbc1_0Ir_h0nh",
-    "date": "2026-07-08T23:03:46.425Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=3b67497c-883a-47d3-bc1b-f3a7488fbb38",
-    "title": null,
-    "text": "Nice",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "4803f14a-be78-4007-9527-a8f2e06c7352",
-    "userName": "murari choudhary",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJQoq-zIJfR2F0WM8WQSfkVXH3iq-5hZYUs1Fxhu2fBqacLZg=mo",
-    "date": "2026-07-08T21:25:24.320Z",
-    "score": 3,
-    "scoreText": "3",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=4803f14a-be78-4007-9527-a8f2e06c7352",
-    "title": null,
-    "text": "employees cab timing allotment can be better",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_visual_appeal",
-        "rating": 3
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "f13bfea9-81c3-4886-b8d5-94e4bfdec9d1",
-    "userName": "Shevito Assumi",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUA9BbVgK-kim4lhbSOvOAXzi_sjUfEB4i_JqPjvZsVgBd96pl2",
-    "date": "2026-07-08T20:08:49.947Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=f13bfea9-81c3-4886-b8d5-94e4bfdec9d1",
-    "title": null,
-    "text": "worse app cab cancel by itself",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "4aa6fdd5-7971-4ddd-acc4-e798abda46ec",
-    "userName": "Barakam Ramu",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXf8vMC6Zo--ybRyA5Uj7MiGh8yFrwMhs2FklaWvTBdwdtJcu0C",
-    "date": "2026-07-08T19:17:41.572Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=4aa6fdd5-7971-4ddd-acc4-e798abda46ec",
-    "title": null,
-    "text": "good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "4755a247-7a41-4df9-860a-c191b60022df",
-    "userName": "uggam venkatadri",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocL_cSQi4FKphxK1uJUrpCSfh7qtAoFNgUpcbtLTJPgOJPtHTPA=mo",
-    "date": "2026-07-08T18:19:06.152Z",
-    "score": 4,
-    "scoreText": "4",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=4755a247-7a41-4df9-860a-c191b60022df",
-    "title": null,
-    "text": "good",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_usability",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_performance",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_ads_presence",
-        "rating": 2
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "39460e88-a834-4afb-99b6-2c9694b3590a",
-    "userName": "Shubhangi Bamne",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjWzPlaNQflXluZUDbqx8_w-QmIKtsnCWvMm85Qn-Gk2GJ4EwWdhXA",
-    "date": "2026-07-08T17:36:43.550Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=39460e88-a834-4afb-99b6-2c9694b3590a",
-    "title": null,
-    "text": "quick and real time update",
     "replyDate": null,
     "replyText": null,
     "version": "12.14.1",
