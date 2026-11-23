@@ -1,5 +1,86 @@
 [
   {
+    "id": "b19ecb34-258b-478e-b9d0-8ad1c1ea6df0",
+    "userName": "Krishna Raj",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVnn9YBpuWDKbeePdMJ0GlaFjDI2XA634QIGgMl0yrFsCw2kL8",
+    "date": "2026-11-21T23:24:34.396Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=b19ecb34-258b-478e-b9d0-8ad1c1ea6df0",
+    "title": null,
+    "text": "The app appears to be heavily biased towards drivers. No action is taken against drivers even when passengers raise complaints through the app. Most of the features seem designed to benefit drivers, while passenger concerns and grievances are consistently ignored.",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "06012dd8-78f5-438c-b2f6-5bbde7c270d6",
+    "userName": "Samirshah 1M",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocJcgvK6phqMwUwgZWXlmU8ZIlIsPf68ikUTuioqtcNFLfoboA=mo",
+    "date": "2026-11-21T18:22:40.110Z",
+    "score": 4,
+    "scoreText": "4",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=06012dd8-78f5-438c-b2f6-5bbde7c270d6",
+    "title": null,
+    "text": "you have one mistake but I will not write it and I hope IT team will find it soon😄",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "b1338a51-baf3-46bc-a5a6-6c7ffc959c43",
+    "userName": "Precious Deepak",
+    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjVNQvkvrtEZIiKWF-hBFhKDllTCt895aRj5g0ruPURAwyGJTSY",
+    "date": "2026-11-21T16:45:21.708Z",
+    "score": 5,
+    "scoreText": "5",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=b1338a51-baf3-46bc-a5a6-6c7ffc959c43",
+    "title": null,
+    "text": "good 👍",
+    "replyDate": null,
+    "replyText": null,
+    "version": "12.22.0",
+    "thumbsUp": 0,
+    "criterias": [
+      {
+        "criteria": "vaf_app_quality_battery_efficiency",
+        "rating": 3
+      },
+      {
+        "criteria": "vaf_app_quality_stability",
+        "rating": 2
+      },
+      {
+        "criteria": "vaf_app_quality_performance",
+        "rating": 3
+      }
+    ],
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "04d40462-f4c8-49c5-95f4-55cb92127012",
+    "userName": "Vibin",
+    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocKktOd1zS1w6tplSvdfX0Om9gKELohdZqlu8QjESQt2aAd5yyU=mo",
+    "date": "2026-11-21T14:07:43.173Z",
+    "score": 1,
+    "scoreText": "1",
+    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=04d40462-f4c8-49c5-95f4-55cb92127012",
+    "title": null,
+    "text": "facing issue with app, auto closing after opening",
+    "replyDate": null,
+    "replyText": null,
+    "version": null,
+    "thumbsUp": 0,
+    "criterias": [],
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "5e40d2e0-9f25-4225-8e0f-f49f46ee0616",
     "userName": "Vivek Kumar",
     "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjXC3AeVl1k0iwIWg9zpTpQ-Gd32Dcrn8Tpmwb_JnHcLi-BNrfev",
@@ -19581,87 +19662,6 @@
     "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=c1b25db9-7a1d-4467-aa00-14823e82fe2f",
     "title": null,
     "text": "when booking a cab it freezes if too many people try at once",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "dd90d143-5ad0-4c82-a3e5-a53501ba504c",
-    "userName": "Pavan Kalyan",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjUd0E-haXbZCAEnUBLLGqEkuB1rmXXMDjTv3K0rupCingJFjNZ3",
-    "date": "2026-07-09T14:08:12.375Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=dd90d143-5ad0-4c82-a3e5-a53501ba504c",
-    "title": null,
-    "text": "overall good 😊",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [
-      {
-        "criteria": "vaf_app_quality_ads_frequency",
-        "rating": 2
-      },
-      {
-        "criteria": "vaf_app_quality_visual_appeal",
-        "rating": 1
-      },
-      {
-        "criteria": "vaf_app_quality_ads_intrusiveness",
-        "rating": 2
-      }
-    ],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "a80b16e2-64b2-4f8b-b5f5-68b2718a1dcb",
-    "userName": "Subha S",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIMPJlUXZ7jWe5iDapqmaJem851PkOELRtbnfxmOXCcJGWDwQ=mo",
-    "date": "2026-07-09T12:43:24.120Z",
-    "score": 3,
-    "scoreText": "3",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=a80b16e2-64b2-4f8b-b5f5-68b2718a1dcb",
-    "title": null,
-    "text": "app didn't included with the building name and floor details of the cab pickup. this makes it very difficult to go and find the place.",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "c0a638f7-13b2-4090-a93a-d2104065a717",
-    "userName": "Rushikesh",
-    "userImage": "https://play-lh.googleusercontent.com/a/ACg8ocIvI-4HrEAD0_sTF84Isy-HaMh6zS_bxb_RB7PV6z3GgSJpRQ=mo",
-    "date": "2026-07-09T05:37:58.287Z",
-    "score": 1,
-    "scoreText": "1",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=c0a638f7-13b2-4090-a93a-d2104065a717",
-    "title": null,
-    "text": "worst app",
-    "replyDate": null,
-    "replyText": null,
-    "version": "12.14.1",
-    "thumbsUp": 0,
-    "criterias": [],
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "396d9664-99ea-42a3-900e-fbf2f0c44eeb",
-    "userName": "Sreya Bolliboina",
-    "userImage": "https://play-lh.googleusercontent.com/a-/ALV-UjW8suPeI9t9lH3458F0ycDhBGdhVQiApXeZbmOHuIlQLnPPvvVK",
-    "date": "2026-07-09T04:36:15.482Z",
-    "score": 5,
-    "scoreText": "5",
-    "url": "https://play.google.com/store/apps/details?id=com.moveinsync.ets&reviewId=396d9664-99ea-42a3-900e-fbf2f0c44eeb",
-    "title": null,
-    "text": "good",
     "replyDate": null,
     "replyText": null,
     "version": "12.14.1",
