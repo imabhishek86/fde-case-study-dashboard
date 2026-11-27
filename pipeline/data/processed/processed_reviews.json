@@ -1,5 +1,35 @@
 [
   {
+    "id": "834ab929-366a-4108-9fd3-b53cc36e03a1",
+    "userName": "Vaibhav Goriwale",
+    "rating": 5,
+    "text": "Great App 😊👍",
+    "cleanedText": "Great App 😊👍",
+    "textLength": 14,
+    "ratingCategory": "positive",
+    "date": "2026-11-25T22:39:21.470Z",
+    "reviewDate": "2026-11-25",
+    "reviewMonth": "2026-11",
+    "thumbsUpCount": 0,
+    "version": "Unspecified",
+    "collectedSort": "NEWEST"
+  },
+  {
+    "id": "505f0bfd-0ae6-47b5-84f2-51ca6e9354ee",
+    "userName": "shruti negi",
+    "rating": 5,
+    "text": "it's good",
+    "cleanedText": "it's good",
+    "textLength": 9,
+    "ratingCategory": "positive",
+    "date": "2026-11-25T12:59:51.259Z",
+    "reviewDate": "2026-11-25",
+    "reviewMonth": "2026-11",
+    "thumbsUpCount": 0,
+    "version": "12.22.0",
+    "collectedSort": "NEWEST"
+  },
+  {
     "id": "09464548-d79e-4f42-9f82-6e5ddef8a525",
     "userName": "RUPESH CHAUDHARI",
     "rating": 1,
@@ -11971,7 +12001,7 @@
   },
   {
     "id": "4827bbe5-905f-4f4d-a903-7992a94c7bec",
-    "userName": "GPS PYTHON",
+    "userName": "Narayan Singh",
     "rating": 5,
     "text": "Awesome",
     "cleanedText": "Awesome",
@@ -14967,36 +14997,6 @@
     "reviewMonth": "2026-07",
     "thumbsUpCount": 0,
     "version": "12.15.0",
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "e0a8c68e-f456-4f33-8970-1e04395c436b",
-    "userName": "pranav jayan",
-    "rating": 5,
-    "text": "Easy to use and efficient.",
-    "cleanedText": "Easy to use and efficient.",
-    "textLength": 26,
-    "ratingCategory": "positive",
-    "date": "2026-07-13T06:33:20.121Z",
-    "reviewDate": "2026-07-13",
-    "reviewMonth": "2026-07",
-    "thumbsUpCount": 1,
-    "version": "12.15.0",
-    "collectedSort": "NEWEST"
-  },
-  {
-    "id": "aec9d310-e381-4b43-a3d1-0a874b7b615a",
-    "userName": "Balasubramanian Chidambaram",
-    "rating": 5,
-    "text": "ease of booking via this app",
-    "cleanedText": "ease of booking via this app",
-    "textLength": 28,
-    "ratingCategory": "positive",
-    "date": "2026-07-13T02:29:33.319Z",
-    "reviewDate": "2026-07-13",
-    "reviewMonth": "2026-07",
-    "thumbsUpCount": 0,
-    "version": "12.14.1",
     "collectedSort": "NEWEST"
   }
 ]
